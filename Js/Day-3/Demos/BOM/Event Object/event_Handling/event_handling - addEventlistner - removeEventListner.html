@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Event handler #1</title>
+
+    <script>
+        function handleBtnClick() {
+            alert("Welcome");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Click the button before 3 seconds</h1>
+    <hr/>
+    <input id="btn" type="button" value="click me" name="b1" />
+
+    <script>
+        document.getElementById("btn").addEventListener("click", handleBtnClick);
+
+        setTimeout(function() {
+            document.getElementById("btn").removeEventListener("click", handleBtnClick);
+            alert("Game Over!")
+        }, 5000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut</title>
+</head>
+<body onclick="RemoveAlert()">
+    <script>
+        // function DoSomething(){
+        //     alert('Welcome');
+        // }
+        var t = setTimeout(function(){alert("Welcome");},3000); //anonymous function
+        //setTimeout(()=>{alert("Welcome");},3000); //arrow function
+        //setTimeout(DoSomething,3000); //call back function
+        //setTimeout("DoSomething()",3000);
+        //setTimeout("alert('Welcome');",3000);
+
+        function RemoveAlert(){
+            clearTimeout(t);
+        }
+    </script>
+</body>
+</html>

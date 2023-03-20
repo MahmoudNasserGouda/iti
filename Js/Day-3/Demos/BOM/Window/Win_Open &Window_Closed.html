@@ -1,0 +1,53 @@
+<html>
+<head>
+<script>
+
+function ifClosed()
+{
+  //document.write("'myWindow' has been closed!")
+document.getElementById("D1").innerText = "'myWindow' has been closed!"
+}
+
+function ifNotClosed()
+{
+  //document.write("'myWindow' has NOT been closed!")
+	document.getElementById("D1").innerText = "'myWindow' has NOT been closed!"
+}
+
+function checkWin()
+{
+  if (myWindow.closed)
+    //ifClosed()
+	document.write("Closed");
+
+  else
+    //ifNotClosed()
+	document.write("Opened");
+}
+</script>
+</head>
+<body>
+<script>
+//myWindow=window.open(URL,win_Name,Properties)
+var myWindow;
+myWindow=window.open('','','width=200,height=100');
+try
+{
+  myWindow.document.write("This is myWindow");
+}
+catch(e)
+{
+  alert(e.message);
+}
+</script>
+<P>
+<input type="button" value="Has 'myWindow' been closed?"
+onclick="checkWin()">
+
+<input type="button" value="Close window"
+onclick="myWindow.close()">
+
+<div id="D1"></div>
+</P>
+</body>
+</html>

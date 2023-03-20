@@ -1,0 +1,107 @@
+ <HTML>
+
+<HEAD>
+ 
+<TITLE>Lighting Marbles</TITLE>
+
+<script type="text/javascript">
+
+    var imageArray = new Array(3);
+    var currentImage = 1;
+    
+    for (i = 0; i < 3; i++) {
+        imageArray[i] = "marble" + eval((i + 1)) + ".jpg"
+    }
+    var i = 0;
+
+    a = 0;
+    c = 0;
+    b = 0;
+
+    function lightingMarbles() {
+        for (b = 0; b < a; b++) 
+		{
+            document.images[b].src = imageArray[0]; //1 
+        }
+//            for (c = 0; c < b; c++) {
+//                document.images[c].src = imageArray[0];
+//            }
+
+            if (a == 5)
+                a = 0;
+
+            document.images[a].src = imageArray[2]
+
+            a++;
+        }
+
+        
+
+            
+</script>
+ 
+</HEAD>
+<body bgcolor="white" onload="timerID=setInterval('lightingMarbles()',500)" ><!--onmousedown="clearInterval(timerID)"-->
+<BR><BR><BR><BR><BR>
+ 
+<CENTER>
+ 
+<TABLE>
+
+<TR VALIGN="top" ALIGN="center">
+<TD>
+<IMG SRC="marble1.jpg" id="1" onmouseover="clearInterval(timerID)" onmouseout="timerID=setInterval('lightingMarbles()',500)">
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+<IMG SRC="marble1.jpg" id="2">
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+<IMG SRC="marble1.jpg" id="3">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+<IMG SRC="marble1.jpg" id="4">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+<IMG SRC="marble1.jpg" id="5">
+<div id="a"></div>
+</TD>
+</TR>
+</TABLE>
+ 
+</CENTER>
+ <script>
+
+//     //1st <tr>
+//     document.body.childNodes[7].chilNodes[1].chilNodes[1].firstChild.insertBefore(document.Img1.src = 'marble3.jpg', document.getElementById("a")); //1
+//     document.body.childNodes[7].chilNodes[1].chilNodes[1].lastChild.insertBefore(document.Img1.src = 'marble3.jpg', document.getElementById("a")); //1
+//     document.getElementById("b").insertBefore(document.Img2.src = 'marble1.jpg', document.getElementById("b")); //2
+//     //3rd <tr>    
+//     document.getElementById("c").insertBefore(document.Img3.src = 'marble1.jpg', document.getElementById("c")); //3
+//     document.getElementById("d").insertBefore(document.Img4.src = 'marble1.jpg', document.getElementById("d")); //4
+//     document.getElementById("e").insertBefore(document.Img5.src = 'marble1.jpg', document.getElementById("e")); //5
+//     //5th <tr>   
+//     document.getElementById("f").insertBefore(document.Img6.src = 'marble1.jpg', document.getElementById("f")); //6
+//     document.getElementById("g").insertBefore(document.Img7.src = 'marble1.jpg', document.getElementById("g")); //7
+//     
+     /*
+     document.getElementById("b").insertBefore(document.Img2.src = 'marble1.jpg', document.getElementById("b")); //2
+     //3rd <tr>    
+     document.getElementById("c").insertBefore(document.Img3.src = 'marble1.jpg', document.getElementById("c")); //3
+     document.getElementById("d").insertBefore(document.Img4.src = 'marble1.jpg', document.getElementById("d")); //4
+     document.getElementById("e").insertBefore(document.Img5.src = 'marble1.jpg', document.getElementById("e")); //5
+     //5th <tr>   
+     document.getElementById("f").insertBefore(document.Img6.src = 'marble1.jpg', document.getElementById("f")); //6
+     document.getElementById("g").insertBefore(document.Img7.src = 'marble1.jpg', document.getElementById("g")); //7
+     
+     */
+ </script>
+</BODY>
+</HTML>
+
+
+
+

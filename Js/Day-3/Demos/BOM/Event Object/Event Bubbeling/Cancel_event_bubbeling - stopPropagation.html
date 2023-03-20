@@ -1,0 +1,9 @@
+<body onclick="alert('I am Body')">
+    <script>
+        function tryme(e) {
+            alert("I am input")
+            e.stopPropagation();
+        }
+    </script>
+    <b>Try clicking the text box & see what happens!</b>
+    <input type="text" onclick="tryme(event)" />

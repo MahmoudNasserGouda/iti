@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<style>
+div#d1 {color: green; font-size:18pt}
+</style>
+
+<script>
+	function makeBlue()
+	{
+		document.getElementById("d1").style.color="blue";
+	}
+	
+	function makeRed()
+	{
+		document.getElementById("d1").style.color="red";
+	}
+</script>
+</head>
+
+<body>
+
+<!-- <font size="18" color="green"> -->
+	<div id="d1"> Simple Example</div>
+<!-- </font> -->
+<input type="button" value="blue" onClick="makeBlue();"/>
+<input type="button" value="red" onClick="makeRed();"/>
+
+</body>
+</html>

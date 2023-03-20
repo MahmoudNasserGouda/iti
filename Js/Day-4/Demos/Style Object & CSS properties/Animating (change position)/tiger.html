@@ -1,0 +1,21 @@
+<img id="TIGER" src="tiger.gif" style="position:absolute; left:1000px" onclick="AnimateTiger()" />
+
+
+
+<script>
+    var TigerTimer;
+
+    function AnimateTiger() {
+        document.getElementById("TIGER").style.left = "1000px";
+        TigerTimer = setInterval("MoveTiger()", 20);
+    }
+
+    function MoveTiger() {
+        console.log(document.getElementById("TIGER").style.left);
+        document.getElementById("TIGER").style.left = (parseInt(document.getElementById("TIGER").style.left) - 5) + "px";
+        if (parseInt(document.getElementById("TIGER").style.left) < 0) {
+            clearInterval(TigerTimer);
+            //document.getElementById("TIGER").style.left = window.innerWidth;
+        }
+    }
+</script>

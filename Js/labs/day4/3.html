@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <img style="opacity:1" onMouseOver="fadeout(this)" onmouseout="fadein(this)" src="Images/1.jpg" alt="">
+    <img style="opacity:1" onMouseOver="fadeout(this)" onmouseout="fadein(this)" src="Images/2.jpg" alt="">
+    <img style="opacity:1" onMouseOver="fadeout(this)" onmouseout="fadein(this)" src="Images/3.jpg" alt="">
+    <img style="opacity:1" onMouseOver="fadeout(this)" onmouseout="fadein(this)" src="Images/4.jpg" alt="">
+    <img style="opacity:1" onMouseOver="fadeout(this)" onmouseout="fadein(this)" src="Images/5.jpg" alt="">
+    <img style="opacity:1" onMouseOver="fadeout(this)" onmouseout="fadein(this)" src="Images/6.jpg" alt="">
+    <img style="opacity:1" onMouseOver="fadeout(this)" onmouseout="fadein(this)" src="Images/7.jpg" alt="">
+    <img style="opacity:1" onMouseOver="fadeout(this)" onmouseout="fadein(this)" src="Images/8.jpg" alt="">
+    <script>
+        var inter;
+        function fadeout(t) {
+            clearInterval(inter)
+            inter = setInterval(() => {
+                if (t.style.opacity > 0.3) {
+                    t.style.opacity -= 0.1
+                }
+            }, 500);
+        }
+        function fadein(t) {
+            console.log(t.style.opacity)
+            clearInterval(inter)
+            setInterval(() => {
+                if (t.style.opacity < 1) {
+                    t.style.opacity = parseFloat(t.style.opacity) + 0.1
+                    console.log(t.style.opacity)
+                }
+            }, 500);
+        }
+    </script>
+</body>
+</html>

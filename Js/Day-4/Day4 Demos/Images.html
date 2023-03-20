@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body onclick="stopInterval()">
+    <img src="./Images/Image1.png" width="300" onmouseover="maximize(event)" onmouseout="minimize(event)">
+    <img src="./Images/Image2.jpg" width="300" onmouseover="maximize(event)" onmouseout="minimize(event)">
+    <img src="./Images/Image3.jpg" width="300" onmouseover="maximize(event)" onmouseout="minimize(event)">
+    <!-- <script>
+        //var images = document.getElementsByTagName("img");
+        //var images = document.querySelectorAll("img");
+        //debugger;
+        console.log(document.images);
+        var counter = 0;
+        var originalImages = ["./Images/Image1.png","./Images/Image2.jpg","./Images/Image3.jpg"];
+        var t = setInterval(function(){
+            if(!(counter<document.images.length))
+                counter = 0;
+            document.images[counter].src = "./Images/Joker.jpg";
+            for(var i=0; i<document.images.length;i++){
+                if(i == counter)
+                    continue;
+                document.images[i].src = originalImages[i];
+            }
+            counter++;
+            console.log("Change")
+        },1000);
+
+        function stopInterval(){
+            clearInterval(t);
+        }
+    </script> -->
+
+    <script>
+        //Hover in CSS: mouseover & mouseout
+        function maximize(eve){
+            console.log(eve.target);
+            eve.target.width =500;
+        }
+
+        function minimize(eve){
+            eve.target.width =300;
+        }
+    </script>
+</body>
+</html>

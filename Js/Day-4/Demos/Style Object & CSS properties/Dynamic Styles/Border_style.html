@@ -1,0 +1,57 @@
+<script type="text/javascript">
+
+function ChangeStyle(Style)
+{
+  document.getElementById("DIV").style.borderStyle = Style;
+}
+function ChangeWidth(Width)
+{
+  document.getElementById("DIV").style.borderWidth = Width;
+}
+function ChangeColor(Color)
+{
+  document.getElementById("DIV").style.borderColor =  Color;
+}
+
+</script>
+
+<div id="DIV" style="border:solid 1; padding:10px">
+  To change the border style, width, and color surrounding this division,
+  click the radio buttons below.
+</div>
+
+<table border="1">
+<tr>
+  <td>
+<b>borderStyle</b><br/>
+<input type="radio" name="Style" onclick="ChangeStyle('solid')" checked/>solid<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('dashed')"/>dashed<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('dotted')"/>dotted<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('double')"/>double<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('groove')"/>groove<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('inset')"/>inset<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('outset')"/>outset<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('ridge')"/>ridge<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('none')"/>none<br/>
+  </td>
+  <td>
+<b>borderWidth</b><br/>
+<input type="radio" name="Width" onclick="ChangeWidth('1px')" checked/>1px<br/>
+<input type="radio" name="Width" onclick="ChangeWidth('2px')"/>2px<br/>
+<input type="radio" name="Width" onclick="ChangeWidth('3px')"/>3px<br/>
+<input type="radio" name="Width" onclick="ChangeWidth('4px')"/>4px<br/>
+<input type="radio" name="Width" onclick="ChangeWidth('5px')"/>5px<br/>
+<input type="radio" name="Width" onclick="ChangeWidth('7px')"/>7px<br/>
+<input type="radio" name="Width" onclick="ChangeWidth('10px')"/>10px<br/>
+  </td>	
+  <td>
+<b>borderColor</b><br/>
+<input type="radio" name="Color" onclick="ChangeColor('white')"/>white<br/>
+<input type="radio" name="Color" onclick="ChangeColor('black')" checked/>black<br/>
+<input type="radio" name="Color" onclick="ChangeColor('red')"/>red<br/>
+<input type="radio" name="Color" onClick="ChangeColor('blue')"/>blue<br/>
+<input type="radio" name="Color" onclick="ChangeColor('teal')"/>teal<br/>
+<input type="radio" name="Color" onclick="ChangeColor('green')"/>green<br/>
+<input type="radio" name="Color" onclick="ChangeColor('')"/>"" (null)<br/>
+  </td>
+</table>

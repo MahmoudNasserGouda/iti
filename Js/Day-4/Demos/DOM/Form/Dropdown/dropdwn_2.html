@@ -1,0 +1,24 @@
+<script type="text/javascript">
+
+function ShowItem()
+{
+  var Index = document.getElementById("Menu").selectedIndex;
+  
+  document.getElementById("Text").value = 
+    document.getElementById("Menu").options[Index].text;
+  document.getElementById("Value").value = 
+    document.getElementById("Menu").options[Index].value;
+}
+
+</script>
+
+<b>Select Menu:</b>
+<select id="Menu">
+  <option value="Item 1">This is Item 1</option>
+  <option value="Item 2">This is Item 2</option>
+  <option value="Item 3">This is Item 3</option>
+</select>
+<input type="button" value="Select" onclick="ShowItem()"/>
+
+<p>You selected item text: <input id="Text" type="text"/></p>
+<p>You selected item value: <input id="Value" type="text"/></p>

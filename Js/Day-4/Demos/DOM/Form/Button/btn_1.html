@@ -1,0 +1,34 @@
+<script type="text/javascript">
+
+function Append(TheValue)
+{
+	document.getElementById("Number").value += TheValue;
+}
+function Erase()
+{
+	var Length = document.getElementById("Number").value.length;
+	document.all.Number.value = document.getElementById("Number").value.substring(0,Length-1);
+}
+function ClearNumber()
+{
+	document.getElementById("Number").value = "";
+}
+
+</script>
+
+<br/>
+<input type="button" value="0" onClick="Append(value)">
+<input type="button" value="1" onClick="Append(this.value)">
+<input type="button" value="2" onClick="Append(value)">
+<input type="button" value="3" onClick="Append(value)">
+<input type="button" value="4" onClick="Append(value)">
+<input type="button" value="5" onClick="Append(value)">
+<input type="button" value="6" onClick="Append(value)">
+<input type="button" value="7" onClick="Append(value)">
+<input type="button" value="8" onClick="Append(value)">
+<input type="button" value="9" onClick="Append(value)">
+<input type="button" value="." onClick="Append(value)">
+<input type="text" id="Number" style="width:100px; text-align:right">
+<input type="button" value="<<" onClick="Erase()">
+<input type="button" value="C" onClick="ClearNumber()"><br/>
+<br/>

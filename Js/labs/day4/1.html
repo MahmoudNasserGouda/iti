@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form onsubmit="return subm(event)" action="complete.html" method="get" id="form">
+        <div>
+            <input type="text" name="userid" hidden>
+        </div>
+        <div>
+            <label for="fullname">Full Name</label>
+            <input onfocus="this.style.border='solid 1px blue';" onblur="nameblur(this);" placeholder="Enter your Name" required type="text" id="fullname" name="fullname" >
+            <div id="red1" style="display: inline;color: red;" hidden><img width="20" height="20" id="val1" src="" alt=""></div>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input required type="email" id="email" name="email" >
+        </div>
+        <br>
+        <div>
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="Cairo">Cairo</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Minia">Minia</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Suez">Suez</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input required type="password" id="password" name="password" >
+            <label for="repassword">Repeat Password</label>
+            <input onblur="valpass(this);" required type="password" id="repassword" name="password" >
+            <div id="red2" style="display: inline;color: red;" hidden></div>
+        </div>
+        <br>
+        <div>
+            <input required type="checkbox" name="terms" id="terms">
+            <label onClick="windowsc();" for="terms">I agreed to terms and condition.</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit" id="submit">
+        </div> 
+    </form>
+    <script>
+        function nameblur(t) {
+            t.style.border='none'
+            if(t.value.length<4){
+                document.getElementById("val1").src = "Images/notvalid.png";
+                window.setTimeout(function () { 
+                    t.focus(); 
+                }, 0);
+                t.select();
+                t.style = "background-color:gray"
+            }
+            else{
+                document.getElementById("val1").src = "Images/valid.png";
+                t.style = "background-color:white"
+            }
+        }
+        function valpass(t) {
+            if (document.getElementById("password").value != document.getElementById("repassword").value) {
+                document.getElementById("red2").innerHTML = "password and repeat password should be the same";
+                t.style = "background-color:gray"
+            }
+            else{
+                document.getElementById("red2").innerHTML = "";
+                t.style = "background-color:white"
+            }
+        }
+        function subm(ev) {
+            if (document.getElementById("password").value != document.getElementById("repassword").value) {
+                ev.preventDefault()
+                alert("Enter correct values")
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

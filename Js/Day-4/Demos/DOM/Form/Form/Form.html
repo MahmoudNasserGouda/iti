@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function check(event)
+            {
+                if(document.getElementById("user").value.length>3)
+                {
+                    event.target.submit();
+                }
+                else
+                {
+                    event.preventDefault();
+                    document.getElementById("user").focus();
+                }
+
+            }
+
+            function clearTxt(txt)
+            {
+                if(txt.value=="Enter your name")
+                    txt.value="";
+            }
+        </script>
+    </head>
+    <body>
+        <form action="thanks.html" method="get" onsubmit="check(event)">
+            user name <input id="user" type="text" value="Enter your name" onfocus="clearTxt(this)"><br>
+            <input  type="submit" value="submit">
+        </form>
+    </body>
+</html>

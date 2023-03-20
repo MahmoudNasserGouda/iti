@@ -1,0 +1,28 @@
+<html>
+<script>
+    var win1;
+
+    function OpenWin() {
+        //window.open('url','Name', 'Properties');
+        // URL: Optional. Specifies the URL of the page to open. If no URL is specified, a new window is opened
+        //Name: Optional. Specifies the target attribute or the name of the window. 
+        //specs:Optional. A comma-separated list of items.
+        //http://www.w3schools.com/jsref/met_win_open.asp
+        //https://javascript.info/popup-windows
+
+        win1 = window.open('', '_Blank', 'width=200,height=200,screenX=333,screenY=111');
+        win1.document.write("This is New Window");
+    }
+</script>
+
+<input type="button" value="Click to open" onClick="OpenWin();" />
+<input type="button" value="Click to close" onClick="win1.close();" />
+<input type="button" value="Is Closed?" onClick="alert(win1.closed);" />
+<p>
+    Light Green
+    <input type="radio" name="Color" onClick="win1.document.bgColor='lightgreen';win1.focus()" /> Light yellow
+    <input type="radio" name="Color" onClick="win1.document.bgColor='lightyellow';" /> Pink
+    <input type="radio" name="Color" onClick="win1.document.bgColor='pink';win1.focus()" />
+</p>
+
+</html>

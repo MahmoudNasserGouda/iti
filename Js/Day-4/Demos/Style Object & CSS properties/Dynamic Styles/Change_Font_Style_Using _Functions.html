@@ -1,0 +1,34 @@
+<title>--- Change Font Style Using  Functions ---</title>
+<script type="text/javascript">
+
+function DoMouseOver(Tag)
+{
+  Tag.style.fontWeight = "bold";
+}
+
+function DoMouseDown(Tag)
+{
+  Tag.style.fontSize = "14pt";
+  Tag.style.color = "red";
+}
+
+function DoMouseUp(Tag)
+{
+  Tag.style.fontSize = "12pt";
+  Tag.style.color='blue'
+}
+
+function DoMouseOut(Tag)
+{
+  Tag.style.fontWeight = "normal";
+}
+
+</script>
+<a href="javascript:"
+  onmouseover="DoMouseOver(this)"
+  onmousedown="DoMouseDown(this)"
+  onmouseup="DoMouseUp(this)"
+  onmouseout="DoMouseOut(this)">
+    Click this link
+</a>
+

@@ -1,0 +1,60 @@
+<title>--- Format Font ---</title>
+<script type="text/javascript">
+
+function ChangeFont(Font)
+{
+  document.getElementById("PAR").style.fontFamily = Font;
+}
+function ChangeSize(Size)
+{
+  document.getElementById("PAR").style.fontSize = Size;
+}
+function ChangeStyle(Style)
+{
+  document.getElementById("PAR").style.fontStyle = Style;
+}
+function ChangeWeight(Weight)
+{
+  document.getElementById("PAR").style.fontWeight = Weight;
+}
+function ChangeVariant(Variant)
+{
+  document.getElementById("PAR").style.fontVariant = Variant;
+}
+
+</script>
+
+<p id="PAR" style="border:solid 1; padding:10">
+  Here is a paragraph of text that has various font settings that can be
+  changed dynamically. Click the radio buttons below to view combinations
+  of font style settings applied to this text.
+</p>
+
+<table border=1>
+<tr>
+  <td>
+<b>fontFamily</b><br/>
+<input type="radio" name="Font" onclick="ChangeFont('arial')" checked/>arial<br/>
+<input type="radio" name="Font" onclick="ChangeFont('courier')"/>courier<br/>
+<input type="radio" name="Font" onclick="ChangeFont('georgia')"/>georgia<br/>
+<input type="radio" name="Font" onclick="ChangeFont('impact')"/>impact<br/>
+<input type="radio" name="Font" onclick="ChangeFont('times new roman')"/>times new roman<br/>
+<input type="radio" name="Font" onclick="ChangeFont('verdana')"/>verdana<br/>
+  </td>	
+  <td>
+<b>fontStyle</b><br/>
+<input type="radio" name="Style" onclick="ChangeStyle('normal')" checked/>normal<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('italic')"/>italic<br/>
+  </td>
+  <td>
+<b>fontWeight</b><br/>
+<input type="radio" name="Weight" onclick="ChangeWeight('normal')" checked/>normal<br/>
+<input type="radio" name="Weight" onclick="ChangeWeight('bold')"/>bold<br/>
+  </td>	
+  <td>
+<b>fontVariant</b><br/>
+<input type="radio" name="Variant" onclick="ChangeVariant('normal')" checked/>normal<br/>
+<input type="radio" name="Variant" onclick="ChangeVariant('small-caps')"/>small-caps<br/>
+  </td>
+</tr>
+</table>

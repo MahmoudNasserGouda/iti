@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+function detectBrowser()
+{
+var browser=navigator.appName
+var b_version=navigator.appVersion
+var version=parseFloat(b_version)
+
+if ((browser=="Netscape"||browser=="Microsoft Internet Explorer") && (version>=4))
+  {
+	alert("Your browser is good enough!")
+  }
+else
+  {
+	alert("It's time to upgrade your browser!")
+  }
+  //document.write("navigator.appMinorVersion: " + navigator.appMinorVersion + "<br>" + "navigator.appVersion: " + navigator.appVersion + "<br>" + "navigator.browserLanguage: " + navigator.browserLanguage + "<br>" + "navigator.cookieEnabled: " + navigator.cookieEnabled + "<br>" + "navigator.platform: " + navigator.platform);
+  document.write( "<b>navigator.appVersion: </b>" + parseFloat(navigator.appVersion) + "<br><br>" + "<b>navigator.browserLanguage:</b> " + navigator.browserLanguage + "<br><br>" + "<b>navigator.cookieEnabled: </b>" + navigator.cookieEnabled + "<br><br>" + "<b>navigator.platform:</b> " + navigator.platform);
+}
+
+
+</script>
+</head>
+
+<body onload="detectBrowser()">
+</body>
+
+</html>

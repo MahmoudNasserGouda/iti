@@ -1,0 +1,43 @@
+﻿<script>
+function getElements()
+  {
+      var e = document.getElementsByTagName("input");
+      var txtCount = 0;
+      var btnCount = 0;
+      var txtArr = new Array();
+      var btnArr = new Array();
+      for (i = 0; i < e.length; i++) {
+          if (e[i].type == "text") {
+              txtArr[txtCount] = e[i];
+              txtCount++;
+          }
+          else if (e[i].type == "button") {
+          btnArr[btnCount] = e[i];
+          btnCount++;
+          }
+      }
+      alert("You've got " + txtArr.length + " Text boxes");
+      alert("You've got "+ btnArr.length+ " Buttons");
+
+      for (i = 0; i < txtArr.length; i++)
+          txtArr[i].value = "Textbox Number"+(i + 1);
+		  
+
+      for (i = 0; i < btnArr.length; i++)
+          btnArr[i].value = "Button Number " + (i + 1);  
+		  
+//document.getElementByTagName("input")[i].value=
+  }
+</script>
+</head>
+<body>
+<p>
+<input name="myInput" type="text" size="20" /><br />
+<input name="myInput" type="text" size="20" /><br />
+<input name="myInput" type="text" size="20" /><br />
+<br />
+</P>
+<input type="button" onclick="getElements()"
+value="How many input elements?" /></body>
+</html> 
+

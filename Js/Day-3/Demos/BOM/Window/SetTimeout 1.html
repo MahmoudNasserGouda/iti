@@ -1,0 +1,38 @@
+<html>
+<head>
+<script type="text/javascript">
+var c=0;
+var t;
+function showAlert()
+{
+	alert("Alert after 5 seconds");
+	document.getElementById('txt').value="";
+}
+
+function Delayed_action()
+  {
+	document.getElementById('txt').value="Alert will pop up after 5 seconds, press cancel if want to cancel it.";
+	
+  
+  t=setTimeout(showAlert,5000);
+  }
+
+
+function cancel_Action()
+  {
+  document.getElementById('txt').value="Alert Canceled";
+  clearTimeout(t)
+  }
+</script>
+</head>
+<body>
+<input type="button" value="Show Alert!" onClick="Delayed_action()">
+
+<input type="button" value="Cancel show alert!" onClick="cancel_Action()">
+
+
+<br/><br/><br/>
+<input type="text" size="111" id="txt">
+
+</body>
+</html>

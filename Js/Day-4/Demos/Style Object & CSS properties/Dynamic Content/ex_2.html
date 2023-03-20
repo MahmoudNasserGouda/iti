@@ -1,0 +1,16 @@
+<script type="text/javascript">
+
+function WriteText()
+{
+  var Output  = "<div style='border:ridge 3px; padding:7px; width:250px; ";
+      Output += "color:darkgrey; font-size:14pt; font-weight:bold'>";
+      Output += "Here is a styled text string written to the page.";
+      Output += "</div>";
+      document.getElementById("Text").innerHTML = Output;
+      //document.getElementById("Text").innerText = Output;
+}
+
+</script>
+
+<input type="button" value="Write to SPAN" onclick="WriteText()"/>
+<span id="Text"></span>

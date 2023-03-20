@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+    function myFunc() 
+	{
+		//setTimeOut("alert('I does not act asa link')",1000);
+		alert('I does not act asa link');
+		
+		
+    }
+</script>
+</head>
+<body>
+Link Excutes function 
+<a href="#" onclick="myFunc();return false; "> click me </a>
+<br/>
+Link Excutes function 
+<a href="#" onclick="myFunc();event.preventDefault(); "> click me </a>
+<br/>
+Another Link Excutes function 
+<a href="javascript: void(0)" onclick="alert('I does not act asa link too')" >click me also</a>
+</body>
+</html>

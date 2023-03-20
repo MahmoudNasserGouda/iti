@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function getElements()
+  {
+  var e=document.getElementsByTagName("input");
+  alert("You have got "+e.length+" elements in yor document!");
+	e[0].value="A" 
+	e[1].value="B" 
+	e[2].value="C" 
+	e[3].value="Click Here" 
+  }
+</script>
+</head>
+<body>
+<p>
+<input name="myInput" type="text" size="20" /><br />
+<input name="myInput1" type="text" size="20" /><br />
+<input name="myInput2" type="text" size="20" /><br />
+<br />
+</P>
+<input type="button" onclick="getElements()"
+value="How many input elements?" /></body>
+</html> 

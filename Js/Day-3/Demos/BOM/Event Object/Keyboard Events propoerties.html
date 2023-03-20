@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+
+    function whichKey(e)
+    {
+        alert("you pressed: "+e.key);
+    }
+
+    function closeWin(e)
+    {
+        if(e.altKey && e.key=="w")
+            window.close();
+    }
+
+</script>
+</head>
+<body onkeydown="closeWin(event)">
+
+<input type="text" onkeypress="whichKey(event)">
+<div>Press Alt+W to close the window</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<title>--- Change Background & Text Color ---</title>
+<script type="text/javascript">
+
+function SwitchColors()
+{
+  if (document.getElementById("d").style.color == "red") 
+	{
+    		document.getElementById("d").style.color = "blue";
+    		document.getElementById("d").style.backgroundColor = "red"; 
+	}
+  else 
+	{
+    		document.getElementById("d").style.color = "red";
+    		document.getElementById("d").style.backgroundColor = "blue";
+  	}
+}
+</script>
+
+<div id="d" style="border:solid 1; padding:10; color:red; background-color:blue; 
+font-size:12pt; font-weight:bold">
+  Here is a paragraph of text with foreground and background color settings.
+  These settings are changed by clicking the following button.
+</div>
+
+<input type="button" value="Switch Colors" onclick="SwitchColors()"/>

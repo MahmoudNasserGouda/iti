@@ -1,0 +1,51 @@
+<script type="text/javascript">
+
+function RowOn(Row)
+{
+  Row.style.backgroundColor = "#A0A0A0";
+  Row.style.color="#FFFFFF";
+  Row.style.cursor = "hand";
+}
+function RowOff(Row)
+{
+  Row.style.backgroundColor = "#FFFFFF";
+  Row.style.color="#000000";
+}
+function RowDown(Row)
+{
+  Row.style.backgroundColor = "#FF0000";
+}
+
+</script>
+
+<table border="1" cellpadding="2">
+<tr>
+  <th>Link</th>
+  <th>Url</th>
+  <th>Description</th>
+</tr>
+<tr onmouseover="RowOn(this)"  onmouseout="RowOff(this)" 
+    onmousedown="RowDown(this)"
+    onclick="open('http://www.google.com','','')">
+  <td>Google</td>
+  <td>www.google.com</td>
+  <td>Google has many special features to help you to find exactly what
+      you're looking for.</td>
+</tr>
+<tr onmouseover="RowOn(this)"  onmouseout="RowOff(this)" 
+    onmousedown="RowDown(this)"
+    onclick="open('http://www.altavista.com','','')">
+  <td>AltaVista</td>
+  <td>www.altavista.com</td>
+  <td>The AltaVista Toolbar is free, customizable, and gives you the
+      research tools to perform searches from your browser.</td>
+</tr>
+<tr onmouseover="RowOn(this)"  onmouseout="RowOff(this)" 
+    onmousedown="RowDown(this)"
+    onclick="open('http://www.yahoo.com','','')">
+  <td>Yahoo!</td>
+  <td>www.yahoo.com</td>
+  <td>The Yahoo! Music Engine brings you a new and powerful way to enjoy
+      and explore music on your PC.</td>
+</tr>
+</table>

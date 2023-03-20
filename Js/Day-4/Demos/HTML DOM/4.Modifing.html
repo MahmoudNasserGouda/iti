@@ -1,0 +1,52 @@
+ <html>
+	<head>
+	     <title>Simple Example!</title>
+	</head>
+	<body bgcolor="red">
+	     <h1 onclick="changeBgcolor()">Greeting</h1>
+	      Welcome All
+	     <p class ="open" id="my">A paragraph</p>
+	     <!--and that’s all-->
+
+		<script>
+			function changeBgcolor()
+			{
+				document.body.setAttribute("bgcolor", "black");			
+			}
+			
+			//content & style
+			alert(document.getElementById("my").textContent);
+			alert("change textContent of P");
+			document.getElementById("my").textContent="Changed";
+			alert("change InnerHTML of P");
+			document.getElementById("my").innerHTML="<b>Changed again</b>";
+/*
+			//relations
+			document.write("<br/>document.body.firstChild: " +
+			document.body.firstChild.nodeName);
+			
+			document.write("<br/>document.documentElement.childNodes.length: " + 
+			document.documentElement.childNodes.length + 
+			"<br/> document.documentElement.nodeName " + document.documentElement.nodeName);
+
+			//attribute
+			document.write("<br/>document.body.hasAttributes(): " + 
+			document.body.hasAttributes());
+
+			//document.body.setAttribute("bgcolor", "pink");
+			*/
+			//alert(document.body.firstChild.nextSibling.nextSibling.nextSibling.getAttribute("id"));
+			//document.body.setAttribute("bgcolor", "lightgreen");
+				
+
+			
+			//document.body.firstChild.nextSibling.nextSibling.nextSibling.firstChild.nodeValue="Changed Again";
+			//var my = document.getElementById("my");
+			//my.innerHTML = "<i>final</i>";
+			//my.style.fontWeight = "bold";
+			//my.style.color = "blue";
+				
+
+		</script>
+	</body>
+  </html>

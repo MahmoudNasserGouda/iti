@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="" method="post" id="form">
+        <div>
+            <input type="text" name="userid" hidden>
+        </div>
+        <div>
+            <label for="firstname">First Name</label>
+            <input onkeydown="keyd(event);" required type="text" id="firstname" name="firstname" >
+            <label for="lastname">Last Name</label>
+            <input required type="text" id="lastname" name="lastname" >
+        </div>
+        <br>
+        <div>
+            <label style="display: inline-block;" for="email">Email</label>
+            <input style="display: inline-block;" required type="email" id="email" name="email" >
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input required type="password" id="password" name="password" >
+            <label for="repassword">Repeat Password</label>
+            <input required type="password" id="repassword" name="password" >
+        </div>
+        <br>
+        <div>
+            <label for="date">Birth Date</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <br>
+        <div>
+            <label for="pic">User Picture</label>
+            <input type="file" name="pic" id="pic">
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender" id="gender1" value="Male">
+                <label for="gender1">Male</label>
+                <input type="radio" name="gender" id="gender2" value="Female">
+                <label for="gender2">Female</label>
+            </fieldset>            
+        </div>
+        <br>
+        <div>
+            <label for="faculty">Faculty</label>
+            <select name="faculty" id="faculty">
+                <option value="1">Engineering</option>
+                <option value="2">Medicine</option>
+                <option value="3">Business</option>
+                <option value="3">Arts</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Interests</legend>
+                <input type="checkbox" name="programming" id="programming">
+                <label for="programming">Programming</label>
+                <input type="checkbox" name="reading" id="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" name="swim" id="swim">
+                <label for="swim">Swimming</label>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <textarea name="about" id="about" cols="50" rows="5" placeholder="about you.........."></textarea>
+        </div>
+        <br>
+        <div>
+            <input required type="checkbox" name="terms" id="terms">
+            <label onClick="windowsc();" for="terms">I agreed to terms and condition.</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit" id="submit">
+            <input type="RESET" value="Reset">
+        </div> 
+    </form>
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event){
+            event.preventDefault();
+            window.location.href="complete.html";
+        })
+        function windowsc() {
+            var w = window.open('5x.html','','width=500,height=500')
+            setInterval(() => {
+                w.scrollBy(10,10);
+            }, 200);
+        }
+        function keyd(ev) {
+            if (isFinite(ev.key)) {
+                ev.preventDefault();
+                console.log("preventDefault() called")
+            }
+        }
+    </script>
+</body>
+</html>

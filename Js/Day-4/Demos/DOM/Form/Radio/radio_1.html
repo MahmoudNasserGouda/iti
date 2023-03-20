@@ -1,0 +1,24 @@
+<script type="text/javascript">
+
+function ShowValue()
+{
+  var radios=document.getElemenetsByName("RadioSet");
+  for (i=0; i < radios.length; i++) {
+	
+    if (radios[i].checked == true) {
+      document.getElementById("RadioValue").innerHTML = 
+        "</b>The value is: </b>" + radios[i].value;
+      break;
+    }
+  }
+}
+
+</script>
+
+<b>Radio Buttons:</b><br/>
+<input type="radio" id="Radio0" name="RadioSet" value="Item 1" />This is Item 1<br/>
+<input type="radio" id="Radio1" name="RadioSet" value="Item 2"/>This is Item 2<br/>
+<input type="radio" id="Radio2" name="RadioSet"/>This is Item 3<br/>
+
+<input type="button" value="Show Value" onclick="ShowValue()"/>
+<span id="RadioValue"></span>

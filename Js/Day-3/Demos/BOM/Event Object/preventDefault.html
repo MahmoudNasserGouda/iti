@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+
+  
+  function preventA(e)
+  {
+  //alert(e.code);
+	if (e.key=="a")
+		e.preventDefault();
+  }
+</script>
+</head>
+<body >
+
+<input type="text" value="No A" onkeydown="preventA(event);">
+
+</body>
+</html>

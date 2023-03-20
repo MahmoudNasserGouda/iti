@@ -1,0 +1,37 @@
+<HTML>
+<SCRIPT>
+    var currentImage = 0;
+
+    var timerID;
+
+    var imageArray = [];
+
+    imageArray[0] = "1.jpg";
+    imageArray[1] = "2.jpg";
+    imageArray[2] = "3.jpg";
+    imageArray[3] = "4.jpg";
+    imageArray[4] = "5.jpg";
+    imageArray[5] = "6.jpg";
+</SCRIPT>
+
+<BODY>
+
+    <img src="1.jpg" id="img" name="img1" width="20%" height="50%" onmouseover="playSlider();" onmouseout="clearInterval(timerID)">
+    <br>
+
+    <script>
+        function playSlider() {
+            timerID = setInterval(nextImage, 500);
+        }
+
+        function nextImage() {
+            currentImage++;
+            if (currentImage > 5)
+                currentImage = 0;
+
+            document.querySelector('#img').src = imageArray[currentImage];
+        }
+    </script>
+</BODY>
+
+</HTML>

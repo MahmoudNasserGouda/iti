@@ -1,0 +1,81 @@
+<title>--- Styling BG ---</title>
+
+<style type="text/css">
+table#Bkgnd    {width:550px; border-collapse:collapse}
+table#Bkgnd tr {vertical-align:top}
+table#Bkgnd td {font-family:times new roman; font-size:11pt}
+</style>
+
+
+<p>
+<div id="DIV" style="width:450px; height:100px; overflow:auto; border:solid 1px; 
+background-repeat:no-repeat; background-image:url('topgifs.gif'); float:left; margin-bottom:15px">
+</div>
+<input id="BUTTON" type="button" value="Show Text" onclick="ShowHide()"/>
+</p>
+
+<script type="text/javascript">
+
+function ChangePosition(Position) 
+{
+	document.getElementById("DIV").style.backgroundPosition = Position;
+}
+function ChangeRepeat(Repeat) 
+{
+	document.getElementById("DIV").style.backgroundRepeat = Repeat;
+}
+function ChangeAttachment(Attachment) 
+{
+	document.getElementById("DIV").style.backgroundAttachment = Attachment;
+}
+
+function ShowHide()
+{
+	if (document.getElementById("BUTTON").value == "Show Text")
+	{
+		for (i=1; i<=40; i++) 
+		{
+			document.getElementById("DIV").innerText += "This is division text. ";
+		}
+		document.all.BUTTON.value="Hide Text";
+	}
+	else 
+	{
+		document.getElementById("DIV").innerText = "";
+		document.getElementById("BUTTON").value = "Show Text";
+	}
+}
+
+</script>
+
+<br style="clear:left"/>
+<table id="Bkgnd" border="1">
+<tr>
+  <td>
+<b>backgroundPosition</b><br/>
+<input type="radio" name="Position" onclick="ChangePosition('top left')" checked/>top left<br/>
+<input type="radio" name="Position" onclick="ChangePosition('top center')"/>top center<br/>
+<input type="radio" name="Position" onclick="ChangePosition('top right')"/>top right<br/>
+<input type="radio" name="Position" onclick="ChangePosition('center left')"/>center left<br/>
+<input type="radio" name="Position" onclick="ChangePosition('center center')"/>center center<br/>
+<input type="radio" name="Position" onclick="ChangePosition('center right')"/>center right<br/>
+<input type="radio" name="Position" onclick="ChangePosition('bottom left')"/>bottom left<br/>
+<input type="radio" name="Position" onclick="ChangePosition('bottom center')"/>bottom center<br/>
+<input type="radio" name="Position" onclick="ChangePosition('bottom right')"/>bottom right<br/>
+<input type="radio" name="Position" onclick="ChangePosition('50 50')"/>50 50<br/>
+<input type="radio" name="Position" onclick="ChangePosition('50% 50%')"/>50% 50%<br/>
+  </td>
+  <td>
+<b>backgroundRepeat</b><br/>
+<input type="radio" name="Repeat" onclick="ChangeRepeat('no-repeat')" checked/>no-repeat<br/>
+<input type="radio" name="Repeat" onclick="ChangeRepeat('repeat')"/>repeat<br/>
+<input type="radio" name="Repeat" onclick="ChangeRepeat('repeat-x')"/>repeat-x<br/>
+<input type="radio" name="Repeat" onclick="ChangeRepeat('repeat-y')"/>repeat-y<br/>
+  </td>
+  <td>
+<b>backgroundAttachment</b><br/>
+<input type="radio" name="Attachment" onclick="ChangeAttachment('scroll')" checked/>scroll<br/>
+<input type="radio" name="Attachment" onclick="ChangeAttachment('fixed')"/>fixed<br/>
+  </td>
+  </tr>
+</table>

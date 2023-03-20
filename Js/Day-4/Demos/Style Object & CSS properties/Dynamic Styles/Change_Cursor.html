@@ -1,0 +1,43 @@
+<title>--- Change Cusror ---</title>
+<script type="text/javascript">
+
+function Set(Cell,Cursor)
+{
+  Cell.style.backgroundColor = "#E0E0E0";
+  Cell.style.cursor = Cursor;
+}
+
+function Reset(Cell)
+{
+  Cell.style.backgroundColor = "#FFFFFF";
+}
+
+</script>
+
+<table border="1" cellpadding="5">
+<tr>
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">default</td> 
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">hand</td> 	
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">crosshair</td> 	
+</tr>
+<tr>
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">move</td> 
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">text</td> 	
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">wait</td> 	
+</tr>
+<tr>
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">n-resize</td> 
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">ne-resize</td> 	
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">nw-resize</td> 	
+</tr>
+<tr>
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">s-resize</td> 
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">se-resize</td> 	
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">sw-resize</td> 	
+</tr>
+<tr>
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">e-resize</td> 
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">w-resize</td> 	
+  <td onmouseover="Set(this,this.innerText)" onmouseout="Reset(this)">help</td> 	
+</tr>
+</table>

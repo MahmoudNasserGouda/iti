@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>LogIn</title>
+	</head>
+
+	<body bgcolor="#FFD9D9" topmargin="50" leftmargin="70">
+		<form method="get">
+			<fieldset>
+				<legend>Log In</legend>
+				<label for="nm" >User Name:</label>
+				<input id="nm" name="user" type="text" size="25" maxlength=5 placeholder="Enter your name here" tabindex="1" accesskey="u"/>
+				<br>
+				<small>Please press Shift+Alt+U</small>
+				<br/>
+				
+				<!--<label for="psd">Password: </label> --> Password:
+				<input id="psd" name="pswd" type="Password" size="25" value="" tabindex="3" >
+				<br/>
+				<label for="country">Select Your Location: </label>
+				<select name="country" id="country">
+					<optgroup label="Africa">
+						<option value="egy">Egypt</option>
+						<option value="sud">Sudan</option>
+						<option value="nam">Namibia</option>
+					</optgroup>
+					<optgroup label="Europe">
+						<option value="fra">France</option>
+						<option value="rus">Russia</option>
+						<option value="uk">UK</option>
+					</optgroup>
+					<optgroup label="North America" disabled="disabled">
+						<option value="can">Canada</option>
+						<option value="mex">Mexico</option>
+						<option value="usa">USA</option>
+					</optgroup>
+				</select>
+				<br/>
+				<input  type="checkbox" id="RememberMe" name="RememberMe" tabindex="2" accesskey="r"/>
+				<label for="RememberMe">Remember Me</label>
+				<br/><br/>
+				<input  type="Submit" value="  Log In  " align= "center"/>
+				
+			</fieldset>
+		</form>
+	</body>
+
+</html> 

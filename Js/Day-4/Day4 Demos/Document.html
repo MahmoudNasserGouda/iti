@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bgColor, onchange Event & get selected value from select tag-->
+    <!-- <select onchange="changeBgColor(event)">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="gray">gray</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <script>
+        function changeBgColor(eve){
+            var selectTag = eve.target; //get select tag as it's the target of the event
+            console.log(selectTag.value); //selected value in select tag
+            document.bgColor = selectTag.value;
+        }
+    </script> -->
+
+    <!-- Write & Writeln -->
+    <!-- <pre>hi this is ITI
+this is Minia Branch
+located in minia univeristy
+    </pre>
+    <pre><script>
+document.writeln("Hi this is minia");
+document.write("Hi this is minia");
+        </script>
+    </pre> -->
+
+    <div class="Style">
+        <table id="dataTable" name="dataTableName" class="Style">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </table>
+    </div>
+    <div class="Style">
+        <table id="dataTable" name="dataTableName" class="Style">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </table>
+    </div>
+    <script>
+        //Search about the difference between NodeList & HTMLCollection
+        //debugger; //how to trace the code step by step
+        var datatable = document.getElementById("dataTable");
+        var arr = new Array(2);
+        arr[0] = {Name:"Mrihan",Age:28};
+        arr[1] = {Name:"Mayan",Age:23};
+        arr[2] = {Name:"Mernan",Age:11};
+        for(var i=0; i<arr.length; i++){
+            datatable.innerHTML += "<tr><td>"+arr[i].Name+"</td><td>"+arr[i].Age+"</td></tr>";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>HTML Lab - Tables</title>
+
+</head>
+
+
+<body>
+<font color="red" face="tahoma" size="2">
+<center><b><Font size=5>Registeration</Font></b></center> <a name="top">
+<br>
+<hr>
+<br>
+<form action="complete.html" method ="get">
+<center>
+<table border =5 bordercolor="Blue" width=70% height=90%>
+<tr>
+	<td colspan ="2" ><center><b>Personal Data</b></center></td>
+</tr>
+
+<tr>
+	<td><label for="fn">First Name</label></td>
+	<td><input type = "text" name="fname" id="fn" value="Enter your name here"	size="20"></td>
+</tr>
+
+<tr>
+	<td>Last Name</td>
+	<td><input type = "text" name="lname" placeholder="Enter your last name" autocomplete="off"></td>
+</tr>
+
+<tr>
+	<td>Password</td>
+	<td><input type = "password" name="pw"></td>
+</tr>
+
+<tr>
+	<td rowspan="2">Gender</td>
+	<td>
+	<input type = "radio" name="gender" id="r1" value="m" checked> 
+	<label for="r1">Male</label>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<input type = "radio" name="gender" id="r2" value="Female"> Female
+	</td>
+</tr>
+
+<tr>
+	<td>Material Status</td>
+	<td>
+		<select name="Status">
+			<option value="NA">Select</option>
+			<option value="s" selected>Single</option>
+			<option value="M">Married</option>
+			<option value="other">Other</option>
+		</select>
+	</td>
+</tr>
+
+<tr>
+	<td colspan ="2" ><center><b>Interests</center></b></td>
+</tr>
+
+<tr>
+	<td><input type = "checkbox" name="Interests" value="S"/> Sports</td>
+	<td><input type = "checkbox" name="Interests" value="M"> Music</td>
+</tr>
+
+<tr>
+	<td><input type = "checkbox" name="Interests" value="Books" checked> Books</td>
+	<td><input type = "checkbox" name="Interests" value="Computer"> Computers Stuff </td>
+</tr>
+
+<tr>
+	<td><input type = "checkbox" name="Interests" value="F"> Fasion</td>
+	<td><input type = "checkbox" name="Interests" value="Mov">Movies</td>
+</tr>
+
+<tr>
+	<td colspan ="2" ><center><b>Comments <br>
+		<textarea cols="70" rows="3" name="c">
+
+		</textarea>
+		</center></b>
+	</td>
+</tr>
+
+<tr>
+	<td colspan ="2"><center><b>
+	<input type="submit" value="ok">
+	<input type="reset" value="cancel">
+	</center></b></td>
+</tr>
+
+</table>
+</Center>
+</form>
+</font>
+</body>
+</html>

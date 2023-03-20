@@ -1,0 +1,30 @@
+<html>
+	<head>
+		
+	</head>
+
+	<body>
+	<input type="button" value="test"/>
+		<h1 id="myHeader" class="c1" name="dfsd" onclick="getElem()">Click to know what Element I am</h1>
+		
+		<h1 id="myHeader2" class="c1" name="dfsd" onclick="getElem()">Click to know what Element I am</h1>
+		
+		<script>
+			function getElem()
+			{
+				//var x=document.querySelector("h1");
+				//var x=document.querySelector("#myHeader");
+				var x=document.querySelector(".c1");
+				alert("querySelector");
+				alert(x.nodeName);
+				alert("querySelectorAll");
+				var x=document.querySelectorAll(".c1");
+				for (var i=0;i<x.length;i++)	
+					alert(x[i].nodeName);
+				
+				
+			}
+		</script>
+	</body>
+
+</html>

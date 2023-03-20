@@ -1,0 +1,23 @@
+<html>
+    <head>
+	<title> Simple Example! </title>
+    </head>
+    <body bgcolor="pink">
+	<h1>Heading</h1>
+	<p id="my">A paragraph</p>
+	<!--and that’s all-->
+    
+    <script>
+        var cloneElem = document.getElementById("my");
+        newElem = document.body.appendChild(cloneElem.cloneNode(true));//true
+		alert("waiting");
+        newElem.appendChild(document.createTextNode("  neww"));
+		
+		newElem.style.color="blue";
+		document.getElementById("my").style.color="red";
+    </script>
+
+    </body>
+
+
+</html>

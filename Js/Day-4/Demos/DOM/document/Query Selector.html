@@ -1,0 +1,34 @@
+<html>
+	<head>
+		
+	</head>
+
+	<body>
+		<input type="button" value="test get elements with c1 class" onclick="getElem()">
+		<h1 id="myHeader" class="c1" name="myHeader" >First header!</h1>
+		<span></span>
+		<h1 id="myHeader2" class="c1" name="myHeader2">Second header!</h1>
+		
+		<script>
+			function getElem()
+			{
+				//var x=document.querySelectorAll("h1");
+				//var x=document.querySelectorAll("#myHeader");
+				//var x=document.querySelectorAll(".c1");
+
+				var elem=document.querySelector(".c1");
+
+				alert("querySelector");
+				alert(elem.innerHTML);
+		
+				alert("querySelectorAll");
+				var x=document.querySelectorAll(".c1");
+				for (var i=0;i<x.length;i++)	
+					alert(x[i].innerHTML);
+				
+				
+			}
+		</script>
+	</body>
+
+</html>

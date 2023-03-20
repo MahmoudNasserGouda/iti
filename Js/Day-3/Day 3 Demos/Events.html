@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onkeypress="console.log(event.key);">
+    <!-- <button onclick="alert('Hi');">Click Me!</button> -->
+    <button onclick="greeting(event)">Click Me!</button>
+    <!-- <button id="btn">Click Me!</button> -->
+    <div onclick="alert('div')" style="background-color: darkgoldenrod;">
+        <table onclick="event.stopPropagation(); alert('table')" style="background-color: cadetblue;">
+            <tr>
+                <td onclick="event.stopPropagation(); alert('cell 1')" style="background-color: burlywood;">this is cell 1</td>
+                <td onclick="alert('cell 2')" style="background-color: blueviolet">this is cell 2</td>
+            </tr>
+        </table>
+    </div>
+    <form action="BOM.html" onsubmit="doSomething(event)">
+        <label>this is to go to BOM.html</label>
+        <input type="submit" value="Go">
+    </form>
+    <script>
+        function greeting(eve){
+            alert('Hi');
+            console.log(eve.target);
+            console.log(eve.screenX);
+            console.log(eve.clientX);
+            console.log(eve.pageX);
+            console.log(eve.offsetX);
+        }
+
+        function doSomething(eve){
+            eve.preventDefault();
+        }
+
+        //document.getElementById("btn").onclick = greeting;
+        // document.getElementById("btn").onclick = function(){
+        //     alert('Welcome');
+        // }
+        // document.getElementById("btn").onclick = ()=>{alert('Welcome');}
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+<input id="b1" type="button" value="Test" onclick="clickfunc1()" />
+
+<input id="b2" type="button" value="Add event to Test Button" onclick="addEvent()" />
+
+
+
+
+<script>
+
+function clickfunc1()
+{
+	alert("Alert from HTML tag click handler");
+}
+
+function clickfunc2()
+{
+	alert("alert from addEventListner click handling for button: ");
+}
+
+/*function clickfunc2(event)
+{
+	alert("alert from addEventListner click handling for button: " + event.target.value);
+}*/
+function addEvent(){
+document.getElementById("b1").addEventListener("click", clickfunc2);
+}
+
+
+</script>
+</body>
+</html>

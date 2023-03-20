@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Event handler #1</title>
+		
+		<script>
+			function handleBtnClick1()
+			{
+				alert("Event handeled by HTMl Tag");
+			}
+
+			function handleBtnClick2()
+			{
+				alert("Event handeled by JS");
+			}
+
+			function handleBtnClick3()
+			{
+				alert("Event handeled by addEventListner");
+			}
+
+			function handleBodyClick()
+			{
+				alert("I am body");
+			}
+		</script>
+    </head>
+
+    <body>
+        <h1>Event Handling "onClick"</h1>
+        <hr/>
+        <input id="btn" type="button" value="click me" name="b1" 
+            onclick="handleBtnClick1()"/>
+		
+		<script>
+			document.getElementById("btn").onclick=handleBtnClick2;
+			
+			document.getElementById("btn").addEventListener("click",handleBtnClick3);
+
+			/*document.getElementById("btn").onclick=function ()
+				{
+					alert("Event handeled by JS");
+				};
+
+			document.getElementById("btn").addEventListener("click",function ()
+				{
+					alert("Event handeled by addEventListner");
+				});*/
+			//document.addEventListener("click",handleBodyClick);
+		</script>
+    </body>
+</html>

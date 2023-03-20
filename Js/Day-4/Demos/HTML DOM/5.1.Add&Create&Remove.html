@@ -1,0 +1,51 @@
+ <html>
+    <head>
+	<title> Simple Example! </title>
+    </head>
+    <body bgcolor="pink"><h1>Greeting</h1>
+	<p id="my">A paragraph</p>
+	<!--and that’s all-->
+    
+    <script>
+        //1 create
+        var newP = document.createElement("p");
+        newP.innerHTML = "<b>New Paragraph</b>";
+        newP.setAttribute("id", "d1");
+		//2a adding node using appendChild()
+		alert("Adding node to body...");
+        document.body.appendChild(newP);
+
+        alert(document.body.lastChild.nodeName);
+
+        alert("Remving first P node...");
+		
+        //remove
+		//var x=document.getElementsByTagName("p");
+	    document.body.removeChild(document.getElementsByTagName("p")[0]);
+		//send an array?
+        
+        alert("Adding text Node to P...");
+        //adding text Node
+        var newTxT = document.createTextNode(" One More text added to Paragraph");
+        newP.appendChild(newTxT);
+		newP.setAttribute("id","myid");
+
+		//2b adding node using insertBefore()
+		alert("Inserting text node before first child in body...");
+		document.body.insertBefore(document.createTextNode("1st"), document.body.firstChild);
+        
+		alert("creating and appending comment node...");
+		//creating and appending comment node
+		var newComm=document.createComment("My personal comment will be added here!");
+		document.body.insertBefore(newComm,document.getElementById("myid"));
+		//document.documentElement.insertBefore(newComm,document.firstChild.firstChild);
+
+        
+    </script>
+    
+    
+    
+    </body>
+
+
+</html>

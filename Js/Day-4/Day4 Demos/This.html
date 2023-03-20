@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+<body>
+    <img src="./Images/Joker.jpg">
+    <select onchange="changeImageSRC(this)">
+        <option value="./Images/Image1.png">Image 1</option>
+        <option value="./Images/Image2.jpg">Image 2</option>
+        <option value="./Images/Image3.jpg">Image 3</option>
+        <option value="./Images/Joker.jpg">Image 4</option>
+    </select>
+    <script>
+        function changeImageSRC(element){
+            //console.log(eve.target.value);
+            document.images[0].src = element.value;
+        }
+    </script>
+</body>
+</html>

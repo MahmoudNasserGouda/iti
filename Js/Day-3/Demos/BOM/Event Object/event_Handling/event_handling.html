@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Event handler #1</title>
+		
+		<script>
+			function handleBtnClick()
+			{
+				alert("button clicked");
+			}
+		</script>
+    </head>
+
+    <body>
+        <h1>Event Handling "onClick"</h1>
+        <hr/>
+        <input type="button" value="click me" name="b1" 
+            onclick="handleBtnClick()" />
+			
+		<input type="button" value="click me2" name="b2" id="btn2"/>
+		
+		<script>
+			document.getElementById("btn2").onclick=handleBtnClick;
+
+			/*document.getElementById("btn2").onclick=function()
+			{
+				alert("button clicked");
+			};*/
+		</script>
+    </body>
+</html>

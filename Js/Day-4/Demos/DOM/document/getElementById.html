@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<span></span>
+		<p id="demo" class="c1">Click the button to change the text in this paragraph.</p>
+		<p id="demo2">Second paragraph.</p>
+		<input type="text" id="txt1">
+
+		<button onclick="myFunction()">Try it</button>
+
+		<script>
+			function myFunction() {
+				//document.getElementById("demo").innerHTML = "Hello World";
+				//document.querySelector("p").innerHTML="Hello Wolrd";
+				document.querySelectorAll("p")[0].innerHTML="Hello Wolrd";
+				document.getElementById("txt1").value="test value";
+			}
+		</script>
+
+	</body>
+</html>

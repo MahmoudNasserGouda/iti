@@ -1,0 +1,85 @@
+.name{
+    text-align: center;
+}
+.personal{
+    display: inline-block;
+    width: 80%;
+}
+.img{
+    display: inline-block;
+    width: 100px;
+    height: 140px;
+}
+.nav{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    padding: 5px;
+}
+.soclink{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+}
+.soc{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: darken;
+}
+.sidebar{
+    width: 20%;
+    background-color: rgb(73, 73, 73);
+    padding: 30px;
+    float: left;
+}
+.mainbody{
+    width: 50%;
+    float: inline-start;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.aside{
+    width: 15%;
+    float: inline-end;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 320px;
+    background-color: lightgreen;
+    text-align: center;
+}
+.footer{
+    float: none;
+    clear: both;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.login{
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.iframe{
+    display: flex;
+    justify-content: center;
+}
+.body{
+    direction: unset;
+}
+.header{
+    background-color: rgb(20, 20, 20);
+}

@@ -1,0 +1,68 @@
+.welcome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightgray;
+}
+.body{
+    background-color: darkslategrey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+}
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+.skip{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    font-size:2em;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: whitesmoke;
+}
+.name{
+    text-align: center;
+}
+.personal{
+    display: inline-block;
+    width: 50%;
+}
+.img{
+    float: inline-end;
+    width: 100px;
+    height: 150px;
+}
+.nav{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.soc{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.audio{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}

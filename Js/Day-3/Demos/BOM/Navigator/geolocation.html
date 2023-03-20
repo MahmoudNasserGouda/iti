@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p>Click the button to get your coordinates.</p>
+
+	<button onclick="getLocation()">show location</button>
+	<button onclick="goPosition()">go to location</button>
+
+	<p><strong>Note:</strong> The geolocation property is not supported in IE8 and earlier versions.</p>
+	<p id="log"></p>
+	<p id="long"></p>
+	<p id="lat"></p>
+
+	<script>
+		//var x = document.getElementById("demo");
+		var longitudeCoords=0;
+		var latitudeCoords=0;
+		
+		function getLocation() {
+			//if (navigator.geolocation) {
+				/*var position=navigator.geolocation.getCurrentPosition();
+				alert (position.coords.latitude);*/
+
+				navigator.geolocation.getCurrentPosition(showPosition);
+				document.getElementById("log").innerHTML="Getting Location...";
+			/*} else { 
+				x.innerHTML = "Geolocation is not supported by this browser.";
+			}*/
+		}
+
+		function showPosition(position) {
+			longitudeCoords=position.coords.longitude;
+			latitudeCoords=position.coords.latitude;
+			
+			document.getElementById("long").innerHTML = "Longitude: " + longitudeCoords;
+			
+			document.getElementById("lat").innerHTML = "Latitude: " + latitudeCoords;
+		}
+		
+		function goPosition() {
+			//if (longitudeCoords==0 || latitudeCoords==0)
+				//getLocation();
+				//http://maps.google.com/maps?q=27.187777,+31.169248800000002 ;
+			var url = "http://maps.google.com/maps?q="+ latitudeCoords + ",+" +longitudeCoords ;
+			alert(url);
+			location.replace(url);
+			//location.assign(url);
+			//window.open(url,'_blank');
+        }
+	</script>
+
+</body>
+</html>

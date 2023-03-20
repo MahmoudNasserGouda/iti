@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+    function show_coords(e) {
+        var x = e.clientX;
+        var y = e.clientY;
+
+        alert(e.type);
+		alert(e.button);
+        
+        alert("X coords: " + x + "\nY coords: " + y)
+
+    }
+
+
+
+
+</script>
+</head>
+<body onmousedown="show_coords(event)">
+<input type="button" value="get X" onmouseover="alert(event.clientX)"/>
+
+<p><big>Click in the document. An alert box will alert 
+the x and y coordinates of the mouse pointer.</big></p>
+</body>
+</html>

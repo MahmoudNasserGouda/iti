@@ -1,0 +1,46 @@
+ <html>
+    <head>
+	    <title> Simple Example! </title>
+	</head>
+	
+	<body bgcolor="pink">
+	     <h1>Greeting</h1>
+	      Welcome All
+	     <p id="my">A paragraph</p>
+	      <!--and that’s all-->
+		  
+        <script>
+			//alert(document.body.childNodes.length)
+			//for(i=0;i<document.body.childNodes.length;i++){document.write(document.body.childNodes[i].nodeName+"<br/>")}
+            
+			alert(document.documentElement.nodeName + "\n" + document.documentElement.nodeType);//HTML 1
+            if (document.documentElement.hasChildNodes()) 
+			{
+                for (i = 0; i < document.documentElement.childNodes.length; i++) 
+				{
+                    alert("i am child " + i +
+                     " of type " + document.documentElement.childNodes[i].nodeType+
+                     " my name is "+ document.documentElement.childNodes[i].nodeName);
+                }
+            }
+
+            //alert(document.getElementById("my").hasChildNodes())
+            
+			if (document.getElementById("my").hasChildNodes()) //true
+            {
+                txt="I am "+document.getElementById("my").childNodes[0].nodeName; //#text
+                txt+= "\n My Value is "+document.getElementById("my").childNodes[0].nodeValue; //A paragraph
+                txt += "\n & type "+document.getElementById("my").childNodes[0].nodeType; //3
+                alert(txt);
+				
+            }
+			if(document.getElementById("my").hasAttributes())
+			{
+				alert(document.getElementById("my").attributes[0].nodeType);
+			}
+			
+        </script>
+    </body>
+</html>
+
+

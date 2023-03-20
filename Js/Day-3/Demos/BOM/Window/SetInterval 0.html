@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+var c=0;
+var t;
+function timedCount()
+  {
+    //var tt=document.getElementById('txt');
+    //tt.value=c;
+    document.getElementById('txt').value=c;
+    c++;
+  }
+
+function startInt()
+{
+	//t = setInterval("timedCount();alert('test');",1000);//not Recomended
+  //t = setInterval(timedCount,1000);
+  t = setInterval(function(){
+      document.getElementById('txt').value=c;
+      c++;
+    },1000);
+}
+
+function stopCount()
+  {
+    clearInterval(t);
+  }
+</script>
+</head>
+<body><form>
+<input type="button" value="Start count!" onClick="startInt()">
+<input type="text" id="txt">
+<input type="button" value="Stop count!" onClick="stopCount()">
+</form></body>
+</html>

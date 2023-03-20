@@ -1,0 +1,22 @@
+<script type="text/javascript">
+
+function ShowItem()
+{
+  var Index = document.getElementById("Menu").selectedIndex;
+  if (Index != 0) 
+  {
+    //document.getElementById("Msg").innerHTML = "<b>You selected: </b>" +
+      alert(document.getElementById("Menu").options[Index].text);
+  }
+}
+
+</script>
+
+<b>Select Menu:</b>
+<select id="Menu" onchange="ShowItem()">
+  <option>-- Select an option --</option>
+  <option value="A">This is Item 1</option>
+  <option value="B">This is Item 2</option>
+  <option value="C">This is Item 3</option>
+</select>
+<span id="Msg"></span>

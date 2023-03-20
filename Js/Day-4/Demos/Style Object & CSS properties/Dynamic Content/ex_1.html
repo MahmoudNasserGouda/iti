@@ -1,0 +1,29 @@
+<script type="text/javascript">
+
+function ChangeMyHTML()
+{
+  document.getElementById("d1").innerHTML =
+    "<font color=red>This is the same paragraph with different content. <p>The previous text is replaced with text that has been inserted by a script.</P></font>";
+}
+
+
+function ChangeMyText()
+{
+  document.getElementById("d2").innerText =
+    "<font color=red>This is the same paragraph with different content. <p>The previous text is replaced with text that has been inserted by a script.</P></font>";
+}
+
+</script>
+<h4 style="color:blue;">Trying innerHTML </h4>
+<div id="d1" style="cursor:hand; font-size:14pt" onclick="ChangeMyHTML()">
+  Here is a text paragraph that is coded inside paragraph tags.
+  Click on this paragraph to change its contents.
+</div>
+
+<hr style="position:relative; top:50px"><hr style="position:relative; top:50px">
+
+<h4 style="color:blue; position:relative; top:100px">Trying innerText </h4>
+<div id="d2" style="cursor:hand; font-size:14pt; position:relative; top:100px" onclick="ChangeMyText()">
+  Here is a text paragraph that is coded inside paragraph tags.
+  Click on this paragraph to change its contents.
+</div>

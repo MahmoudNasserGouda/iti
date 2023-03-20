@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <button onclick="OpenWin()">Open Window</button>
+    <button onclick="CloseWin()">Close Window</button>
+    <button onclick="CloseWinCheck()">Is Closed?</button>
+    <button onclick="MoveBy10()">Move by 10</button>
+    <button onclick="MoveTo10()">Move To 10</button>
+    <br>
+    <input type="radio" name="color" onclick="ChangeColor('green')">Green<br>
+    <input type="radio" name="color" onclick="ChangeColor('red')">Red<br>
+    <input type="radio" name="color" onclick="ChangeColor('blue')">Blue<br>
+    <script>
+        // console.log(window.innerHeight + " - " + window.outerHeight);
+        // console.log(window.innerWidth + " - " + window.outerWidth);
+        var miniWindow;
+        function OpenWin(){
+            miniWindow = window.open("","_blank","width=500,height=500");
+            miniWindow.document.write("Hi in mini window");
+            //miniWindow.alert("Hi");
+        }
+
+        function CloseWin(){
+            miniWindow.close();
+        }
+
+        function CloseWinCheck(){
+            alert(miniWindow.closed);
+        }
+
+        function ChangeColor(color){
+            miniWindow.document.bgColor = color;
+            miniWindow.focus();
+        } 
+
+        function MoveBy10(){ //حركها بمقدار 10 بكسل
+            miniWindow.moveBy(10,10);
+        }
+        
+        function MoveTo10(){ //حركها الى الاحداثي 10 في الشاشة
+            miniWindow.moveTo(10,10);
+        }
+    </script>
+</body>
+</html>
