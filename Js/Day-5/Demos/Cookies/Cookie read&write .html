@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <script>
+        function CreateCookie() {
+            var d = new Date();
+            d.setDate(d.getDate() + 3);
+            //alert(d.toGMTString());
+            var cookievalue = escape(document.getElementById("un").value);
+
+            //document.cookie = "name=ITI;expires=30 nov 2018"
+
+            document.cookie = "name=" + cookievalue + ";expires=" + d.toUTCString();
+            alert("Setting Cookies : " + "name=" + cookievalue);
+
+            cookievalue = escape(document.getElementById("age").value);
+            document.cookie = "age=" + cookievalue + ";expires=" + d.toUTCString();
+            alert("Setting Cookies : " + "Age=" + cookievalue);
+        }
+
+        function ReadCookie() {
+            var allcookies = document.cookie;
+            alert("All Cookies : " + allcookies);
+
+            // Get all the cookies pairs in an array
+            var cookiearray = allcookies.split(';');
+            alert(cookiearray.length);
+            // Now take key value pair out of this array
+            //Name
+            var userName = cookiearray[0].split("=")[1];
+            var age = cookiearray[1].split("=")[1];
+
+            document.getElementById("un").value = unescape(userName);
+            document.getElementById("age").value = unescape(age);
+
+
+            // for (var i = 0; i < cookiearray.length; i++) {
+            //     let key = cookiearray[i].split('=')[0];
+            //     let value = cookiearray[i].split('=')[1];
+            //     alert("Key is : " + key + " and Value is : " + unescape(value));
+            //     document.getElementsByTagName("input")[i].value = unescape(value);
+            // }
+
+        }
+
+
+        function DelCookie() {
+            var d = new Date();
+            d.setDate(d.getDate() - 1);
+
+            document.cookie = "name= null;expires=" + d.toGMTString();
+
+            document.cookie = "age=null ;expires=" + d.toGMTString();
+
+        }
+    </script>
+</head>
+<!-- <body onload="ReadCookie();"> -->
+
+<body>
+    <form name="myform" action="">
+        Enter name: <input type="text" id="un" name="Name" />
+        <br />
+        <hr /> Enter Age: <input type="text" id="age" name="Age" />
+        <br />
+        <hr />
+        <input type="button" value="Set Cookie" onclick="CreateCookie();" />
+
+        <input type="button" value="Get Cookies" onclick="ReadCookie();" />
+
+        <input type="button" value="Delete Cookies" onclick="DelCookie();" />
+    </form>
+</body>
+
+</html>

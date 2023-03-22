@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+    <title>JSON With AJAX from Web API</title>
+    <script>
+		function getProducts(URL)
+		{
+			var xhr= new XMLHttpRequest();
+			xhr.open("GET", URL,true);
+
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200)
+				{
+					var responseInJSON=JSON.parse(xhr.responseText);
+					var products= responseInJSON.data;
+					//alert (products);
+					for (let prod of products)
+						document.getElementById("prod").innerHTML+=prod.name + ",<br>";
+
+				}
+			};
+			
+			xhr.send();// API Parameters to be sent as parameter in send() function in case of POST Request.
+			alert("Request Sent...");
+		}
+    </script>
+</head>
+<body>
+	<!-- <input type="text" id="pID"> -->
+	<input type="button" id="button2" onclick="getProducts('https://reqres.in/api/products')" value="show product" />
+	<div id="prod"></div>
+
+</body>
+</html>

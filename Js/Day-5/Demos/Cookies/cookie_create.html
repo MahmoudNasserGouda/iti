@@ -1,0 +1,28 @@
+<head>
+  <script>
+    var myDate = new Date();
+     myDate.setMonth(myDate.getMonth() + 1);
+
+
+ //document.cookie = "myCookie=" + escape("This is my Cookie") +";expires=" + myDate.toGMTString();
+
+function createTheCookie(name)//name is what was written in the textbox 
+{
+   
+document.cookie = "myCookie=" + name + ";expires=" + myDate.toGMTString();
+alert(document.cookie)
+}
+</script>
+
+<body>
+
+<form name="myForm">
+      <b>What is your name? </b>
+      <input type="text" name="visitorName">
+      <input name="myButton" type="button" value="Save Cookie"
+                 onClick="createTheCookie(document.myForm.visitorName.value)">
+</form>
+
+</body>
+
+</head>

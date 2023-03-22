@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+
+<body>
+    <div>
+        <label for="user">Choose a user:</label>
+
+        <select onchange="getUser()"  name="user" id="users">
+          
+        </select> 
+    </div>
+    <div id="user">
+        <img src="" id="avatar">
+        <h1 type="text" id="fname"></h1>
+        <h1 type="text" id="lname"></h1>
+    </div>
+
+
+    <script>
+        var XHR = new XMLHttpRequest();
+        XHR.onreadystatechange = function () {
+                if (XHR.readyState == 4 && XHR.status == 200) {
+                    var users = XHR.responseText;
+                    users = JSON.parse(users).data;
+                    users.forEach(user => {
+                        var op = document.createElement("option");
+                        op.value = user.id;
+                        op.innerText = user.first_name + " " + user.last_name;
+                        var drop = document.getElementById("users");
+                        drop.appendChild(op)
+                    });
+                }
+            };
+
+            var url = "https://reqres.in/api/users";
+            XHR.open("get", url, true);
+
+            XHR.send();
+        function getUser() {
+            var XHR = new XMLHttpRequest();
+
+            XHR.onreadystatechange = function () {
+                if (XHR.readyState == 4 && XHR.status == 200) {
+                    var user = XHR.responseText;
+                    user = JSON.parse(user).data;
+                    // alert(user);
+                    displayUser(user);
+                }
+            };
+
+            var url = "https://reqres.in/api/users/" + document.getElementById("users").value;
+            XHR.open("get", url, true);
+
+            XHR.send();
+        }
+        function displayUser(u) {
+            document.getElementById("avatar").src = u.avatar;
+            document.getElementById("fname").innerText = u.first_name;
+            document.getElementById("lname").innerText = u.last_name;
+
+        }
+    </script>
+</body>
+
+</html>

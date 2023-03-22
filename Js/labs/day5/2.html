@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+
+<body>
+    <script>
+        var students = [
+            {
+                Id: 1,
+                Name: "mahmoud",
+                Age: 24,
+                Adress: "cairo, egypt",
+                Skills: ["HTML", "CSS", "JS"],
+                IsLeader: false
+            },
+            {
+                Id: 2,
+                Name: "ahmed",
+                Age: 25,
+                Adress: null,
+                Skills: ["C#", "LINQ", "EF"],
+                IsLeader: false
+            },
+            {
+                Id: 3,
+                Name: "mohamed",
+                Age: 26,
+                Adress: "cairo, egypt",
+                Skills: ["PS", "AI", "UI/UX"],
+                IsLeader: true
+            }
+        ]
+        students.forEach(student => {
+            document.writeln("<b>" + student.Name + ": </b>" + student.Skills.join(', ') + "<br>")
+        });
+    </script>
+</body>
+
+</html>

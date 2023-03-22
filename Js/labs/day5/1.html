@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+
+<body onload="getLocalStorage()">
+    <form onsubmit="setLocalStorage()">
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input id="username" name="username" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Remember me</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">
+                <img style="width: 30px;" src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="login">
+            </button>
+        </div>
+    </form>
+    <script>
+        function setLocalStorage() {
+            if (document.getElementById("checkbox").checked) {
+                localStorage.username = document.getElementById("username").value;
+                localStorage.password = document.getElementById("password").value;
+            }
+            else{
+                delLocalStorage()
+            }
+        }
+        function getLocalStorage() {
+            if (localStorage.username) {
+                document.getElementById("username").value = localStorage.username;
+            }
+            if (localStorage.password) {
+                document.getElementById("password").value = localStorage.password;
+            }
+        }
+        function delLocalStorage() {
+            localStorage.removeItem("username");
+            localStorage.removeItem("password");
+        }
+    </script>
+</body>
+
+</html>

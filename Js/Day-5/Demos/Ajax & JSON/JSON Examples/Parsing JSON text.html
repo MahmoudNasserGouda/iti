@@ -1,0 +1,42 @@
+﻿<html>
+
+<head>
+    <title>parsing JSON String</title>
+</head>
+
+<body>
+    <script>
+        //JSON as JS object
+        var jsonObj = {
+            firstName: "Ahmed",
+            lastName: "Ali",
+            age: 99
+        };
+
+        //alert(jsonObj.firstName);
+
+        ////////////////////////////
+        //JSON as String
+        var jsonStr =
+            '{ "firstName": "Ahmed","lastName": "Ali","age": 23}';
+        console.log(jsonStr);
+        console.log(jsonStr.firstName);
+        //document.write(jsonStr.firstName);// Error
+
+
+        var jsonObject = JSON.parse(jsonStr);
+        console.log(jsonObject);
+        console.log(jsonObject.firstName)
+            //document.write(jsonObject.firstName);
+
+        var jsonstr2 = JSON.stringify(jsonObject);
+        console.log(jsonstr2);
+
+
+
+        /*var jsonObject2=eval ("(" + jsonStr + ")");
+        document.write("<br/>"+jsonObject2.firstName);*/
+    </script>
+</body>
+
+</html>

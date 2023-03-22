@@ -1,0 +1,62 @@
+﻿
+<html>
+<head>
+    <title>Nested Objects and Arrays</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+/*var x= "
+			<wclass> 
+			<!--My students who took web programming class with me--> 
+				<student id="1"> 
+					<name>Linda Jones</name> 
+					<legacySkill>Access, VB5.0</legacySkill> 
+				</student> 
+				<student id="2"> 
+					<name>Adam Davidson</name> 
+					<legacySkill>Cobol, MainFrame</legacySkill> 
+				</student> 
+			</wclass>
+		";*/
+
+var studentAll =
+		{wclass:
+				[ 
+					{student: 
+						{
+							id: 1,
+							name:"Linda Jones", 
+							legacySkill:["Access", "VB 5.0"]
+						}
+					},
+					{student: 
+						{
+							id: 2,
+							name:"Adam Davidson", 
+							legacySkill:["Cobol", "MainFrame"]
+						}
+					}
+				] 
+		}; 
+
+	//studentAll=JSON.parse(studentAll);
+	
+for (var i=0;i<studentAll.wclass.length;i++)
+{
+    document.write("<b>Id of  student : </b>" + studentAll.wclass[i].student.id);
+    document.write("<br/>");
+    document.write("<b>name of  student:</b> " + studentAll.wclass[i].student.name);
+    document.write("<br/>");
+    
+    document.write("<b>Skills of student:</b> " + 
+					studentAll.wclass[i].student.legacySkill[0]
+					+ "," + studentAll.wclass[i].student.legacySkill[1]);
+	document.write("<br/>------------------------------------------------<br/>");
+					
+}
+    
+</script>
+</body>
+</html>

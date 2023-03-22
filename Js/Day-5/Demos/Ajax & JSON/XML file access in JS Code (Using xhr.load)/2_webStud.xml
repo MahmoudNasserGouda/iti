@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<wclass>
+  <!--My students who took web programming class with me-->
+  <student id="1">
+    <name>Ahmed</name> 
+    <Skills>Javascript, CSS</Skills>
+  </student>
+  <student id="2">
+    <name>Adam</name> 
+    <Skills>Asp, WS</Skills>
+  </student>
+  <student id="3">
+    <name>Ali</name> 
+    <Skills>HTML, XML</Skills>
+  </student>
+  <student id="4">
+    <name>Sara</name> 
+    <Skills>Javascript, CSS</Skills>
+  </student>
+</wclass>

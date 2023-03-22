@@ -1,0 +1,19 @@
+{"wclass":
+				[ 
+					{"student": 
+						{
+							"id": 1,
+							"name":"Linda Jones", 
+							"legacySkill":["Access", "VB 5.0"]
+						}
+					}, 
+
+					{"student": 
+						{
+							"id": 2,
+							"name":"Adam Davidson", 
+							"legacySkill":["Cobol", "MainFrame"]
+						}
+					}
+				] 
+		}

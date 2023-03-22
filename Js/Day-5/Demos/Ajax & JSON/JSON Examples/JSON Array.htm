@@ -1,0 +1,29 @@
+﻿
+
+<html>
+<head>
+    <title> Array Demo</title>
+</head>
+<body>
+    <script>
+		//Array of one type
+		 var stdArr=["Ahmed","Ali","Emad"];
+		 document.write ("Printing String Array <br/>");
+		 for (i=0; i<3; i++)
+		 { 
+			 document.write(stdArr[i] + "<br/>"); 
+		 } 
+		//Array with different types 
+		var Jarr=["red", 1, null, true]; 
+		document.write("Jarr[2]: "+Jarr[2]+ "<br/>"); 
+		//Nested array 
+		var Jarr2=["red",1,["a", "b", "c"], false]; 
+		document.write("Jarr2[2][1]: "+Jarr2[2][1]+ "<br/>"); 
+		//Object in an array 
+		var Jarr3=["Ahmed", {"Grade":"c", "Mark":20}, 2]; 
+		document.write("Jarr[1].Grade: "+Jarr3[1].Grade); 
+    </script>
+    
+
+</body>
+</html>

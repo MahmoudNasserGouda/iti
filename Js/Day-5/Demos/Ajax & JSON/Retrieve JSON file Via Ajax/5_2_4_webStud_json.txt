@@ -1,0 +1,7 @@
+﻿{ "wclass":[
+				{ "student": { "id": "1" }, "name": "Ahmed", "Skills": "Javascript, CSS" },
+				{ "student": { "id": "2" }, "name": "Adam", "Skills": "Asp, WS" },
+				{ "student": { "id": "3" }, "name": "Ali", "Skills": "HTML, XML" },
+				{ "student": { "id": "4" }, "name": "Sara", "Skills": "Javascript, CSS" }
+			]
+}

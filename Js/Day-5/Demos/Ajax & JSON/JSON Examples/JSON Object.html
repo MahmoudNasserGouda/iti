@@ -1,0 +1,57 @@
+﻿
+
+<html>
+<head>
+    <title>Object Values Demo</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var jObj = { company: "XYZ",
+					phone: "123-456-789",
+					city:"abc"};
+		 
+        alert(jObj.phone);
+		//alert(jObj.city);
+        
+        //values are numbers (integer and floating point)
+        var jobj2={sunday:1, tuesday:2.85, wednesday:3};
+        document.write("<br><br><br><br><b>jobj2.tuesday:</b> " + jobj2.tuesday + "<br>");
+        
+        //values are of mixed types
+        var jObj3={criminal:true, innocent:false, notsure:null};
+        document.write("<br><br><br><br><b>jObj3.criminal:</b> " + jObj3.criminal + "<br>");
+        document.write("<b>jObj3.innocent:</b> " + jObj3.innocent +"<br>");
+        document.write("<b>jObj3.notsure:</b> " + jObj3.notsure + "<br><br><br><br><br>");
+		
+		
+		//accessing Data
+		var myObject1 = { color: 'red' };
+		document.writeln(myObject1.color); // outputs blue.
+		document.write("<hr />");
+
+		var myObject = { color: 'blue',
+						 animal: { dog: 'friendly' }
+					 };
+		document.writeln(myObject.animal.dog); // outputs friendly
+		document.write("<hr />");
+
+		var myFirstJSON = { firstName: "Ahmed",
+								lastName: "Ali",
+								age: 23
+							};
+						
+		document.writeln(myFirstJSON.firstName);  // Outputs Ahmed
+		document.writeln(myFirstJSON.lastName);   // Outputs Ali
+		document.writeln(myFirstJSON.age);        // Outputs 23
+		document.write("<br /> as an associative array: ".bold());
+
+		//as an associative array
+		document.writeln(myFirstJSON["firstName"]);  // Outputs Ahmed
+		document.writeln(myFirstJSON["lastName"]);   // Outputs Ali
+		document.writeln(myFirstJSON["age"]);        // Outputs 23
+		document.write("<hr />");
+    </script>
+    
+
+</body>
+</html>

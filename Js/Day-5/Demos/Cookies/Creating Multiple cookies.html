@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Creating Multiple Cookies</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+document.cookie = "myFirstCookie=" + escape("This is my first Cookie");
+
+//Continue to create the second cookie
+document.cookie = "mySecondCookie=" + escape("This is my second Cookie");
+
+alert(document.cookie)
+
+
+//Accessing these cookies
+var first = document.cookie.indexOf("myFirstCookie=");
+
+var firstEnd = document.cookie.indexOf(";", first + 1);
+
+if (firstEnd == -1) 
+{
+ firstEnd = document.cookie.length; 
+}
+var firstCookie = unescape(document.cookie.substring(first+14,firstEnd));
+
+//2nd cookie access
+var second = document.cookie.indexOf("mySecondCookie=");
+var secondEnd = document.cookie.indexOf(";", second + 1);
+if (secondEnd == -1) 
+{
+ secondEnd = document.cookie.length;
+}
+var secondCookie = unescape(document.cookie.substring(second+15,secondEnd));
+
+
+window.alert(firstCookie);
+window.alert(secondCookie);
+
+//to delete created cookies
+var y = (confirm("Delete cookie?")) ? "delete" : "keep";
+    if (y=="delete") 
+    {
+        document.cookie="mySecondCookie=;expires=01-01-97";
+        document.cookie="myFirstCookie=;expires=01-01-97";
+        document.cookie="myHits=;expires=01-01-97";
+        document.cookie="name=;expires=01-01-97";        
+        message="after deleting, your cookie looks like this:";
+        message+=document.cookie;
+        alert(message);
+    }
+    else
+    {
+        message="after keeping ,your cookie looks like this:";
+        message+=document.cookie;
+        alert(message);
+    }
+
+
+</script>
+
+</body>
+</html>

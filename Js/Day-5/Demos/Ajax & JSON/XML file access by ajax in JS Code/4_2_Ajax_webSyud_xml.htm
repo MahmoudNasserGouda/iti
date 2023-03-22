@@ -1,0 +1,72 @@
+﻿
+<html>
+<head>
+    
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+        <!--
+        var xhr;
+        function getPage(url) 
+        {
+            //1- Create XHR
+			xhr = false;
+			
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+				xhr=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+				xhr=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+            if (!xhr) 
+            {
+                alert('XMLHttp failed to instantiate');
+               
+            }
+           //2- Send request
+            xhr.open('GET', url, true);
+            xhr.send(null);
+			 xhr.onreadystatechange = statusCheck;
+        }
+
+        function statusCheck() 
+        {
+            if (xhr.readyState == 4) 
+            {
+                if (xhr.status == 200) 
+                {
+                    //alert(xhr.responseText);
+					alert(xhr.responseXML);
+					var xmlText=xhr.responseXML;
+                    document.getElementById("x1").innerHTML="<b>Student Names:</b> <br/>";
+					for (var i=0;i<xmlText.getElementsByTagName('student').length;i++)
+						document.getElementById("x1").innerHTML += xmlText.getElementsByTagName('student')[i].childNodes[1].firstChild.nodeValue + "<br/>";
+                    
+                } 
+                else 
+                {
+                    alert('The request could not be fulfilled.');
+                }
+            }
+        }
+//-->
+    
+    </script>
+
+</head>
+
+
+<body>
+<input id="button2" onclick="getPage ('2_webStud.xml')" type="button" value="Get the XML Document" name="button2" />
+<p> </p>
+<div id="x1"></div><div id="x2"></div>
+<div id="x3"></div><div id="x4"></div>
+<div id="x5"></div><div id="x6"></div>
+<div id="x7"></div><div id="x8"></div>
+<div id="9"></div><div id="10"></div>
+<div id="11"></div><div id="12"></div>
+<div id="13"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<html>
+<head>
+    <title>Nested Objects and Arrays 1</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    ///////////////example 2//////////////////////
+    var employees = { "accounting": [   // accounting is an array in employees.
+                                    {  "firstName": "Ahmed",  // First element
+                                       "lastName": "Ali",
+                                       "age": 23
+                                    },
+
+                                    {  "firstName": "Mona",  // Second Element
+                                       "lastName": "Mohamed",
+                                       "age": 32
+                                    }
+                                  ], // End "accounting" array.                 
+
+                       "sales": [ // Sales is another array in employees.
+                                   {  "firstName": "Adam", // First Element
+                                      "lastName": "Mahmoud",
+                                      "age": 27
+                                   },
+
+                                   {  "firstName": "Sara",   // Second Element
+                                      "lastName": "Hussien",
+                                      "age": 41
+                                   }
+                                ] // End "sales" Array.
+                     }; // End Employees
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+
+///////////////example 2//////////////////////
+document.writeln(employees.sales[0].firstName + ' ' + employees.sales[0].lastName);
+document.writeln(employees.accounting[1].firstName + ' ' + employees.accounting[1].lastName);
+document.write("<hr />");
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<html>
+<head>
+    <title>JSON With AJAX</title>
+    <script>
+
+        var xhr;
+		/*function CreateXHR()
+		{
+			xhr = false;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xhr=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xhr=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+					
+			if (!xhr)
+				return false;
+			else
+				return true;
+		}*/
+		
+        function getPage() 
+        {
+			/*if (!xhr) 
+			{
+				//1- create XHR Object
+				var f=CreateXHR();
+				if(!f)
+				{
+					alert("Your browser does not support XMLHTTP.");
+					return false;
+				}
+			}*/
+			// 1- Create XHR
+			  xhr=new XMLHttpRequest();
+
+			//2- Check Server status, and deal with server return
+			xhr.onreadystatechange = statusCheck; 
+			
+			//3- Send Request
+			xhr.open('GET','5_2_4_webStud_json.txt', true);
+			xhr.send();
+			
+			
+        }
+		
+		
+        function statusCheck() 
+        {
+            if (xhr.readyState == 4) //4= loaded
+            {
+                if (xhr.status == 200) //200=OK
+                {
+                    //document.write(xhr.responseText);
+					var jsonStr=xhr.responseText;
+                    alert(jsonStr);
+                    //var jsonT = eval('(' + xhr.responseText + ')');
+					var jsonT =JSON.parse(jsonStr);
+
+                    document.write("jsonT.wclass.length= " + jsonT.wclass.length + "<br />jsonT.wclass[0].name: " + jsonT.wclass[0].name);
+
+                } 
+            }
+        }
+
+    
+            
+    </script>
+</head>
+<body>
+<input type="button" id="button2" onclick="getPage()" value="Get JSON" />
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿
+<html>
+<head>
+    <title>Untitled Page</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    //<h1>instantiate an XMLDocument object</h1>
+    document.write("<h1>instantiate an XMLDocument object</h1>");
+	var xhr;
+	xhr = false;
+			xhr = new XMLHttpRequest();
+			if(!xhr)
+				// code for IE6, IE5                
+				xhr = new ActiveXObject("Microsoft.XMLHTTP");
+			if(!xhr)
+					// code for some other Versions of IE                
+					xhr=new ActiveXObject("Msxml2.XMLHTTP");
+  
+    xhr.async = false;
+    xhr.load("2_webStud.xml");
+
+    //
+    document.write("This documents first child is a " + xhr.documentElement.firstChild.nodeName);
+                    //This documents first child is a #comment
+    document.write("<br>");
+    document.write("This document's  last child= " + xhr.documentElement.lastChild.nodeName);
+                    //This document's last child= student
+    document.write("<hr>");
+
+    //
+    document.write("<h1>Document Element Properties</h1>");
+    var xdoc = xhr;
+    document.write("<br>" + xdoc.documentElement.childNodes.item(0).text + "<br>");//comment
+    document.write("<br>" + xdoc.documentElement.childNodes.item(1).attributes[0].name + "<br>");//id
+    document.write("<br>" + xdoc.documentElement.childNodes.item(1).attributes[0].value + "<br>");//1
+    document.write("<hr>");
+
+    //
+    document.write("<h1>Nodes Collection</h1>");
+    var nodes=xdoc.getElementsByTagName("student");
+    document.write("<br>Number of student nodes is " + nodes.length + "<br>");
+    for (i = 0; i < nodes.length; i++)
+    {
+        document.write("<br>" + nodes.item(i).text + "<br");
+    }
+    document.write("<hr>");
+
+    //
+    document.write("<h1>Node's name, type and value</h1>");
+    var Elem = xdoc.documentElement.childNodes.item(2);
+    document.write("<br>" + Elem.nodeName + "<br>");
+    document.write("<br>" + Elem.nodeType + "<br>");
+    document.write("<br>" + Elem.nodeValue + "<br>");
+    document.write("<hr>");
+
+    //
+    document.write("<h1>Family metaphor related items</h1>");
+    var midElem = xdoc.documentElement.childNodes.item(2);
+    document.write("<br>" + midElem.attributes[0].value + "<br>");
+    document.write("<br>" + midElem.previousSibling.text + "<br>");
+    document.write("<br>" + midElem.nextSibling.text + "<br>");
+    document.write("<br>" + midElem.parentNode.nodeName + "<br>");
+    document.write("<br>" + midElem.parentNode.nodeType + "<br>");
+    document.write("<br>" + midElem.parentNode.nodeValue + "<br>");
+    document.write("<hr>");
+
+
+    //http://www.devarticles.com/c/a/XML/Roaming-through-XMLDOM-An-AJAX-Prerequisite/3/
+    
+
+
+
+</script>
+
+</body>
+</html>

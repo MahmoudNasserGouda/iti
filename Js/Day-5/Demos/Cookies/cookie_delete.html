@@ -1,0 +1,42 @@
+  <script>
+//var newDate = new Date();
+//newDate.setTime(newDate.getTime() - 86400000);
+alert (document.cookie);      
+    var y = (confirm("Delete cookie?")) ? "delete" : "keep";
+    if (y=="delete") 
+    {
+        //document.cookie="myHits=;expires=01-01-97";
+        //document.cookie="myFirstCookie=;expires=01-01-97";
+        document.cookie="myCookie=;expires=01-01-97";
+        message="after deleting, your cookie looks like this:";
+        message+=document.cookie;
+        alert(message);
+    }
+    else
+    {
+        message="after keeping ,your cookie looks like this:";
+        message+=document.cookie;
+        alert(message);
+    }
+
+
+
+
+
+
+
+
+/*  var newDate = new Date();
+    alert(document.cookie)
+    newDate.setTime(newDate.getTime() - 864000000);
+    document.cookie = "myCookie=;expires="+newDate.toGMTString();
+   alert(document.cookie)
+  */
+
+
+
+
+
+
+//document.cookie = "myCookie=deleted;expires=" +newDate.toGMTString();
+  </script>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>XMLHTTPRequest</title>
+	
+<script type="text/javascript">
+var myRequest;
+function createXHRObject()
+{//1- Create object
+    
+        /*try 
+        {
+            	var myRequest = new XMLHTTPRequest();
+        }
+        catch (e)
+        {
+           	try 
+            	{
+               		var myRequest = new ActiveXObject("Microsoft.XMLHTTP"); 
+            	}
+            	catch (e)
+             	{
+                		try 
+                		{
+                     		var myRequest = new ActiveXObject("Msxml2.XMLHTTP");
+                 		}
+                 		catch (e) 
+                 		{
+                     		alert("Cann't create object");
+                		}
+            	}
+        }*/
+		myRequest = new XMLHttpRequest();
+			if(!myRequest)
+				// code for IE6, IE5                
+				myRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			if(!myRequest)
+					// code for some other Versions of IE                
+					myRequest=new ActiveXObject("Msxml2.XMLHTTP");
+					
+			if (!myRequest)
+				alert("Cann't create object");
+}
+
+function sendRequest()
+{
+createXHRObject();
+	//2- send request
+	var url = "mypage.aspx?username=test"; //+ document.getElementbyId("txt1").txt;
+	myRequest.open("GET", url, true); 
+	myRequest.send(null); 
+
+	// when state changed , call function that handles server respond
+	myRequest.onreadystatechange=getData;// function that handles server respond
+}
+
+function getData()
+{alert("test");
+    if (myRequest.readyState == 4) 
+    {
+        // 4 = "loaded"
+        if (myRequest.status == 200) 
+        {
+            // 200 = "OK"
+            //alert(xmlhttp.responseText);
+            
+            //document.getElementById('p1').innerHTML = xmlhttp.getAllResponseHeaders();
+			alert("erew");
+			alert(xmlhttp.responseText);
+            document.getElementById('p1').innerHTML = xmlhttp.getResponseHeader("connection");
+        }
+        else 
+		{
+            alert("Problem retrieving data");
+        }
+    }
+}
+//test_xmlhttp.txt
+</script>
+</head>
+<body>
+
+<p id="p1">
+The getAllResponseHeaders() function returns the headers of a resource.
+The headers contain file information like length,
+server-type, content-type, date-modified, etc.
+</p>
+
+<button onclick="sendRequest();">Get Headers</button>
+
+</body>
+</html>
+

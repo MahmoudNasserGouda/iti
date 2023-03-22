@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+    <title>Untitled Page</title>
+
+    <script>
+    <!--
+        var xhr = false;
+        function getPage() 
+        {
+            xhr = false;
+            if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+				xhr=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+				xhr=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  
+            xhr.onreadystatechange = function() 
+			{
+				if (xhr.readyState == 4) 
+				{
+					if (xhr.status == 200) 
+					{
+						//document.write(xhr.responseText);
+						alert("Status OK");
+						var jsonStr=xhr.responseText;
+						alert(jsonStr);
+
+						//var jsonT = eval('(' + jsonStr + ')');
+						var jsonT =JSON.parse(jsonStr);
+						
+						formating(jsonT);
+					}
+				}
+			};
+            xhr.open('GET', '5_2_4_webStud_json.txt', true);
+            xhr.send(null);
+        }
+        
+    //-->
+
+        function formating(jsonT) 
+        {
+
+            //document.write("<p>HI</p>");
+            var str = '<table border="1" bgcolor="#C080FF" style="font-family:tahoma;font-size:10px;">';
+            str = str + '<tbody id="webstudnts">';
+            str = str + '<tr style="background-color:#dbb;">';
+            str = str + '<td>Id</td><td>Name</td><td>Legacy skill</td>';
+            //document.write(str);
+            var i = 0;
+            var displaying = new Array();
+            //var display="";
+            //alert("saSAS");
+            for (i = 0; i < 3; i++) 
+            {
+                //alert(i);
+                displaying[i] = "<tr><td>" + jsonT.wclass[i].student.id + "</td><td>" +
+                        jsonT.wclass[i].name + "</td><td> " +
+                        jsonT.wclass[i].Skills + "</td></tr>";
+                //alert(displaying[i]);
+                str += displaying[i];
+                
+                //alert(display);
+//                document.writeln("<tr><td>" + jsonT.wclass[i].student.id + "</td><td>" +
+//                        jsonT.wclass[i].name + "</td><td> " +
+//                        jsonT.wclass[i].Skills + "</td></tr>");
+            }
+            document.writeln(str+"</table>");         
+         }
+        
+    </script>
+</head>
+<body>
+<input type="button" id="button2" onclick="getPage()" value="Get JSON" />
+<div id="1"></div>
+
+
+</body>
+
+</html>
