@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <title></title>
+        <style>
+        body
+        {
+            font-family:Segoe UI;
+            padding:20px;
+        }
+        label 
+        {
+            display:block;
+            margin-top:20px;
+        }
+        </style>
+    </head>
+    <body>
+        <section>
+            <input type="button" id="getLocationButton" value="Get Location" />
+            <label for="lat">Latitude:</label>
+            <input type="text" id="lat" name="lat" />
+            
+            <label for="long">Longitude:</label>
+            <input type="text" id="long" name="long" />
+
+            <label for="alt">Altitude</label>
+            <input type="text" id="alt" name="alt" />
+
+            <label for="acc">Accuracy</label>
+            <input type="text" id="acc" name="acc" />
+
+            <label for="altAcc">Altitude Accuracy</label>
+            <input type="text" id="altAcc" name="altAcc" />
+
+            <label for="heading">Heading</label>
+            <input type="text" id="heading" name="heading" />
+
+            <label for="speed">Speed</label>
+            <input type="text" id="speed" name="speed" />
+
+            <label for="timestamp">Timestamp</label>
+            <input type="text" id="timestamp" name="timestamp" >
+
+            <div><a href="javascript:void(0);" id="mapLink" target="_blank">View Map</a></div>
+        </section>
+    </body>
+    <script>
+
+        document.getElementById("getLocationButton").onclick = function () {
+            navigator.geolocation.getCurrentPosition(showPosition);
+			//The getCurrentPosition() method returns an object if it is successful. 
+			//The latitude, longitude and accuracy properties are always returned. 
+			//The other properties below are returned if available.
+        }
+
+        function showPosition(position) {
+            document.getElementById("lat").value = position.coords.latitude;//The latitude as a decimal number
+            document.getElementById("long").value = position.coords.longitude;//The longitude as a decimal number
+            document.getElementById("alt").value = position.coords.altitude;//The altitude in meters above the mean sea level
+            document.getElementById("acc").value = position.coords.accuracy;//The accuracy of position
+            document.getElementById("altAcc").value = position.coords.altitudeAccuracy;//The altitude accuracy of position
+            document.getElementById("heading").value = position.coords.heading;//The heading as degrees clockwise from North
+            document.getElementById("speed").value = position.coords.speed;//The speed in meters per second
+            document.getElementById("timestamp").value = position.coords.timestamp;//The date/time of the response
+
+        }
+
+        document.getElementById("mapLink").onclick = function () { 
+           this.href= "http://maps.google.com/maps?q="+ document.getElementById("lat").value + ",+" +
+            document.getElementById("long").value ;//+ "+(You+are+here!)";
+			
+
+        }
+    </script>
+</html>

@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <script>
+        function setLocalStorage() {
+            localStorage.setItem("user", document.getElementById("un").value);
+            //OR
+            //localStorage.user = document.getElementById("un").value;
+            //OR
+            //localStorage["user"] = document.getElementById("un").value;
+
+
+
+            localStorage.age = document.getElementById("age").value;
+            alert("Data saved");
+        }
+
+        function getLocalStorage() {
+            if (localStorage.user) {
+                document.getElementById("un").value = localStorage.getItem("user");
+                //OR
+                //document.getElementById("un").value=localStorage.user;
+                //OR
+                //document.getElementById("un").value=localStorage["user"];
+
+
+            }
+
+            if (localStorage.age) {
+                document.getElementById("age").value = localStorage.age;
+            }
+        }
+
+        function delLocalStorage() {
+            localStorage.removeItem("user");
+            localStorage.removeItem("age");
+            alert("Data Deleted");
+        }
+
+
+        //-->
+    </script>
+</head>
+
+<!-- <body onload="getLocalStorage()"> -->
+
+<body>
+    <form name="myform" action="">
+        Enter name: <input type="text" id="un" name="Name" />
+        <br />
+        <hr /> Enter Age: <input type="text" id="age" name="Age" />
+        <br />
+        <hr />
+        <input type="button" value="set" onclick="setLocalStorage();" />
+        <input type="button" value="get" onclick="getLocalStorage();" />
+        <input type="button" value="Del" onclick="delLocalStorage();" />
+    </form>
+</body>
+
+</html>

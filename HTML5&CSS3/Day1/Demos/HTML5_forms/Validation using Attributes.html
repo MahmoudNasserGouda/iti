@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css" style="display:none">/**/
+html,body,div,span,p,pre,fieldset,form,label,legend,meter,progress{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;}
+article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}
+
+mark{background:none;}
+button{padding:0!important;margin:0!important;}
+input,select{vertical-align:middle;}
+</style>
+<style type="text/css" style="display:none">
+body{width:960px;margin:0px auto;font-family:Arial,Helvetica,sans-serif;color:#666;}
+header{margin:2em auto;text-align:center;}
+header h1{font-size:3.0em;}
+fieldset{width:500px;margin:2em auto;padding:20px;border:2px solid #ccc;}
+legend{font-weight:bold;}fieldset p{display:block;clear:both;padding:10px;}
+label{width:200px;float:left;font-weight:bold;}
+p small{display:block;padding-left:200px;font-size:0.7em;font-style:italic;clear:both;}
+input[type=email], input[type=url], input[type=text]{width:145px;float:left;}
+div{margin:2em auto;text-align:center;}
+button{height:35px;width:150px;}
+</style>
+</head>
+<body>
+<header>
+<h1>HTML5 Form Demo</h1>
+</header>
+<form>
+<fieldset>
+<legend>New Attributes</legend>
+<p>
+<label>Required:</label>
+<input type="text" name="html5requied" required>
+<small>Works in Opera &amp; Chrome</small>
+</p>
+
+<p>
+<label>AutoFocus:</label> 
+<input type="text" name="html5autofocus" autofocus> 
+<small>Works in Opera, Chrome &amp; Safari</small>
+</p>
+
+<p>
+<label>PlaceHolder:</label> 
+<input type="text" name="html5placeholder" placeholder="This Will Show in WebKit"> 
+<small>Works in Chrome &amp; Safari</small>
+</p>
+
+<p>
+<label>Input Pattern:</label> 
+<input type="text" pattern="[0-9][A-Z]{3}" name="html5pattern" required title="Enter a digit followed by three uppercase letters">
+<small>Works in Opera &amp; Chrome</small>
+</p>
+ 
+<p>
+<label>Multiple Files:</label>
+<input type="file" name="html5multiplefileupload" multiple>
+<small>Works in Chrome, Safari &amp; Firefox</small>
+</p>
+ 
+<p>
+<label>List:</label>
+<input type="text" name="html5textwithdatalist" list="colors">
+<datalist id="colors">
+<option value="Red"></option>
+<option value="Green"></option>
+<option value="Blue"></option>
+</datalist>
+<small>Works in Opera</small>
+</p>
+</fieldset>
+<div>
+<button>Submit</button>
+</div>
+
+
+ 
+</form>
+</body>
+</html>

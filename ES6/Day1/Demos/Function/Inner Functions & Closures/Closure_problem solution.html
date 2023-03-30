@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title></title>
+		
+	</head>
+	<body>
+		<script>
+
+//debugger;
+	function myFun(){
+		var arr=[]
+		var i;
+		for(var i = 0; i < 3; i ++){            
+		arr.push((function(j){                            
+						return function(){
+											document.write(j+"<br>");
+										 }
+								})(i)
+				);      
+		}
+	 return arr;
+	}
+	
+	
+	
+	arr=myFun();
+	
+	arr[0]();
+	arr[1]();
+	arr[2]();
+			
+			
+			
+
+			/*
+
+			var a = function(param){
+				
+				var b = function(theinput){
+					return theinput * 2;
+				};
+				
+				return 'The result is ' + b(param);
+			};
+
+			x=a(5)
+			alert(x)
+			//alert(b(5))
+			*/
+
+				
+			</script>
+		
+	</body>
+</html>

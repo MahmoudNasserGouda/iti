@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<!-- The autocomplete attribute specifies whether a form or input field should have autocomplete on or off.
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before..</p>
+
+The novalidate attribute is a boolean attribute.
+When present, it specifies that the form-data (input) should not be validated when submitted.
+-->
+<form  autocomplete="on" >
+  First name:<input type="text" name="fname" required><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+
+<br>
+<!--
+The formaction attribute overrides the action attribute of the <form> element.
+The formmethod attribute overrides the method attribute of the <form> element.
+The formnovalidate attribute overrides the novalidate attribute of the <form> element.
+The formtarget attribute overrides the target attribute of the <form> element.
+Note: The formaction, formmethod, formtarget attributes is used with type="submit" and type="image".-->
+  <input type="submit" formaction="demo_admin.asp" formmethod="post" formtarget="_blank"  />
+  
+ <!--More attributes--> 
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"> 
+  <br/>
+   Select images: <input type="file" name="img" multiple>
+<br/>
+   Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+   <br/>
+   <input type="text" name="fname" placeholder="First name">
+     <input type="submit"/>
+</form>
+
+<!--
+The form attribute specifies one or more forms an <input> element belongs to.
+Tip: To refer to more than one form, use a space-separated list of form ids.
+-->
+Company: <input type="text" name="cmp" form="form1">
+</body>
+</html>

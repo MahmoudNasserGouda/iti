@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+div:not(#transDemo1){ border:3px solid red;margin:15px; position:relative;left:120px;
+width:190px;height:200px;}
+
+#skew {
+transform: skew(30deg,20deg);
+-ms-transform: skew(30deg,20deg); /* IE 9 */
+-webkit-transform: skew(30deg,20deg); /* Safari and Chrome */
+-o-transform: skew(30deg,20deg); /* Opera */
+-moz-transform: skew(30deg,20deg); /* Firefox */
+}
+
+#scale {
+transform: scale(2,4);
+
+}
+
+#rotate {
+transform: rotate(30deg);
+-ms-transform: rotate(30deg); /* IE 9 */
+-webkit-transform: rotate(30deg); /* Safari and Chrome */
+-o-transform: rotate(30deg); /* Opera */
+-moz-transform: rotate(30deg); /* Firefox */
+}
+
+#translate {
+  transform: translate(50px,100px);
+-ms-transform: translate(50px,100px); /* IE 9 */
+-webkit-transform: translate(50px,100px); /* Safari and Chrome */
+-o-transform: translate(50px,100px); /* Opera */
+-moz-transform: translate(50px,100px); /* Firefox */
+}
+
+#rotate-skew-scale-translate {
+ transform: skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px);
+-ms-transform: skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px); /* IE 9 */
+-webkit-transform: skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px); /* Safari and Chrome */
+-o-transform: skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px); /* Opera */
+-moz-transform: skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px); /* Firefox */
+}
+
+#Matrix
+{
+  /*https://www.quackit.com/css/functions/css_matrix_function.cfm*/
+transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+-ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+-moz-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Firefox */
+-webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
+-o-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Opera */
+}
+body {
+padding-top: 60px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div id="transDemo1">
+  <div id="skew">This div has been skewed - note that the text is still selectable.</div>
+  <div id="scale">This div has been scaled - again, the text is real text.</div>
+  <div id="rotate">This div has been rotated - you get the idea about the text!</div>
+  <div id="translate">This div has been translated 10px down, and 20px across.</div>
+  <div id="rotate-skew-scale-translate">This div has all four types with matrix!</div>
+  <div id="Matrix">This div has all four types!</div>
+  <div class="normal">normal</div>
+</div>
+<br>
+<br>
+
+
+</body>
+</html>

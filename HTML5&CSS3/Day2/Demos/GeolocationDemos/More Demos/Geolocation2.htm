@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <title></title>
+     
+    </head>
+    <body>
+        <section>
+            <input type="button" id="getLocationButton" value="Get Location" />
+            
+        </section>
+    </body>
+    <script>
+
+        document.getElementById("getLocationButton").onclick = function () {
+            navigator.geolocation.getCurrentPosition(showPosition);
+			//The getCurrentPosition() method returns an object if it is successful. 
+			//The latitude, longitude and accuracy properties are always returned. 
+			//The other properties below are returned if available.
+        }
+
+        function showPosition(position) {
+		var url = "http://maps.google.com/maps?q="+ position.coords.latitude + ",+" +position.coords.longitude ;
+			location.replace(url);
+        }
+		
+		
+    </script>
+</html>

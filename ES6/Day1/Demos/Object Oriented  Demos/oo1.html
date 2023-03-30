@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Object Demo #1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var obj = 
+        {
+        //Set the property names and values use key/value pairs
+	        name: "banana",
+	        click: function()
+	            {
+	            alert( "you can eat" );
+	            },
+	        //initialize entire object
+	        details:{
+		        mycolor: "yellow",
+		        mycount:12
+	        }
+        };
+        
+        document.write("<b>obj.name</b> "+obj.name);
+        document.write("<b><br> obj.details.mycolor</b> "+obj.details.mycolor);
+        document.write("<b><br>obj[\"details\"][\"mycount\"]</b> "+obj["details"]["mycount"]);
+        obj.click();
+        //alert(details.mycolor);
+    		
+    </script>
+</body>
+</html>

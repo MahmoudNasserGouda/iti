@@ -1,0 +1,2 @@
+https://ihatetomatoes.net/demos/one-page-scroll-animations/ 
+https://css-tricks.com/aos-css-driven-scroll-animation-library 

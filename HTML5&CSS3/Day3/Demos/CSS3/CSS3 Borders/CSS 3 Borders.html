@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Borders</title>
+    <style>
+        div {
+            background-color: white;
+            text-align: center;
+            width: 70%
+        }
+        
+        #divRadius {
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
+            /* 
+            one, two, three, or four <length> or <percentage> values. 
+            This is used to set a single radius for the corners.
+             The four values for each radius are given in the order top-left, top-right, bottom-right, bottom-left.
+            <length>
+            Denotes the size of the circle radius, or the semi-major and semi-minor axes of the ellipse, 
+            using length values. Negative values are invalid.
+            <percentage>
+            Denotes the size of the circle radius, or the semi-major and semi-minor axes of the ellipse, 
+            using percentage values. Percentages for the horizontal axis refer to the width of the box; percentages for the vertical axis refer to the height of the box. Negative values are invalid. 
+
+            This property is a shorthand for the following CSS properties:
+
+            border-bottom-left-radius
+            border-bottom-right-radius
+            border-top-left-radius
+            border-top-right-radius
+            */
+            border: 5px solid blue;
+            border-radius: 10px;
+            /* -moz-border-radius: 5px;  Old Firefox 
+            -Webkit-border-radius: 5px;
+            -MS-border-radius: 5px;*/
+        }
+        
+        #divRadius2 {
+            width: 100px;
+            height: 100px;
+            border: 5px solid blue;
+            border-radius: 10px 20px 10px 20px/ 50px;
+        }
+        
+        #divRadius3 {
+            width: 100px;
+            height: 100px;
+            border: 5px solid blue;
+            border-radius: 50%;
+        }
+        
+        #divShadow {
+            /*https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+            /*
+        box-shadow: h-offset (Req.) v-offset (Req.) blur spread color
+    */
+            border: 3px solid blue;
+            box-shadow: 5px 10px 15px 10px red;
+        }
+        
+        #divShadow2 {
+            /* border: 1px solid black; */
+            box-shadow: 3px 3px 5px 0px gray;
+        }
+        
+        #divBorderImage {
+            border: 15px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 30 round;
+            /* border-image-source: url(border.png);
+            border-image-slice: 30;
+            border-image-repeat: round; */
+            /*repeat round stretch*/
+        }
+    </style>
+</head>
+
+<body>
+    <br/><br/><br/>
+    <div id="divRadius">div Radius</div>
+    <br/><br/><br/>
+    <div id="divRadius2">div Radius2</div>
+    <br/><br/><br/>
+    <div id="divRadius3">div Radius2</div>
+    <br/><br/><br/>
+
+    <div id="divShadow">div Shadow</div>
+    <br/><br/><br/>
+    <div id="divShadow2">div Shadow 2</div>
+    <br/><br/><br/>
+    <div id="divBorderImage">div Border Image</div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="empty_star.png" id="Img1" data-counter="0" width="60px" height="60px" alt="emptyStar"  onclick="clickedImg(this)">
+    <img src="Filled_star.png"  id="Img2" data-counter="0" width="60px" height="60px" alt="filledStar"  onclick="clickedImg(this)"> 
+   
+    <script>
+      
+          function clickedImg(Img)
+          {
+            var count=Img.getAttribute("data-counter")
+             
+              if(count==0)
+              {
+                alert('first Click')
+                Img.setAttribute("data-counter",1)
+              }
+              else
+              {
+                alert('anthor Click')
+              }
+          }
+
+        // function changeImg(Img)
+        // {
+    
+        //     if(Img.getAttribute("src")=="empty_star.png")
+        //     {
+        //         Img.setAttribute("src","Filled_star.png");
+        //     }
+        //     else
+        //     {
+        //         Img.setAttribute("src","empty_star.png");
+        //     }
+        // }
+    </script>
+</body>
+</html>

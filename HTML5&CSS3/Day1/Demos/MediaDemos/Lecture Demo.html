@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <style>
+        video {
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+
+<body onmousedown="document.getElementById('a1').play()">
+    <header>
+        <h1>HTML5 Media Basics (Attribute)</h1>
+    </header>
+
+    <section>
+        <h1>Video</h1>
+        <video id="v1" poster="image/p.png" width="300" height="200" onclick="playVideo(this)">
+                <source src="video/sample.mp4" /><!-- fallback-->
+                <source src="video/sample.ogv" />
+                <source src="video/sample.webm" />
+				<p>this will appear if nothing of the video codecs supported</p>
+            </video>
+    </section>
+
+    <section>
+        <h1>Audio</h1>
+        <audio controls id="a1" autoplay>
+			<!--either autoplay or preload-->
+                <source src="audio/bgsound.mp3" /> <!-- fallback-->
+                <source src="audio/bgsound.wav" />
+            </audio>
+    </section>
+
+    <script>
+        function playVideo(vid) {
+            if (vid.paused)
+                vid.play();
+            else
+                vid.pause();
+        }
+    </script>
+
+</body>
+
+</html>

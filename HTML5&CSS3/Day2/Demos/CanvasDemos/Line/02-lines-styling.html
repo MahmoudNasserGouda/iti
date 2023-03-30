@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <title>Styled Lines</title>
+        <style>
+        canvas
+        {
+            cursor:pointer;
+        }
+        #strokeVsFill
+        {
+            position:absolute;
+            top:75px;
+            left:300px;
+        }
+        </style>
+        <script src="../../scripts/jquery-1.4.4.min.js"></script>
+
+    </head>
+    <body>
+        <canvas id="canvas" width="225" height="375">
+            <div class="noCanvas">Your browser does not support the canvas element.</div>
+        </canvas>
+		
+		        <script>
+           // $(function () {
+/*
+                $(".hide").hide();
+
+                $("canvas").click(function () {
+                    $("#strokeVsFill").toggle();
+                });
+*/
+                var canvas = document.getElementById("canvas");
+
+                //if (canvas && canvas.getContext) {
+                    var context = canvas.getContext("2d");
+
+                    context.beginPath();//to start
+                    context.moveTo(100, 100);//starting point
+                    context.lineTo(100, 300);//next point
+                    context.lineTo(150, 300);
+                    context.lineTo(150, 155);
+                    context.lineTo(205, 155);
+                    context.lineTo(205, 100);
+                    context.closePath();//close the shape so we can draw any poly
+                    
+					context.fillStyle = "#0099ff";
+                    context.fill();
+
+                    context.lineWidth = 6;
+                    context.lineJoin = "round";//"miter";//"bevel"; "round"
+                    context.strokeStyle = "#cccccc";
+                    context.stroke();
+					
+                //}
+         //   });
+        </script>
+    </body>
+</html>

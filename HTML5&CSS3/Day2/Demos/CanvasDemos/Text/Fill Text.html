@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #myCanvas {
+            border: 1px solid #9C9898;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        context.rect(0, 0, canvas.width, canvas.height);
+
+        /* add linear gradient
+	  //createLinearGradient(startX, startY, endX, endY)
+      var grd = context.createLinearGradient(0, 0, canvas.width, canvas.height);
+      // light blue
+      grd.addColorStop(0, 'black');  
+		//grd.addColorStop(0.5, 'red');	  
+      // dark blue
+      grd.addColorStop(1, 'Blue');
+      context.fillStyle = grd;
+      context.fillRect(0, 0, canvas.width, canvas.height);*/
+
+
+        //draw text
+        context.fillStyle = "#ff00ff";
+        context.font = "bold 33px sans-serif";
+        //fillText(text, startx, starty);
+        context.fillText("text1", 248, 43);
+        context.fillText("text2", 58, 165);
+        //      
+        context.fillStyle = "#ff00ff";
+        context.font = "italic 70px Segoe UI";
+        context.fillText("text3", 140, 110);
+    </script>
+</body>
+
+</html>

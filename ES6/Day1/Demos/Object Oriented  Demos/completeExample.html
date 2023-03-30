@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Complete Object Oriented Example</title>
+</head>
+<body>
+    <h2>Representing a lecture and schedule of lectures Example</h2>
+    <hr />
+    <script type="text/javascript">
+    
+        // The constructor for our 'Lecture'
+        // Takes two strings, name and teacher
+        function Lecture( name, teacher ) 
+        {
+            // Save them as local properties of the object
+            this.name = name;
+            this.teacher = teacher;
+        }
+
+        // A method of the Lecture class, used to generate
+        // a string that can be used to display Lecture information
+        Lecture.prototype.display = function()
+        {
+            return this.teacher + " is teaching " + this.name;
+        };
+
+        // A Schedule constructor that takes in an
+        // array of lectures
+        function Schedule( lectures ) 
+        {
+            this.lectures = lectures;
+        }
+
+        // A method for constructing a string representing
+        // a Schedule of Lectures
+        Schedule.prototype.display = function()
+        {
+            var str = "";
+            // Go through each of the lectures, building up
+            // a string of information
+            for ( var i = 0; i < this.lectures.length; i++ )
+            str += this.lectures[i].display() + " ";
+            return str;
+        };
+
+
+        // Providing a User with List of Classes
+        // Create a new Schedule object and save it in
+        // the variable 'mySchedule‘
+        var mySchedule = new Schedule([
+                    // Create an array of the Lecture objects, which
+                    // are passed in as the only argument to the Lecture object
+                    new Lecture( "Gym", "Mr. G" ),
+                    new Lecture( "Math", "Mr. M" ),
+                    new Lecture( "English", "Mr. E" )
+                ]);
+
+        // Display the Schedule information as a pop-up alert
+        alert( mySchedule.display() );
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SVG</title>
+</head>
+
+<body>
+
+    <!--
+x="the x-axis top-left corner of the rectangle"
+ y="the y-axis top-left corner of the rectangle"
+ rx="the x-axis radius (to round the element)"
+ ry="the y-axis radius (to round the element)" 
+width="the width of the rectangle". Required.
+ height="the height of the rectangle" Required.
+
+-->
+    <svg width="200" height="200">
+        <rect
+        x="100" y="100"
+        width="100" height="100"
+        fill="blue" stroke="red"
+        stroke-width="5px"
+        rx="20" ry="20"
+        id="myRect" class="chart" /> 
+
+        <line x1="10" y1="10" x2="100" y2="100" stroke="blue" strok-width="3px"/>
+		
+		<rect
+        x="0" y="0"
+        width="33" height="33"
+        fill="blue" stroke="red"
+        stroke-width="5px" />
+
+    </svg>
+
+
+    <script>
+        var rect = document.getElementById('myRect');
+
+        rect.onclick = function() {
+            alert('hello');
+            rect.style.fill = 'green';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title></title>
+		
+	</head>
+	<body>
+		<script>
+
+			function sayHello2(name) {
+				var text =  name; // Local variable
+				//inner function
+				var sayAlert = function() { return "Hello" +text; }
+				var res=sayAlert()
+				return res;    //returning value of the inner func.
+			}
+			var say2 = sayHello2('Ahmed'); 
+			alert(say2);
+
+
+				
+			</script>
+		
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+        var counter = 1;
+
+        function countClicks() {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                counter++;
+            } else {
+                sessionStorage.clickcount = 1;
+            }
+
+            document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s).";
+            document.getElementById("counterVar").innerHTML = "Counter value (Variable) " + counter;
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <input type="button" value="Count" onclick="countClicks();" />
+    <div id="result"></div>
+    <div id="counterVar"></div>
+    </form>
+</body>
+
+</html>

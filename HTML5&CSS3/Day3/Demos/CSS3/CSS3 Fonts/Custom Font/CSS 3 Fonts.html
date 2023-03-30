@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Fonts</title>
+    <meta charset="UTF-8">
+    <style>
+        #div1 {
+            /* 1- User fonts */
+            /* Generic Font Families
+            In CSS there are five generic font families:
+
+            Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+            Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+            Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
+            Cursive fonts imitate human handwriting.
+            Fantasy fonts are decorative/playful fonts. */
+            font-family: "Times New Roman", Times, serif;
+            /*Fallback*/
+            font-size: 5em
+        }
+        
+        @font-face {
+            /* 2- server font */
+            font-family: newArabicFont;
+            src: url('ge_ss_two_medium.ttf'), url('ge_ss_two_medium.eot');
+            /* IE9+ */
+        }
+        
+        #div2 {
+            font-family: newArabicFont, Tahoma;
+            /*Fallback*/
+            font-size: 5em
+        }
+        
+        #div3 {
+            font-family: 'Texturina', andalus;
+            /*Fallback*/
+            font-size: 5em
+        }
+    </style>
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <br/><br/><br/>
+    <div id="div1">user font عربي
+    </div>
+    <br/><br/><br/>
+    <div id="div2">Server font عربي
+    </div>
+
+    <br/><br/><br/>
+    <div id="div3">Web font عربي
+    </div>
+
+</body>
+
+</html>

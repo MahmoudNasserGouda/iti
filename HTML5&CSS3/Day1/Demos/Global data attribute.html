@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+</head>
+
+<body>
+    <img id="img1" data-isClicked="0" onclick="calculateScore(this)" src="https://picsum.photos/seed/picsum/200/200" alt="img">
+    <img id="img2" data-isClicked="0" onclick="calculateScore(this)" src="https://picsum.photos/seed/picsum/200/200" alt="img">
+    <img id="img3" data-isClicked="0" onclick="calculateScore(this)" src="https://picsum.photos/seed/picsum/200/200" alt="img">
+
+    <script>
+        var score = 0;
+
+        function calculateScore(img) {
+            if (img.getAttribute("data-isClicked") == 0) {
+                score += 1;
+                img.setAttribute("data-isClicked", "1");
+                alert("Your score is: " + score)
+            } else {
+                alert("Thhis image was clicked before");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

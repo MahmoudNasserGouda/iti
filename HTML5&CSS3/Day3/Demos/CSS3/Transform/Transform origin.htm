@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Transform-origin</title>
+<style>
+
+div{ border:3px solid red;margin:15px; position:relative;left:120px;
+width:190px;height:200px;}
+
+#div1
+{
+transform: rotate(45deg);
+transform-origin:20% 40%;
+-ms-transform: rotate(45deg); /* IE 9 */
+-ms-transform-origin:20% 40%; /* IE 9 */
+-webkit-transform: rotate(45deg); /* Safari and Chrome */
+-webkit-transform-origin:50% 50%; /* Safari and Chrome */
+-moz-transform: rotate(45deg); /* Firefox */
+-moz-transform-origin:20% 40%; /* Firefox */
+-o-transform: rotate(45deg); /* Opera */
+-o-transform-origin:20% 40%; /* Opera */
+} 
+</style> 
+</head>
+
+<body>
+<br/><br/><br/>
+<div id="div1">Transform test</div>
+
+</body>
+
+</html> 

@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+		
+	<title>JSON With AJAX from Web API</title>
+
+    <script>
+		// Docs for Fetch: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+		function getProducts(URL)
+		{
+			//fetch(URL, {method:'POST', body:{}})
+			
+			fetch(URL)
+				.then(function(response){
+					return (response.json())
+				})
+				.then(function(resJSON){
+					console.log(resJSON);
+					for (let prod of resJSON.data)
+					document.getElementById("prod").innerHTML+=prod.name + ",<br>";
+				});
+			alert ("Request sent...");
+		}
+
+		function getProductsUsingArrowFunc(URL)
+		{
+			fetch(URL)
+				.then((response) => (response.json()))
+				//.then((response) => {return (response.json())})
+				.then((resJSON) => {
+					for (let prod of resJSON.data)
+						document.getElementById("prod").innerHTML+=prod.name + ",<br>";
+				});
+			alert ("Request sent...");
+		}
+    </script>
+</head>
+<body>
+	<!-- <input type="text" id="pID"> -->
+	<input type="button" id="button2" onclick="getProducts('https://reqres.in/api/products')" value="show product" />
+	<div id="prod"></div>
+
+</body>
+</html>

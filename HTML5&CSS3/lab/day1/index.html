@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>day 1</title>
+</head>
+
+<body>
+    <header style="background-color: yellowgreen; display: flex; flex-direction: row; justify-content: center;">
+        <img style="mix-blend-mode: darken; margin: 2rem; width: 15rem;"
+            src="https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars.png"
+            alt="prpfile picture">
+        <div style="margin-top: auto; margin-bottom: auto; margin-left: 2rem;">
+            <h1>Mahmoud Nasser Gouda</h1>
+            <h2>FullStack .Net Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis eveniet obcaecati delectus
+                <br>
+                totam necessitatibus eligendi impedit? Ut a veritatis iusto corporis iure ad quasi perferendis accusamus
+                <br>
+                blanditiis, quam inventore.
+                <br>
+                <time datetime="1998-06-05">Birth Date: 1998-06-05</time>
+            </p>
+        </div>
+    </header>
+    <br>
+    <div id="content" style="display: flex;">
+        <aside style=" width: 30%; display: inline-block;">
+            <section onmouseover="document.getElementById('audio').play();"
+                onmouseout="document.getElementById('audio').pause();" id="contact"
+                style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size:xxx-large;">Contact</h1>
+                <audio id="audio" src="resources/notification.mp3"></audio>
+                <div>
+                    <div>
+                        <i class="fas fa-home" style="font-size:x-large; color:red; margin: 1rem;"></i>
+                        <p style="display: inline; font-size:x-large;">Cairo, Egypt</p>
+                    </div>
+                    <div>
+                        <i class="far fa-address-book" style="font-size:x-large; color:red; margin: 1rem;"></i>
+                        <p style="display: inline; font-size:x-large;">0111 945 3005</p>
+                    </div>
+                    <div>
+                        <i class="far fa-envelope-open" style="font-size:x-large; color:red; margin: 1rem;"></i>
+                        <p style="display: inline; font-size:x-large;">mahmoudnasser98@gmail</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-globe" style="font-size:x-large; color:red; margin: 1rem;"></i>
+                        <p style="display: inline; font-size:x-large;">www.mahmoudnasser.com</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-globe" style="font-size:x-large; color:red; margin: 1rem;"></i>
+                        <button onclick="getLocation()" style="display: inline; font-size:x-large;">Location</button>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section id="languages" style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size:xxx-large;">Languages</h1>
+                <div>
+                    <div>
+                        <p style="font-size:x-large;">English</p>
+                        <progress class="progress-bar" max="100" min="0" value="60"></progress>
+                    </div>
+                    <div>
+                        <p style="font-size:x-large;">Germany</p>
+                        <progress class="progress-bar" max="100" value="30"></progress>
+                    </div>
+                    <div>
+                        <p style="font-size:x-large;">Spanish</p>
+                        <progress class="progress-bar" max="100" value="90"></progress>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section id="skills" style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size:xxx-large;">Skills</h1>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <p style="font-size:x-large;">HTML</p>
+                        <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:85">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <p style="font-size:x-large;">CSS</p>
+                        <div role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:75">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <p style="font-size:x-large;">JS</p>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:65">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section id="online" style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size:xxx-large;">Online Info</h1>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div style="display: flex; flex-direction: row; align-items: center;">
+                        <img style="margin: 1rem; width: 5rem;"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAA/1BMVEX///8YePP///wXePT///r//v/w+v8Aa+nu/P3//v78/////P/Z6fgAadsWePYYePHV6PHO4vMAcO0cdff//vcAcPP///MXee/4//4Aa+cAb+kAbfT/+vsVeu0AbO0WePmexfFnm+0AcOYUd/0Ve+iBsuf2//rG5fYAa9vl+/4AaOyuy/C21PGryO7G4Pe41eyTufCEsfB5q/Fwo+9bmdwxf+hSluOwxvNDheEVdN0LbflAiO1xru9dl/He7POFrehEjeKYv+x1oeDb+v2n1PEUcteUxes6gN1KjtyjyuqOtOLl/flYmd8lfuDP5v7B2PMAWbkAWcW86fhtm/IAZvJFNFBcAAARzklEQVR4nO1dCUPbuLaWtSSxHKTgJXJsjMEOSYAUuky5hG6UaQu0ZXrfe/P/f8s7Cu1MlwTs2Epghq8MlE4SW5+ls+mcI4Qe8IAHPOABD3jAAx6wOlDMEeOc67/ZDgs5hh8OY/o/hjFC8ANhxOClWGPV92sCMFYbb9jUpyEAAxE2fANiEPyA/89wl8IPjmwMbDhs1fdrAphSmAr8+pewfXC49fjJ02fbGs+e7jzeOjxot/iUDZgH/NsL/1lwnA3mdNHuwdbOb8/jvShyhYAv/Y2QPHCzrJldHT39z3oDw0SwV327RgAPt/Pu6fEki05ioUjuwdCBgTT1Us2ESIW0XM9zo+TFk8tO2P1nCARKbcZD5vgDWNyN8curXuDBYImSMHipYX2DUvCbINN/E2kQ965eHrZAQto8BPkJC+O+ige4+RCEQAgE7B9lWUYEsYpBCEtl2fZ+w99w6GAqSVY9mAXRpZw5nIb725OMeJYURTnQs4GoPA6yV+9ayNEqdNVjWRTc9jF6/SaKpJeLRIrCHAALIs1lX3lJEO10OO1O1eZ9BCyDw6NeJqdDlwQgijGQpiAV4EsIz0rcvaPDkN4vPcGxb9sOrGGEL0+zDIatKYDhF54EFpm+VEzfCsTl8fkYBAvWdiS+F3aDDbIctAEdPJo049grPPC5UH3h9SaXoYMHoCDuxYQAfeiD2Tt+4coEUJ0DkXuWIvH5IQc7274X0pEzu8uHp1ESe6mV1jAPZD8heZwkJ6dDTu/HWgDxtXvWSz2hdRwpLgTmAwwqsKHAqF47a4BUwOhOGwuMaZvochTXMfRfQVwQC34Y2ndZU1Kf0dcXsXQLKsGSAF3Zu/idgt216oHOxwBvhB+arszNUGAlaZpYe48G9saqRzofDO9uR0KSXMnbB7QA0n7i9T13u3E3BSOmCP4cTBIPfMIkNTMRSC5UasmgfwDah+kFcaeko20zP/ywFicyNTL87yFl9JZzRxuOd8qfZA7iZ+7JCegw4xwACfHZAEgAPbTqcX8P2//9NFaWUmIJHBCpTo5b6M6FVobvgyRViTQjDb+DDjSlSgaTNgKz8a6QYMOqPBjF0yAJMaQSvgcRqUiEyA4omGR3JADNQ/RlbQlL4CeItUPE74obOUCHe2aM45uRNt+BSXIndqQYGu/1a/APy0LJk+gQ3Ymwio0ue2QFFFggFLzemKNVc+DQkH3pWctQiL9AEGWl7hc2WHFchXN/OFoFAd8gN4f+iiPvvt15n65CHn4DEaO2v1qpuNF6HtQQMqyA/kl/d7UchKeuqsNJEpbeWrr+u46/ya9huFunmGcl3kW4KivBZpjip5E2XitB77MqvQNt6a1YovehPcD1dvT1lrQgMiVKzFY+kgQv0Yr8R+qg7haoBFKVA6J3WC0YeOBGvez5i1evtrdfvXrxoj9ai6JeEOdpqsmYv0tFsksUroQEZ4DbTf3kKnMA47OEmz3/bevgdRh+y83hYavVPvjy6OPZ6STbjISnrHkkqLi9sZIQoxO2EqLdxKocWKmVbR6/7ehHqVNQADb8ofQ6M4sjynfXP/TyZC4HrnzeWAUFiPtn0fUu+eLDF0LBMnBHT9oc5AtDzNapBn9Na2wjG1OdvYU6PS+Zv2Xrei+xDf7TUheETg15l4HwXnj8GqlUeeqNdnZvv2DHlXNkoqUtxnQ0RqG/zJg7uCm+vztRIKwrcQCyPo9+62A/vPWSHdeaz4FSXj7a3eD+Eg1GChyEZ1kuVDUzOU1Ic0wpt2/X7zdyQPRe3BnmbJnzAOTUu6a6QV0VAkni8991cJgObr3kjRxoEkjvEETCEgb/DZzyKwlPMV1cJygvTazTBrVBBBYID9/IAZgYnif6gwJrqjY4mD5uFjBkb4C2DYOLVuFw4M3zAEDS7PEyrUXmv970KnrMXiKPG363Ng5Eqv785Jgd9/fg9MyqqBJS62TySaclFxRjt3Ig+0KdmR32D6DDqKqFbIm1A5BhvGjC2Y32wZSDJOhvDs2O+ysY42CKHHmiyp6afnfwEev4T9EV3Ims9Ob0RtBR3gW3Wde8ctCz92AEju7iHAAFxDvfLaXMNQe3amISDRk1ryDBqeH0FOz8xTkQeaJSdwzTqcTdFuLAEheoy40bizqav76ZTuM+i3Lg9VP3gnd5GU1WjAOyN0TmOWAopNuWIhXSbYhM8t4h5bgMCVMObjVIiPi8hKw1G/POiapmH1lB0i97o7fqxmsOVNwemDcSMH5T1TwSIvhQ9rLFOJAiekLNO49s0FR5NQ6IjH8v+7ButQ++frSVmE/YwugyqJp8KsUpLuvlFuTAEtGWiWH/ABsdS6/irooK3rJ53vI0kIbxL1WenV4hDlJJjrXpaWw9TMtR25mouqlCovW5OTTUZroKEqOwM7x8tPUXdjJZwDwHSzIdDe2QO6aUA9U5gR/BS63IgZi05nLAwy7MgMb+UdJ0N4Mg/gZ3WvV2K7tEiegjouZsBJ85ODwXVoXIyRTp8Q2GDMVOuPXe9dxp+ZP6BllsI0MqkZ6HtLS4KQzMMF/vicobjN7Z/Dwi7NiftmNBRDoduriuAvVAHRcjHqiKhhgbi65yBEshIFUzUWXw9oZrdFsvJElzkUwrYP+qBNU/C6gjkgrp7tihMQ4oPL3j6gkXMjhEzrzIH0PPgqqpri+QuYQ9Tmm7WT3hQm4O53OAvuyBX1np81XvNbJ9UxxgehlXpgA4aGNnjtCyuTY/qoXprOASI1Mc2Bz9VkcC2uZrOo8DtJ5Jq6Id6slnaGBKHtiU92uggDQbujDrV4A3TR+7qfQq7mKqPjImExntRDXkX4leY3ZOoY7PfK4uc4XM2uZiCPhRVkPykWjO4cDGjF/VwsG+sUAKQ0/rqFKZxwGzuR2O6pho7hNkSjk6OphqkAMU+o2sBt3r5afG8nftRr+WPLx5a4Fy3OpV54CAZ2EuNaed1ZGWO58Dhlo12GCEaAvEFAfj6D5wADLLHZviAL8NaqDAOAfKI+5bYxw8DarF1JfDQeIJ95kxDl4leQ0VW6Y5EJYSR4YoQPh5YlYv1MQBkdaVKQ7C0dxM0bvEgY6sjkxlJrXWqkYSr2/ROAdC9lqGOGhH94QDIpttQxysx0Vi/CvnQEph9f5AZhoDrMfqXnBgwTw4MMTBl1jdB/tA77wGXwxxMI6T+8GBZQVjYxyo4p3v9GBlLnVrkJ+QRo2Zd8eozXabv7wc3PW0dHJ4sG+oqdh+rMqEVEma5O/XZuC/DTrrDhmlzu7/zHj9CL5KGmfAgRkAB6Vuhaj4f/kMhDaftdfGaGj74aw3IDQsGVcwxsE4KMeBlHtDPGNElM5u4kE59+2ZnKEPJT1WY2thXG4tWIr8OfyWT/EDuD1bIDDO6a+vtjFDO+XSfyTIRDMcHMblZJMkm+tzPmq2yJ69KQByAh2VIJ+AJIq/1DTmn3EQe6UWww0clIHmYFKSg72DGi48C+ubaSnnuSYOEEWNtRIikWgT5I86LjwD7V66innAMVpvlrDRdQ/WNVM+Uws4qEkelAHoUZDGJa4LWCtQMrkQwmZSaku4Jg5s7u8EJeaBrp4emdpj4YkqVcxXGwf4mVvispqDK2OJKNtuqTSZumQiR+dlph/MVXMxVfQyWIU8QLSVlCusJpax6i78IV7JPPA7bhkOJBHuDZlvFTF2RZk4Ul0cdL9kXonrytSND+u47izgdrn9xtrWwpYqs7cjU69nyjxAuDFZBQc69aPMPLCImBjbe6fodCX2ATqVZfxVYYlTY1vvHD0p9Txq4gDz57JULy4inhjL2eZ4v4y9VhsHjU1ZJo6pRLBvLB8J+53eCnwm/EfTKqOPhIo7xjqyU8rfl4nn1MXBZZN4JXymNMnMdaXHDJ2VyVeui4Mnbrk0bvnMXJ0nZv6jMrFNkUZDX/f50J2Ppt++fg3wzFoejBznukfU39BveKbKieLokbmiLozw6zIxbiXX1nXPJ/oD4Fffmd21g+o2dPRnoOcqT8oox+ZrbKzQEz45LFHDQXKRveu0f0Vn4MxshsuoHc54fScSXpn8WPkc+cby1oED/LGEJ58kIsjcX7H3ic56TphRp7H368szC6yDEgaq+xiX6SpQDtzBdH2z8GIQXgKu9oztw82WQ2fIbQwr5FM8Y79Rivkt82Yg7uBwbn1EZTBk8yvQ1QUVlT6Db9a9z83dZ7jVnPVBpGidvUqV8M5Dbrju+6M+drAYB3NgcO9dSSHjj4jN3seqDZ2sXIB9qRxYSZ40O9gxfTbFRcVSG5McSHCyT7WBZJQCTh8FabW6M5NrwZPuJeazJG6dHODGqGKDeZNrgXjJEhoNM/yk4mIwyYGId8z3hGG8227e2bVAhNs2fx4Dwzb6XIkCo/PA+20J/ZHAmvMPerJUjH05HBBiSdFb50vgwOZ+eKHyCi11DXGgbTfvIqQzS2hrBcYhxcM9UqGYw9Q8kDKNhhiekWkOELhkXf6q1KbHUjggAmbmEXgK2DwHups1HfZkhb55hjgQ6WQdL+fAV1v3Qfg/tfjRfIbWgud5Z6C6l3Z8mV8qprYUDghRvdIdyCpA9ymIFnYeTa2FbGeZx1VR7rQWL3EzZSMlLbbMM0kwZ4cL1z4b4iAa+8s9rQo7aDsT3kLmYv0cpIlnkbPlH9hl745EP1lkLtTPgW5SO9rt0qWf4tcd7y3WDqF+DsBq3Rvjbrj0c58ZOjspVdpjjoPnJ8FT6jBurlXcHDh+66rUPqA5Djx5/mlDh9CWfoIfx+2ICDLJS952vRzoDoOiOTQcTZ8HjtHlXj8v3Vm0Vg708V7yz3eYLdFE/A6cU/7yROVlI2u1cgC+W+q+pBt4RUe2YUxbxzecmrQcDlJy0WIzNzDNg+u2VhufwEQQ5apf6+OAgJegxFVjI+yuZilM4XSHWQrzsVTOVH0cKCLzUWfpo/4RA07Xe2R68uDSOdABRCGiA1z0LA9DcEKODrO0lL1YFwdEWnm+N/SdFenFb7CdAcfjUan+GPVxIPK1MbKX0GT+RoSYdR08jsBOKTwX6uBAgjYS0s0useOEq9KL3wOj8aa00qJh1lo4ELqddHO89LHOg+PDchCeKljoU89aAIkYvQPbaOmjnQ27RenBJCWqYCvsOuaBzL3RgT8713MVoCF1aOeKFOyIWwMHujfGVVu/YfXn3X8FZZx3Xx8HUvVz61b3oSIHREglRXy6qwXRitXij2COPzjbS70CVXgVOejngZLus9YyD6wsBkqdLt8axent2ZTVOCB5ooLNt+CvrdBFmA0eOhz7BxNZ4DCtavNA9PNsuIrg4a1gts8Y83ePmrc6kZU4IJaKP+/iQejYtx+AunwwhpkTXo68PNVFhnPt54U4UNLzZCo8zxpdcp2TbT7VYjFgzrqofRElWjvMjTkvNg+k1OfAyN5pG4yCJZ7bWhb0Oj3y0cQlnpXUygFYYCrNs/6WtkqXuq9YEjBHp6Jq92zipXP3oBaVB0o1nzaQrw/ZuCvW4SxwX5+x7FM0PN5UuW5sKqTue12BA6IjNBLMojw6XUecsekBTksf2QLw+fg4SKehnvTnGtUyHCgldZJNLmVwPr4XI/8bod9t7V81A50iY/3kS5XggKRAAvjkcq9/yf3B/SJBT1fML4+bkSRTXbngPNAHNeVe83ysG4w5d1kM/ArOHBZSGo5frbmk/6OKuJmDH9cNrKRobXs8AMvDdF1G7XDwgDrcZhh3dpKTQFtMINcUrG0QcTdxMD0q1pIJyAGQg1Jsjt60MUwrDNL2fk2Dv8EQbY23s2B63JjrTY/dmlfTpTnogXHlpUJ4sUy9YPPzu9YyE60MYeCDqmzsfx5lUSoSfRDdLfMAoMAqlkF2tL+L2MZqdtFqBQaNrs/FboyfTjaDwIPFcNM8aMISSNyg+f7llxbXpa/Tgul7Dob9LozDcbrd8PX+y9PJZrx3Awd7aTQ5fvmuA464vQFvAvrM5x+bB3M4eHoU3Eod/Wus778BDmZZ/DDpG2/+84dulU5BEdi+H14Xzf8DAQa/PYsDrNON/y2Y82TxP/Whz8C8TQGtBf8tHICmmL0WdBPdpd/NyvAvGuoDHvCABzzgAfcP/w+B45sJ/pTQJwAAAABJRU5ErkJggg=="></img>
+                        <p style="display: inline; font-size:large;">/mahmoudnasser</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; align-items: center;">
+                        <img style="margin: 1rem; width: 5rem;"
+                            src="data:image/png;base64,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"></img>
+                        <p style="display: inline; font-size:large;">/mahmoudnasser</p>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section id="video" style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size:xxx-large;">Video</h1>
+                <video width="560" height="315" controls>
+                    <source src="resources/Windows 3D Maze Screensaver.mp4" type="">
+                </video>
+            </section>
+        </aside>
+        <main style="display: inline-block; width: 60%;">
+            <section id="ach">
+                <h1 style="background-color: yellowgreen; padding: 1rem;">Achievements</h1>
+                <h2>2010 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+                <h2>2011 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+                <h2>2012 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+            </section>
+            <section id="edu">
+                <h1 style="background-color: yellowgreen; padding: 1rem;">Education</h1>
+                <h2>2010 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+                <h2>2011 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+                <h2>2012 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+            </section>
+            <section id="work">
+                <h1 style="background-color: yellowgreen; padding: 1rem;">Work Experience</h1>
+                <h2>2010 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+                <h2>2011 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+                <h2>2012 Lorem project</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</br> Consectetur perferendis molestiae
+                    dolores eius voluptates quidem aut, quaerat quisquam unde vel enim. Cum beatae rerum assumenda.
+                    </br> Distinctio hic tempore totam qui!</p>
+            </section>
+        </main>
+    </div>
+    <footer style="background-color: yellowgreen; height: 5rem;"></footer>
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    routeInGmaps(position.coords.latitude + ", " + position.coords.longitude);
+
+                }, function (error) { }, { enableHighAccuracy: true });
+            }
+            else {
+                //Geolocation is not suported by your browser.
+                alert("No geolocation for you");
+            }
+        }
+        function routeInGmaps(from) {
+            open("https://maps.google.be/maps/place/" + from).focus();
+        }
+    </script>
+</body>
+
+</html>

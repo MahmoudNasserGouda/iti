@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Microdata</title>
+</head>
+
+<body>
+    <div id="withoud microdata">
+        My name is Bob Smith but people call me Smithy Here is my home page:
+        <a href="http://www.example.com">www.example.com</a> I live in Albuquerque, NM and work as an engineer at ACME Corp.
+    </div>
+    <hr>
+
+    <div itemscope itemtype="http://schema.org/Person">
+        My name is <span itemprop="givenName">Bob Smith</span> but people call me
+        <span itemprop="additionalName">Smithy</span>. Here is my home page:
+        <a href="http://www.example.com" itemprop="url">www.example.com</a> I live in
+        <span itemprop="Address">Albuquerque, NM </span> and work as an
+        <span itemprop="jobTitle">engineer</span> at
+        <span itemprop="worksFor">ACME Corp</span>.
+    </div>
+
+
+</body>
+
+</html>

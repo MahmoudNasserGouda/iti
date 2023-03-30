@@ -1,0 +1,27 @@
+<script>
+
+//selfinvoking
+var y = function () {
+            alert("this is self invoking");
+			//return 10;
+    }();
+//y//();
+/**************************************************/
+
+//anonymous selfinvoking
+(
+  function (count) {
+    if (count < 5) {
+        alert(count);
+       // arguments.callee(++count);//recursive call
+		
+    }
+	alert(arguments.callee);
+	//return arguments.callee
+//
+}
+)(1)//(2)/*(5)*/
+
+//myfun(1);
+
+</script>

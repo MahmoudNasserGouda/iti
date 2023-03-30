@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+    <title>fillShape</title>
+    
+</head>
+<body>
+
+<canvas id="canvas" width="838" height="220">
+</canvas>
+
+<script>
+    var canvasContext = document.getElementById("canvas").getContext("2d");
+    //canvasContext.fillRect(250, 25, 150, 100);
+
+    //drawing arc
+    canvasContext.beginPath();
+    canvasContext.arc(450, 110, 100, Math.PI * 1 / 2, Math.PI * 3 / 2,false);
+    //x,y,radius,sAngle,endAngle,anti/clock
+    canvasContext.lineWidth = 15;
+    canvasContext.lineCap =  'round' ;//'flat';//or  square
+    canvasContext.fillStyle = "Blue";
+    canvasContext.fill();
+    canvasContext.strokeStyle = 'rgba(255, 127, 0, 0.5)';
+    canvasContext.stroke();
+    //canvasContext.fillStyle = "Blue";
+    //canvasContext.fill();
+    
+</script>
+
+
+</body>
+
+</html>

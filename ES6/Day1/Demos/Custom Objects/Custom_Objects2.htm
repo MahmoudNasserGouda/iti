@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Custom Objects Example</title>
+    
+    <script type="text/javascript" language="javascript">
+
+    function Employee(name, age)
+   {
+    this.name = name;
+    this.age = age||0;
+    this.show = showAll;
+    
+    }
+
+function showAll() {
+  
+    document.write("Employee " + this.name + " is " + this.age + " years old."+"<br>");
+}
+
+// Different ways for Instatiating new Objects of type Employee
+
+
+// 1- Passing parameters to the Constructor Function
+document.write("<b>Emp1 created by : <u>Passing parameters to the Constructor Function</u></b>"+"<br>");
+var emp1 = new Employee("Alice", 23);
+emp1.show();
+document.write("<hr>");
+
+// 2- Using short syntax (Property name: value)
+document.write("<b> Emp2 created by : <u>Using Short Syntax </u></b>" + "<br>");
+var emp2 = { name: "Fred", age: 32, show:showAll};
+emp2.show();
+document.write("<hr>");
+
+// 3- Creating empty object , then populating its properties explicitly
+document.write(" <b>Emp3 created by : <u>Creating empty Object then adding its properties</u></b>" + "<br>");
+var emp3 = new Employee();
+emp3.name = "Laila";
+//Commenting the age initialization will cause emp3 age property to be assigned a default value of 0!!
+//emp3.age = "30";
+emp3.show();
+
+</script>   
+    
+</head>
+<body>
+
+</body>
+</html>

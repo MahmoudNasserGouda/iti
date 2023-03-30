@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background-color:red;
+
+/*transition-property:all;*/
+/*transition-property:width, background-color;*/
+transition-property:all;
+transition-timing-function:ease;
+transition-delay:1s;
+transition-duration: 3s;
+
+
+}
+
+div:hover
+{
+width:200px;
+background-color:blue;
+transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer.</p>
+
+<div id="d1"></div>
+
+<button onclick="document.querySelector('#d1').style.width='250px'">Test</button>
+
+<p>Hover over the div element above, to see the transition effect.</p>
+<p><b>Note:</b> The transition effect will wait 2 seconds before starting.</p>
+
+</body>
+</html>
+

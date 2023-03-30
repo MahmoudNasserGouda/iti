@@ -1,0 +1,146 @@
+nav {
+    background-color: darkgray;
+}
+
+ul {
+    list-style: none inside;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+li {
+    background-color: darkgray;
+    padding: 2rem 0rem;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 2s ease;
+}
+
+li:hover {
+    background-color: green;
+}
+
+i {
+    color: #ffffff;
+}
+
+p {
+    margin: 0px;
+    font-family: 'Alkatra', cursive;
+}
+
+#pp {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    display: inline-block;
+}
+
+b {
+    margin: 0.5rem;
+}
+
+p {
+    display: inline-block;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#collapses {
+    transition: opacity 2s ease, left 2s ease;
+    opacity: 1;
+    position: relative;
+    left: 20px;
+    opacity: 1;
+}
+
+#collapses.slides {
+    opacity: 0;
+    left: -10px;
+}
+
+#vertical {
+    background-color: green;
+    transform: rotate(-90deg);
+    display: block;
+    width: 16rem;
+    text-align: center;
+    position: relative;
+    left: -7.1rem;
+    top: 8.9rem;
+}
+
+img {
+    width: 23%;
+    height: 16rem;
+    transition: all 2s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    margin: 1rem;
+    width: 15rem;
+    transition: width 1.5s ease;
+    display: block;
+}
+
+input:focus {
+    width: 20rem;
+}
+
+#news {
+    columns: 3;
+}
+
+#tiger {
+    display: block;
+    transition: none;
+    width: 10rem;
+    height: 7rem;
+    animation-name: walling;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes walling {
+    0% {
+        transform: rotateY(180deg);
+        left: 0px;
+        top: 0px;
+    }
+
+    49% {
+        transform: rotateY(180deg);
+        left: 90%;
+        top: 0px;
+    }
+
+    51% {
+        transform: rotateY(0deg);
+        left: 90%;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}

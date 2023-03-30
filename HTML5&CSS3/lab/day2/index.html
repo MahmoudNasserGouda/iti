@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 2</title>
+</head>
+
+<body>
+    <svg width="400" height="400" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"
+        preserveAspectRatio="xMidYMid meet" fill="#000000">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+            <path fill="#FFDC5D" onmouseover="colcha(event);" onmouseout="colback(event);"
+                d="M23.359 11.288c-4 0-12.652-1.04-12.652-1.04s-1.73 1.903-2.73 2.903c-1.863 1.863-1.701 4.221-1.948 7.162C6.336 28.487 11.569 35 18 35c6.394 0 11.606-6.44 11.965-14.551c-.352-3.63-2.796-9.161-6.606-9.161z">
+            </path>
+            <path onmouseover="colcha(event);" onmouseout="colback(event);"
+                d="M18 31c-2.347 0-3.575-1.16-3.707-1.293a.999.999 0 0 1 1.404-1.424c.051.047.806.717 2.303.717c1.519 0 2.273-.69 2.305-.719a1.008 1.008 0 0 1 1.408.029a.994.994 0 0 1-.006 1.397C21.575 29.84 20.347 31 18 31zm1-5h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2z"
+                fill="#C1694F"></path>
+            <path onmouseover="colcha(event);" onmouseout="colback(event);"
+                d="M13 22a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm10 0a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1z"
+                fill="#662113"></path>
+            <path fill="#FFAC33" onmouseover="colcha(event);" onmouseout="colback(event);"
+                d="M17.998 3.083c8.205 0 13.331 6.054 13.331 11.099c0 5.044-1.026 7.064-2.051 5.044c-1.026-2.017-2.051-5.035-2.051-5.035s-3.478 2.253-6.203-1.019c0 0 1.077 6.054-5.077 0c0 0 1.026 4.037-5.127-1.008c0 0-3.077 2.018-4.102 7.062c-.284 1.401-2.051 0-2.051-5.044C4.666 9.137 8.768 3.083 17.998 3.083">
+            </path>
+        </g>
+    </svg>
+    <canvas id="face" width="400" height="400">
+        <p>Your browser does not support the canvas element.</p>
+    </canvas>
+    <svg width="400" height="400" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <circle cx="18" cy="18" r="18" fill-opacity="30%" fill="blue" />
+        <text x="2" y="20" fill="url(#grad1)" style="font: 7px sans-serif;">Mahmoud</text>
+    </svg>
+
+    <div id="sketch" style="display: inline-block;">
+        <canvas id="paint" width="400" height="400" style="border: 1px solid black; cursor: crosshair;">
+            <p>Your browser does not support the canvas element.</p>
+        </canvas>
+    </div>
+    <div id="con" ondrop="drop(event)" ondragover="event.preventDefault();"
+        style="width: 400px; height: 400px; border: 1px solid black;">
+
+    </div>
+    <h1 id="h1" style="display: inline;" ondragstart="drag(event)" draggable="true">text</h1>
+
+    <script>
+        function drop(ev) {
+            ev.preventDefault();
+
+            var data = ev.dataTransfer.getData("draggableID");
+
+            ev.target.appendChild(document.getElementById(data));
+        }
+        function drag(ev) {
+            console.log(ev)
+            ev.dataTransfer.setData("draggableID", ev.target.id);
+        }
+    </script>
+
+    <script>
+        var col;
+        function colcha(ev) {
+            col = ev.target.style.fill
+            ev.target.style.fill = "blue";
+        }
+        function colback(ev) {
+            ev.target.style.fill = col;
+        }
+    </script>
+    <script>
+        var canvas, context, img;
+
+        canvas = document.getElementById("face");
+        context = canvas.getContext("2d");
+        img = new Image();
+        img.src = "resources\\sad.png";
+        img.onload = function () {
+            context.drawImage(img, 0, 0, 400, 400);
+        }
+        canvas.onmousedown = function () {
+            img.src = "resources\\smiley.png";
+        }
+        canvas.onmouseup = function () {
+            img.src = "resources\\sad.png";
+        }
+    </script>
+    <script>
+        var canvas = document.querySelector('#paint');
+        var ctx = canvas.getContext('2d');
+
+        var sketch = document.querySelector('#sketch');
+        var sketch_style = getComputedStyle(sketch);
+        canvas.width = parseInt(sketch_style.getPropertyValue('width'));
+        canvas.height = parseInt(sketch_style.getPropertyValue('height'));
+
+        var mouse = { x: 0, y: 0 };
+        var last_mouse = { x: 0, y: 0 };
+
+        /* Mouse Capturing Work */
+        canvas.addEventListener('mousemove', function (e) {
+            last_mouse.x = mouse.x;
+            last_mouse.y = mouse.y;
+
+            mouse.x = e.pageX - this.offsetLeft;
+            mouse.y = e.pageY - this.offsetTop;
+        }, false);
+
+
+        /* Drawing on Paint App */
+
+
+        canvas.addEventListener('mousedown', function (e) {
+            if (e.button == 0) {
+                canvas.addEventListener('mousemove', onPaint, false);
+            }
+            else {
+                canvas.addEventListener('mousemove', onDelete, false);
+            }
+        }, false);
+
+        canvas.addEventListener('mouseup', function () {
+            canvas.removeEventListener('mousemove', onPaint, false);
+        }, false);
+
+        var onPaint = function () {
+            ctx.lineWidth = 5;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = 'blue';
+            ctx.beginPath();
+            ctx.moveTo(last_mouse.x, last_mouse.y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.closePath();
+            ctx.stroke();
+        };
+        var onDelete = function () {
+            ctx.lineWidth = 10;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = 'white';
+            ctx.beginPath();
+            ctx.moveTo(last_mouse.x, last_mouse.y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.closePath();
+            ctx.stroke();
+        };
+
+    </script>
+</body>
+
+</html>

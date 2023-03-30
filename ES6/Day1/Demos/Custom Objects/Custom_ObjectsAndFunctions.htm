@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Custom Objects with Functions</title>
+    
+    <script language="javascript">
+
+        function Circle(radius) 
+        {
+            this.radius = radius;
+            
+            // Using Function Literal
+            this.getArea = function() 
+            {
+                return (this.radius * this.radius * 3.14);
+            }
+            /*this.getCircumference = function() 
+            {
+                var diameter = this.radius * 2;
+                var circumference = diameter * 3.14;
+                return circumference;
+            }*/
+
+            // Using Anonymous Functions
+            this.getCircumference = new Function(" var diameter = this.radius * 2;"+
+                                                 "var circumference = diameter * 3.14;"+
+                                                 "return circumference;")
+            
+        }
+        
+        var bigCircle = new Circle(100);
+        var smallCircle = new Circle(2);
+
+        document.write("The Area of the circle with Radius = " + bigCircle.radius + " is: " + bigCircle.getArea()+"<br>");
+        document.write("The Circumference of the circle with Radius = " + smallCircle.radius + " is: " + smallCircle.getArea()); 
+    
+    </script>
+    
+    
+</head>
+<body>
+
+</body>
+</html>

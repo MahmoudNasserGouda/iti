@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:red;
+
+
+transition:width 2s, height 2s, transform 2s, background 5s;
+
+}
+
+div:hover
+{
+background:blue;
+width:200px;
+height:200px;
+transform:rotate(180deg);
+
+
+-moz-transform:rotate(180deg); /* Firefox 4 */
+-webkit-transform:rotate(180deg); /* Safari and Chrome */
+-o-transform:rotate(180deg); /* Opera */
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer.</p>
+
+<div id="testDiv">Hover over me to see the transition effect!</div>
+
+<input type="button" value="start transition" onclick="startTrans()">
+<script>
+    function startTrans()
+    {
+        var elem=document.getElementById("testDiv");
+        elem.style.backgroundColor="green";
+        elem.style.width="222px";
+        elem.style.height="222px";
+        elem.style.transform="rotate(180deg)";
+    }
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+        background-image: linear-gradient(angle, color-stop1, color-stop2);
+        https://www.w3schools.com/css/css3_gradients.asp
+
+        background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+        https://www.w3schools.com/css/css3_gradients_radial.asp
+         */
+        
+        #grad1 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to right, red, yellow);
+        }
+        
+        #grad2 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: radial-gradient(circle, red, yellow);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Linear Gradient - Left to Right</h1>
+    <p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
+
+    <div id="grad1"></div>
+    <br><br><br><br><br>
+    <div id="grad2"></div>
+
+
+</body>
+
+</html>

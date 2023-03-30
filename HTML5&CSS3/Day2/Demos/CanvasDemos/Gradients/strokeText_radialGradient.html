@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="en" class="markup">
+
+<head>
+    <title>Arcs and Gradients</title>
+    <script src="../../scripts/jquery-1.4.4.min.js"></script>
+    <script>
+        //$(function () {
+        function draw() {
+            var canvas = document.getElementById("canvas");
+
+            //if (canvas && canvas.getContext) {
+            var context = canvas.getContext("2d");
+
+            //createRadialGradient(startX, startY, startRadius, endX, endY, endRadius)
+            var g1 = context.createRadialGradient( //Creates a radial/circular gradient (to use on canvas content)
+                200, // X coordinate of the start of gradient
+                200, // Y coordinate of the start of gradient
+                10, // Radius of the start circle
+                160, // X coordinate of the end of gradient
+                120, // Y coordinate of the end of gradient
+                250); // Radius of the end circle
+            g1.addColorStop(0, "white");
+            g1.addColorStop(0.5, "red");
+            g1.addColorStop(1, "blue");
+            //-----
+
+            // base circle
+            context.lineWidth = 0;
+            context.strokeStyle = "black";
+
+            context.fillStyle = g1;
+            //context.beginPath();
+            context.arc(
+                210, // X coordinate of the start of arc
+                210, // Y coordinate of the start of arc
+                200, // Radius
+                0, // Start angle
+                Math.PI * 2, // End angle
+                true); // Anticlockwise
+            //context.stroke();
+            context.fill();
+
+            /*var g2 = context.createRadialGradient(360, 320, 0, 260, 220, 200);
+                    g2.addColorStop(0, "#ffffff");
+                    g2.addColorStop(1, "#0033cc");
+
+                    // inner circle
+                    context.fillStyle = g2;
+                    context.beginPath();
+                    context.arc(210, 210, 150, 0, Math.PI * 2, true);
+                    context.fill();
+
+                    context.fillStyle = "yellow";
+                    context.font = "normal 300px Segoe UI";					
+                    context.fillText("N", 100, 310);
+					
+					context.strokeStyle="red"
+                    context.strokeText("N", 100, 310);*/
+            //}
+        }
+        // });
+    </script>
+</head>
+
+<body onload="draw()">
+    <canvas id="canvas" width="425" height="425">
+            <div>Your browser does not support the canvas element.</div>
+        </canvas>
+</body>
+
+</html>

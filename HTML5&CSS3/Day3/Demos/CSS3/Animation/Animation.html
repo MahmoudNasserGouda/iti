@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:black;
+
+/*animation:myfirst 3s paused alternate;*/
+
+}
+
+
+@keyframes myfirst
+{
+	from {background:black;}
+	to {background:white;}
+}
+
+div:hover
+{
+	animation:myfirst 3s;
+	animation-direction: alternate;
+	animation-iteration-count: 2;
+	
+}
+
+
+
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer.</p>
+
+<div id="d1"></div>
+<button onclick="playAnimation()">play</button>
+<script>
+	function playAnimation()
+	{
+		document.getElementById("d1").style.animation="myfirst 3s alternate";
+		document.getElementById("d1").style.animationPlayState="running";
+	}
+</script>
+</body>
+</html>
+

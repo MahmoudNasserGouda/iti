@@ -1,0 +1,35 @@
+<script>
+    function A()                        // Define super class
+    {
+        document.write("A constructor <br>");
+        this.x = 1;
+    }
+
+    A.prototype.DoIt = function()        // Define Method
+    {
+        this.x += 1;
+    }
+
+    B.prototype = new A; ;                // Define sub-class
+   
+    function B() {
+        
+        document.write("B constructor <br>");
+        A.call(this);                    // Call super-class constructor (if desired)
+        this.y = 2;
+    }
+
+    B.prototype.DoIt = function()        // Define Method
+    {
+        A.prototype.DoIt.call(this);    // Call super-class method (if desired)
+        this.y += 1;
+    }
+
+    b = new B;
+
+    document.write((b instanceof A) + ', ' + (b instanceof B) + '<BR/>');
+    b.DoIt();
+    document.write(b.x + ', ' + b.y);
+
+
+</script>

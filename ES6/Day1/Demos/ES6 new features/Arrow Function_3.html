@@ -1,0 +1,65 @@
+<!DOCType html>
+<html>
+    <head>
+		<script>
+			//arr.sort()
+			//arr.sort(compareFunction)
+			//If compareFunction is not supplied, 
+			//elements are sorted by converting them to strings and comparing strings 
+			//in Unicode code point order. 
+			
+			//If compareFunction is supplied, the array elements are sorted according to 
+			//the return value of the compare function. If a and b are two elements being compared, then:
+
+				//If compareFunction(a, b) is less than 0, sort a to a lower index than b, 
+				//i.e. a comes first.
+				
+				//If compareFunction(a, b) returns 0, leave a and b unchanged with respect to each other,
+				//but sorted with respect to all different elements. 
+				
+				//If compareFunction(a, b) is greater than 0, sort b to a lower index than a.
+			///////////////////////////////////////////////////////////////
+			
+			//Implementation ES5
+			function compareNumbers(a, b) {
+			  return a - b;
+			}
+			
+			
+			var numbers = [4, 2, 5, 1, 10];
+			
+			//normal sort
+			numbers.sort();//alphapetic // 1,10,2,4,5
+			console.log(numbers);
+	
+			
+			// sort takes parameter with value: 0, -1, 1
+			numbers.sort(compareNumbers); // 1,2,4,5,10
+			
+			//OR//
+			numbers.sort(function(a, b) {
+			  return a - b;
+			});
+			
+			console.log(numbers);
+
+			// [1, 2, 3, 4, 5, 10]
+			
+			
+			//--------------------------------------------//
+			//Implementation ES6
+			
+			numbers.sort((a, b) => a - b);
+			
+			console.log(numbers);
+
+			// [1, 2, 3, 4, 5, 10]
+
+		</script>
+        
+    <head>
+    <body>
+		Arrow functions test!
+    </body>
+
+</html>

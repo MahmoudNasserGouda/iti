@@ -1,0 +1,39 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Custom Objects</title>
+    
+<script language="JavaScript" type="text/javascript">
+// Fucntion constructor with proporties & Mehods
+function car (make, model, color)
+{
+  this.make = make;
+  this.model = model;
+  this.color = color
+  this.displayCar = displayCar;
+}
+function displayCar() {
+    document.writeln("Make = " + this.make + "<br>");
+}
+</script>
+
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+myCar = new car ("Ford", "Focus", "Red");
+myCar.displayCar();
+
+myCar.make = "BMW";
+myCar.displayCar();
+
+</script>
+
+</body>
+</html>
+
+</head>
+<body>
+
+</body>
+</html>

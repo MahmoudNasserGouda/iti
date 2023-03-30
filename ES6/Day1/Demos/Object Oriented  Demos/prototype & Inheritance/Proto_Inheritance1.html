@@ -1,0 +1,34 @@
+<script>
+// Create the constructor for a Person object
+function Person( name ) {
+this.name = name||"No Name";
+}
+// Create a new User object constructor
+function User(password) {
+// Notice that this does not support graceful overloading/inheritance
+// e.g. being able to call the super class constructor
+this.password = password;
+};
+// The User object inherits all of the Person object's methods
+User.prototype = new Person();
+var NewUser = new User("pwd");
+
+alert("New User Name:" + NewUser.name);//inherited from person
+alert("New User Password: " + NewUser.password);
+//console.log(NewUser.name);
+//console.log("New User Password: " + NewUser.password);
+NewUser.name="Ahmed";//inherited from person
+alert("New User Name:" + NewUser.name);
+
+/***
+The most important line in the example is User.prototype = new Person();.
+Let’s look in depth at what exactly this means. 
+User is a reference to the function constructor of the User object.
+new Person() creates a new Person object, using the Person constructor.
+You set the result of this as the value of the User constructor’s prototype. 
+This means that anytime you do new User(), 
+-->the new User object will have all the methods that the Person object
+had when you did new Person().
+***/
+
+</script>

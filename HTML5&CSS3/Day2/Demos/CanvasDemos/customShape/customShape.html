@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #myCanvas {
+        border: 1px solid #9C9898;
+		float:right;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width=700 height=500></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();// begin custom shape
+      context.moveTo(170, 80);
+      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+      context.closePath();// when shape is completed
+	  
+      context.fillStyle = '#8ED6FF';
+      context.fill();
+	  context.lineWidth = 5;
+      context.strokeStyle = 'blue';
+      context.stroke();
+	  
+	  canvas.onclick=function(){setInterval('settleDown()',30);}
+	  
+	  var counter = 0;
+	  var x=0;
+	  var y=0;
+	  var timer;
+	  function settleDown(){
+		if (counter<26)
+		{
+			counter++
+			context.clearRect(0,0,500,700)
+			//ctx.restore();
+			context.translate(x, y+10);
+		    context.beginPath();// begin custom shape
+		    context.moveTo(170, 80);
+		    context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+		    context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+		    context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+		    context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+		    context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+		    context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+		    context.closePath();// when shape is completed
+		  
+		    context.fillStyle = '#8ED6FF';
+		    context.fill();
+		    context.lineWidth = 5;
+		    context.strokeStyle = 'blue';
+		    context.stroke();
+		}
+		else
+			clearInterval(timer);
+	} 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <svg width="500" height="500" style="border:1px solid red;">
+        <!-- <rect x="0" y="10" width="100" height="200" style="fill:rgb(252, 252, 253);stroke-width:3;stroke:rgb(0,0,0)"> -->
+        <!-- <line x1="2" y1="6" x2="5" y2="8" style="stroke:rgb(255,0,0);stroke-width:2" id="line"></line> -->
+        <circle cx="100" cy="150" r="80" stroke="red" stroke-width="2" fill="blue" id="Face"> </circle>
+        <circle cx="75" cy="125" r="5" stroke="red" stroke-width="2" fill="black" id="LeftEye"> </circle>
+        <circle cx="120" cy="125" r="5" stroke="red" stroke-width="2" fill="black" id="RightEye"> </circle>
+        <line x1="100" y1="130" x2="100" y2="160" style="stroke:rgb(255,0,0);stroke-width:2" id="line"></line>
+         <ellipse cx="40" cy="60" rx="100" ry="200"></ellipse>
+    </svg> -->
+    <img src="Img.jpg" width="100" height="100" id="SimleFace">
+    <button onclick="DrawLine()">Draw Line</button>
+    <script>
+        var simle = document.getElementById("SimleFace")
+        simle.onclick = function () {
+            alert("Simle Face")
+        }
+        document.getElementById("LeftEye").onclick = function () {
+            alert("LeftEye !!")
+        }
+        document.getElementById("RightEye").onclick = function () {
+            alert("RightEye !!")
+        }
+        document.getElementById("line").onclick = function () {
+            alert("Nose !!")
+        }
+        document.getElementById("Face").onclick = function () {
+            alert("Face !!")
+        }
+    </script>
+
+    <!-- <script>
+        var line=document.getElementById("line")
+        // var x2=line.x2.baseVal.value
+        // var y2=line.y2.baseVal.value
+        function DrawLine(){
+            // console.log(line.x2.baseVal.value)
+            // console.log(line.y2.baseVal.value)
+            setInterval(()=>{
+                // x2=x2+8
+                // y2=y2+8
+                // console.log(x2)
+                // console.log(y2)
+                line.x2.baseVal.value= line.x2.baseVal.value+8
+                line.y2.baseVal.value=line.y2.baseVal.value+8
+
+            },3000)
+        }
+
+
+    </script> -->
+</body>
+
+</html>

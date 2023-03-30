@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Private Method Demo #5</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        // An Object constructor that represents a classroom
+        function Classroom(students, teacher )
+        {
+            // Store the class data as public object properties
+            this.students = students;
+            this.teacher = teacher;
+            
+            // A private method used for displaying all the students in the class
+            //this.hello=
+            
+            function disp()
+            {
+                alert(students.join(", ") );
+                //alert(teacher);
+            }
+            
+            // Call; the private method can be called here
+            disp();
+        }
+
+        // Create a new classroom object
+        var classb = new Classroom( [ "Ahmed", "ALi" ], "Mr.JavaScript" );
+        
+        
+        //classb.hello();
+        //classb.disp();
+        //alert(disp());
+
+
+    </script>
+
+</body>
+</html>

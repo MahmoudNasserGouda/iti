@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title></title>
+		
+	</head>
+	<body>
+		<script>
+
+			function sayHello2(name) {
+				var text = 'Hello ' + name; // Local variable
+				var sayAlert = function() { alert(text); }
+				//sayAlert();
+				//debugger;
+				//console.log("In outer function");
+				//console.log(text);
+				return sayAlert;    //returning reverence to the inner func.
+			}
+			var say2 = sayHello2('Bob'); 
+			//say2 holds a reference to the inner func. That access the outer func variables.
+			say2(); // alerts "Hello Bob"
+
+
+				
+			</script>
+		
+	</body>
+</html>

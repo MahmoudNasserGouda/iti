@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Inheritance Demo #4</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        // creating Class Person using constructor functions
+		function Person(name)
+		{
+			this.name = name;			
+		}
+		
+        // Public functions using prototype
+		Person.prototype.getName = function()
+		{
+			return this.name;
+		}
+		
+		//Person.prototype.getAge=function(){return "25";}
+
+        // creating Class Employee using constructor functions
+		function Employee(name, age)
+		{
+			this.name = name;
+			this.age = age;
+		}
+
+		
+		// Using prototype object for inheritance behavior
+		Employee.prototype = Person.prototype;
+		
+        //Person.prototype.getAge=function(){return "20";}
+		var e = new Employee('Ahmed', 25);
+		
+        
+        Person.prototype.getAge=function(){return "25";}
+		
+		alert(e.getName());	//Inherited from Person
+		alert(e.getAge());	
+
+
+	    
+
+    </script>
+
+</body>
+</html>

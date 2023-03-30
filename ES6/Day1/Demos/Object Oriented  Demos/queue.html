@@ -1,0 +1,73 @@
+<script>
+function dequeue()
+{
+  return( this.data.pop() );
+}
+
+function enqueue( value )
+{
+  this.data.unshift( value );
+}
+
+function size()
+{
+  return( this.data.length );
+}
+
+function display()
+{
+  document.write( "<table border=1 cellpadding=5 cellspacing=2 width=50%>" + 
+                    "  <tr>" + 
+                    "    <td>" +
+                    "      <b><code>Queue Size = " +this.size() + "</code></b>" +
+                    "    </td>" +
+                    "  </tr><tr>" + 
+                    "    <td>" );
+
+  if( this.size() == 0 ) document.write( "No data" );
+  document.write( this.data.join( "</td></tr><tr><td>" ) );
+  document.write( "</td></tr></table>" );
+}
+
+function Queue()
+{
+  this.data = new Array( 0 );
+  this.dequeue = dequeue;
+  this.enqueue = enqueue;
+  this.size = size; 
+  this.display = display;
+}
+</script>
+
+ <body>
+
+     <center>
+       <font size=6>Applying Object Orietned JavaScript Concepts</font><br>
+       <font size=4>Queue</font>
+     </center>
+
+     <br><br>
+
+<script language="JavaScript">
+     <!--
+    var q = new Queue();
+    q.display();
+
+    document.write("<br><br>");
+
+    for (i = 0; i < 5; i++) {
+
+        q.enqueue(i+1);
+    }
+
+    q.display();
+
+    document.write("<br><br>");
+
+    q.dequeue();
+    q.dequeue();
+    
+    q.display();
+      // -->
+     </script>
+</body>

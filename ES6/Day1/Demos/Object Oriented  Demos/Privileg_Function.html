@@ -1,0 +1,12 @@
+<script>
+var User = function (name, age) {
+var year = ((new Date().getFullYear())- age);
+this.getYearBorn = function () {
+return year;};};
+// Create a new User
+var user_1 = new User( "Aly", 25 );
+// Access privileged method to access private year value
+alert( user_1.getYearBorn());
+// Fails because year is private
+alert( user_1.year );
+</script>
