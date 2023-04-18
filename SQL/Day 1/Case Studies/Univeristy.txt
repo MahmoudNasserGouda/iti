@@ -1,0 +1,19 @@
+In a University  , there are several departments and each department 
+has a head of department who belongs to Faculty. 
+Department have a name , phone extension , specific mailing address
+and Students that belong to the department. Students can belong to 
+only one Department at a time and Department can have more than one 
+or no Student
+
+Students and faculty have names and unique identification numbers , 
+with address , age , gender and other information. 
+Student studies different Courses offered by University . 
+Faculty teaches these Courses . In each semester one student can take 
+more than one course and Faculty can teach more than one courses . 
+Faculty members can teach in multiple Departments. 
+Each course can be taught by many faculty members or no one
+
+Faculty members are also working on multiple research projects. 
+These projects are funded by government and university. 
+One project can have more than one faculty member and one faculty 
+member can work on more than one project

@@ -1,0 +1,23 @@
+* hospital consists of many departmemts, 
+each department has many staff serves in it.
+
+* hospital is identified by name, address and
+ multiple phone numbers.
+
+* hospital has also many persons associated with it
+ "either as patient or staff".
+
+* patient is a person and identified by prescription and drug,
+ and may be supervised by more than one operation staff.
+
+* staff also is a type of person which identified by
+ startDate, salary and certification.
+
+* adminstrative staff and technical staff are types of
+ staff as well as operations staff.
+
+* surgon is a doctor, which is "doctor" identified by id, 
+name and he is a type of operation staff like the nurse do.
+
+* ---
+ 

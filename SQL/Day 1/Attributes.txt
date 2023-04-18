@@ -1,0 +1,42 @@
+Case 1: single - simple
+Name	|Phone
+Mrihan	|010111
+Sarah	|010222
+------------------
+Case 2: Multivalued - simple
+Name	|Phone
+Mrihan	|010111
+	|010333
+Sarah	|010222
+------------------
+Case 3: single - composite
+Name	|Code	|Number
+Mrihan	|0020	|10111
+Sarah	|0020	|10222
+------------------
+Case 4: Multivalued - composite (Repeating group)
+Name	|Code	|Number
+Mrihan	|0020	|10111
+	|0020	|10333
+Sarah	|0020	|10222
+
+------------------------------------------------------------------------------------------
+Parent:
+ID	|Name	|CardNumber
+1	|Ahmed	|0000000
+2	|Mohamed|1111111
+3	|Ali	|2222222
+
+FamilyMembers: Weak Entity
+ID	|Name	|PID	|Relation
+11	|Nada	|1	|daughter
+12	|Ramy	|2	|son
+13	|Noha	|3	|wife
+14	|Reda	|3	|son
+
+
+
+
+
+
+

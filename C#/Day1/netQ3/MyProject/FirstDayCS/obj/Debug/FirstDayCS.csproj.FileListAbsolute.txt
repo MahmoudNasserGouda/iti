@@ -1,0 +1,12 @@
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\bin\Debug\FirstDayCS.exe.config
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\bin\Debug\FirstDayCS.exe
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\bin\Debug\FirstDayCS.pdb
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\obj\Debug\FirstDayCS.csproj.AssemblyReference.cache
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\obj\Debug\FirstDayCS.csproj.SuggestedBindingRedirects.cache
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\obj\Debug\FirstDayCS.csproj.CoreCompileInputs.cache
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\obj\Debug\FirstDayCS.exe
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\obj\Debug\FirstDayCS.pdb
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\bin\Debug\DataAccessLayer.exe
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\bin\Debug\DataAccessLayer.pdb
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\bin\Debug\DataAccessLayer.exe.config
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\FirstDayCS\obj\Debug\FirstDayCS.csproj.CopyComplete

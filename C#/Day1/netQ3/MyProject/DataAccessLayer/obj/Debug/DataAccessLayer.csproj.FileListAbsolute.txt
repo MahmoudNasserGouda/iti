@@ -1,0 +1,8 @@
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\DataAccessLayer\bin\Debug\DataAccessLayer.exe.config
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\DataAccessLayer\bin\Debug\DataAccessLayer.exe
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.SuggestedBindingRedirects.cache
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\DataAccessLayer\obj\Debug\DataAccessLayer.exe
+D:\MyWork_3Month_2021\C#\Day 1\netQ3\MyProject\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
