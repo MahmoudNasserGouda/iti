@@ -1,0 +1,8 @@
+C:\Users\ITI\Desktop\.Net G2\OOP\Day 3 Demo\Day 3 Demo\bin\Debug\Day 3 Demo.exe.config
+C:\Users\ITI\Desktop\.Net G2\OOP\Day 3 Demo\Day 3 Demo\bin\Debug\Day 3 Demo.exe
+C:\Users\ITI\Desktop\.Net G2\OOP\Day 3 Demo\Day 3 Demo\bin\Debug\Day 3 Demo.pdb
+C:\Users\ITI\Desktop\.Net G2\OOP\Day 3 Demo\Day 3 Demo\obj\Debug\Day 3 Demo.csproj.AssemblyReference.cache
+C:\Users\ITI\Desktop\.Net G2\OOP\Day 3 Demo\Day 3 Demo\obj\Debug\Day 3 Demo.csproj.SuggestedBindingRedirects.cache
+C:\Users\ITI\Desktop\.Net G2\OOP\Day 3 Demo\Day 3 Demo\obj\Debug\Day 3 Demo.csproj.CoreCompileInputs.cache
+C:\Users\ITI\Desktop\.Net G2\OOP\Day 3 Demo\Day 3 Demo\obj\Debug\Day 3 Demo.exe
+C:\Users\ITI\Desktop\.Net G2\OOP\Day 3 Demo\Day 3 Demo\obj\Debug\Day 3 Demo.pdb

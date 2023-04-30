@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 3 Demo", "Day 3 Demo\Day 3 Demo.csproj", "{DFC4DED2-4279-4C9C-8033-D85FE215590E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestInhritance", "TestInhritance\TestInhritance.csproj", "{1EB2EF1A-F46B-41A8-8AAF-675FD9C7166D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFC4DED2-4279-4C9C-8033-D85FE215590E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC4DED2-4279-4C9C-8033-D85FE215590E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC4DED2-4279-4C9C-8033-D85FE215590E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC4DED2-4279-4C9C-8033-D85FE215590E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB2EF1A-F46B-41A8-8AAF-675FD9C7166D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB2EF1A-F46B-41A8-8AAF-675FD9C7166D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB2EF1A-F46B-41A8-8AAF-675FD9C7166D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB2EF1A-F46B-41A8-8AAF-675FD9C7166D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA82228E-232E-4F2D-A947-194B4FBD012A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+D:\MyWork_3Month_2021\C#\Day 2\.NetQ3\Day2\Day2\bin\Debug\Day2.exe.config
+D:\MyWork_3Month_2021\C#\Day 2\.NetQ3\Day2\Day2\bin\Debug\Day2.exe
+D:\MyWork_3Month_2021\C#\Day 2\.NetQ3\Day2\Day2\bin\Debug\Day2.pdb
+D:\MyWork_3Month_2021\C#\Day 2\.NetQ3\Day2\Day2\obj\Debug\Day2.csproj.AssemblyReference.cache
+D:\MyWork_3Month_2021\C#\Day 2\.NetQ3\Day2\Day2\obj\Debug\Day2.csproj.SuggestedBindingRedirects.cache
+D:\MyWork_3Month_2021\C#\Day 2\.NetQ3\Day2\Day2\obj\Debug\Day2.csproj.CoreCompileInputs.cache
+D:\MyWork_3Month_2021\C#\Day 2\.NetQ3\Day2\Day2\obj\Debug\Day2.exe
+D:\MyWork_3Month_2021\C#\Day 2\.NetQ3\Day2\Day2\obj\Debug\Day2.pdb

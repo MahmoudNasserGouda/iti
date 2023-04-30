@@ -1,0 +1,286 @@
+
+create database Examination_System 
+go 
+use  Examination_System
+
+
+create table Course
+(
+	course_ID int Primary key identity(1,1) ,
+	course_name nvarchar(50) not null , 
+	course_description nvarchar(max) , 
+	max_degree int not null , 
+	min_degree int not null 
+)
+
+
+go 
+
+create table question(
+ques_ID int primary key  identity(1,1), 
+ques_text nvarchar(max)  not null , 
+course_ID int not null ,
+constraint que_courFK foreign key (course_ID) references Course(course_ID) 
+)
+
+go
+
+
+create table mcQ_ques(
+correct_answer char not null , 
+A nvarchar(50)  not null , 
+B nvarchar(50)  not null , 
+C nvarchar(50)  not null , 
+D nvarchar(50)  not null , 
+ques_ID int primary key , 
+constraint MCQ_QuesFK foreign key (ques_ID) references question(ques_ID) 
+
+)
+
+
+go
+create table text_ques(
+best_accpeted_Answer  nvarchar(max) not null , 
+ques_ID int primary key , 
+constraint text_QuesFK foreign key (ques_ID) references question(ques_ID) 
+
+
+)
+
+go
+
+
+create table true_false_ques(
+Correct_Answer bit not null , 
+ques_ID int primary key , 
+constraint TrFalse_QuesFK foreign key (ques_ID) references question(ques_ID) 
+)
+
+go
+create table Instructor
+	
+(
+inst_ID int primary key Identity(1,1) , 
+ins_name nvarchar(50) not null , 
+inst_username nvarchar(50) not null , 
+inst_password varchar(50) not null , 
+
+istrainning_manager bit , 
+
+)
+
+go
+
+
+create table Exam(
+exam_ID int primary key identity(1,1) , 
+exam_date	date  not null ,
+start_time 	time  not null ,
+End_Time time  not null ,
+total_time int  not null ,
+allownece_option	nvarchar(50) , 
+inst_ID int   not null ,
+constraint Exam_InsFK  foreign key (inst_ID) references Instructor(inst_ID)
+)
+
+go
+
+create table Exam_Question(
+exam_ID int  , 
+ques_ID int  , 
+Degree float  not null ,
+constraint Exam_QUFK  foreign key (exam_ID) references Exam(exam_ID) , 
+constraint Qus_QuFK foreign key (ques_ID) references question(ques_ID) , 
+constraint Ex_QuesPK primary key (exam_ID,ques_ID)
+)
+
+go
+create table Department(
+
+dept_ID int primary key Identity(1,1) , 
+dept_name nvarchar(50)  not null 
+)
+
+go 
+
+CREATE TABLE Branch (
+  branch_ID INT PRIMARY KEY Identity(1,1) , 
+  branch_name NVARCHAR(50)  not null 
+)
+
+go
+CREATE TABLE Intake (
+  intake_ID INT PRIMARY KEY Identity(1,1) , 
+  intake_name NVARCHAR(50)  not null ,
+  intake_end_date DATE  not null ,
+  intake_start_date DATE  not null 
+)
+go
+CREATE TABLE Track (
+  track_ID INT PRIMARY KEY Identity(1,1) , 
+  track_name NVARCHAR(50)  not null ,
+  dept_ID INT  not null ,
+  CONSTRAINT fk_track_dept FOREIGN KEY (dept_ID) REFERENCES Department(dept_ID)
+)
+
+go 
+
+
+
+create table Class(
+class_ID int primary key identity(1,1) , 
+branch_ID int  not null ,
+Intake_ID int   not null ,
+Track_ID int   not null ,
+
+
+CONSTRAINT Cl_branchFK FOREIGN KEY (branch_ID) REFERENCES Branch(branch_ID),
+  CONSTRAINT Cl_IntakeFK FOREIGN KEY (Intake_ID) REFERENCES Intake(Intake_ID),
+  CONSTRAINT Cl_TRackFK FOREIGN KEY (Track_ID) REFERENCES Track(Track_ID)
+)
+
+
+go 
+
+create table Student	
+(
+st_ID int primary key Identity(1,1) , 
+st_name nvarchar(50)  not null , 
+st_username nvarchar(50)  not null ,
+st_password  varchar(50)  not null ,
+class_ID int   not null ,
+ CONSTRAINT st_classfk FOREIGN KEY (class_ID) REFERENCES Class(class_ID)
+) 
+
+
+go
+
+
+create table st_quesexam_answer(
+
+st_ID  int  not null ,
+exam_ID int   not null ,
+ques_ID int  not null ,
+st_answer nvarchar(max)  , 
+iscorrect bit  not null ,
+CONSTRAINT Sqa_STFK FOREIGN KEY (st_ID) REFERENCES Student(st_ID),
+  CONSTRAINT Sqa_EXFK FOREIGN KEY (exam_ID) REFERENCES Exam(exam_ID),
+  CONSTRAINT Sqa_QUFK FOREIGN KEY (ques_ID) REFERENCES question(ques_ID)
+)
+
+
+
+go 
+
+
+
+
+create table Class_Course
+
+(
+		class_ID  int  not null ,
+		course_ID int  not null ,
+		inst_ID	  int  not null ,
+		exam_ID	  int  not null ,
+
+ CONSTRAINT class_classcoursefk FOREIGN KEY (class_ID) REFERENCES class(class_ID), 
+ CONSTRAINT course_classcoursefk FOREIGN KEY (course_ID) REFERENCES Course(course_ID),
+ CONSTRAINT ins_classcoursefk FOREIGN KEY (inst_ID) REFERENCES Instructor(inst_ID),
+ CONSTRAINT exam_classcoursefk FOREIGN KEY (exam_ID) REFERENCES Exam(exam_ID),
+ CONSTRAINT classcoursePK primary key(class_ID,course_ID)
+)
+
+go 
+
+CREATE TABLE Student_Class_Course (
+  student_ID INT  not null ,
+  class_ID INT  not null ,
+  course_ID INT  not null ,
+  final_result INT  not null ,
+  CONSTRAINT scc PRIMARY KEY (student_ID, class_ID, course_ID),
+  CONSTRAINT SCC_STFK FOREIGN KEY (student_ID) REFERENCES Student(st_ID),
+  CONSTRAINT SCC_CLFK FOREIGN KEY (class_ID) REFERENCES Class(class_ID),
+  CONSTRAINT  SCC_COFK FOREIGN KEY (course_ID) REFERENCES Course(course_ID)
+)
+
+
+
+
+
+
+
+CREATE TABLE Branch_Intake (
+  branch_ID INT  not null ,
+  intake_ID INT  not null ,
+
+  CONSTRAINT Branch_IntakePK PRIMARY KEY (branch_ID, intake_ID),
+  CONSTRAINT  BI_branchFK FOREIGN KEY (branch_ID) REFERENCES Branch(branch_ID),
+  CONSTRAINT   BI_IntakeFK FOREIGN KEY (intake_ID) REFERENCES Intake(intake_ID)
+)
+go 
+
+
+
+
+create table Branch_Intake_Track(
+
+branch_ID int   not null ,
+intake_ID int   not null ,
+track_ID int   not null ,
+  CONSTRAINT  BIT_branchFK FOREIGN KEY (branch_ID) REFERENCES Branch(branch_ID),
+CONSTRAINT  BIT_intakFK FOREIGN KEY (intake_ID) REFERENCES Intake(intake_ID) , 
+
+CONSTRAINT  BIT_trackFK FOREIGN KEY (track_ID) REFERENCES Track(track_ID),
+CONSTRAINT BITPK primary key (branch_ID , intake_ID , track_ID)
+
+)
+go
+
+
+create procedure create_Exam_random
+@Exam_date date ,@start_time time , 
+ @End_Time time  ,@allownece_option nvarchar(50) , @inst_ID int  , @Number_OFQuestion int ,@course_ID int 
+ as
+ begin
+
+ insert into Exam values(@Exam_date , @start_time ,  @End_Time ,DATEDIFF(MINUTE , @End_Time,@start_time) , @allownece_option , @inst_ID )
+
+ declare @exam_ID int 
+ set @exam_ID = SCOPE_Identity()
+ declare @i  int  = 1
+ while @i < @Number_OFQuestion
+ begin
+set @i=@i+1
+declare @q_ID int  =(select top 1 ques_ID from question where course_ID = @course_ID order by RAND())
+declare @degree float = (select max_degree from Course where course_ID = @course_ID )/ @Number_OFQuestion
+ insert into Exam_Question values (@exam_ID , @q_ID , @degree)
+
+ end
+ end
+
+
+ go
+
+ 
+-- create procedure create_Exam_manual
+--@Exam_date date ,@start_time time , 
+-- @End_Time time  ,@allownece_option nvarchar(50) , @inst_ID int  ,@course_ID int ,
+-- as
+-- begin
+
+-- insert into Exam values(@Exam_date , @start_time ,  @End_Time ,DATEDIFF(MINUTE , @End_Time,@start_time) , @allownece_option , @inst_ID )
+
+-- declare @exam_ID int 
+-- set @exam_ID = SCOPE_Identity()
+-- declare @i  int  = 1
+-- while @i < @Number_OFQuestion
+-- begin
+--set @i=@i+1
+--declare @q_ID int  =(select top 1 ques_ID from question where course_ID = @course_ID order by RAND())
+--declare @degree float = (select max_degree from Course where course_ID = @course_ID )/ @Number_OFQuestion
+-- insert into Exam_Question values (@exam_ID , @q_ID , @degree)
+
+-- end
+-- end
+
+
