@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day3&4\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day5\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day3&4\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day5\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day3&4\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day5\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day3&4\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day5\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\mahmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day3&4\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\mahmo\\OneDrive\\سطح المكتب\\iti\\OOP\\lab\\day5\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mahmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
