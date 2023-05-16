@@ -1,0 +1,85 @@
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.exe
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.deps.json
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.runtimeconfig.json
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.pdb
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.csproj.AssemblyReference.cache
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.csproj.GenerateResource.cache
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.AssemblyInfoInputs.cache
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.AssemblyInfo.cs
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.csproj.CoreCompileInputs.cache
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\refint\Part2.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.pdb
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.genruntimeconfig.cache
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\ref\Part2.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.StarterForm.resources
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.csproj.CopyComplete
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.HomeForm.resources
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.ArticleForm.resources
+D:\ITI\Courses\Selected Topics in C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.AddArticleForm.resources
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.exe
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.deps.json
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.runtimeconfig.json
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\Part2.pdb
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.csproj.AssemblyReference.cache
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.AddArticleForm.resources
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.ArticleForm.resources
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.HomeForm.resources
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.StarterForm.resources
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.csproj.GenerateResource.cache
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.GeneratedMSBuildEditorConfig.editorconfig
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.AssemblyInfoInputs.cache
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.AssemblyInfo.cs
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.csproj.CoreCompileInputs.cache
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.csproj.CopyComplete
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\refint\Part2.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.pdb
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.genruntimeconfig.cache
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\ref\Part2.dll
+F:\computer science\iti\Advanced C#\D8\Part1\Part2\obj\Debug\net6.0-windows\Part2.AboutForm.resources
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\Part2.exe
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\Part2.deps.json
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\Part2.runtimeconfig.json
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\Part2.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\Part2.pdb
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.csproj.AssemblyReference.cache
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.AboutForm.resources
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.AddArticleForm.resources
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.ArticleForm.resources
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.HomeForm.resources
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.StarterForm.resources
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.csproj.GenerateResource.cache
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.GeneratedMSBuildEditorConfig.editorconfig
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.AssemblyInfoInputs.cache
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.AssemblyInfo.cs
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.csproj.CoreCompileInputs.cache
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.csproj.CopyComplete
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\refint\Part2.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.pdb
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.genruntimeconfig.cache
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\ref\Part2.dll
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.BonusForm.resources
+F:\computer science\iti\Advanced C#\lab\day 8\Part2\obj\Debug\net6.0-windows\Part2.Properties.Resources.resources

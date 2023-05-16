@@ -1,0 +1,40 @@
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.exe
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.deps.json
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.runtimeconfig.json
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.pdb
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.csproj.AssemblyReference.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.AssemblyInfoInputs.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.AssemblyInfo.cs
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.csproj.CoreCompileInputs.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\refint\TestMyControl.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.pdb
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.genruntimeconfig.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\ref\TestMyControl.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\LabeledClock.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\LabeledClock.pdb
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.Form1.resources
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.csproj.GenerateResource.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.csproj.CopyComplete
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.exe
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.deps.json
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.runtimeconfig.json
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.dll
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\TestMyControl.pdb
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\LabeledClock.dll
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\bin\Debug\net6.0-windows\LabeledClock.pdb
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.csproj.AssemblyReference.cache
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.Form1.resources
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.csproj.GenerateResource.cache
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.GeneratedMSBuildEditorConfig.editorconfig
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.AssemblyInfoInputs.cache
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.AssemblyInfo.cs
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.csproj.CoreCompileInputs.cache
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.csproj.CopyComplete
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.dll
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\refint\TestMyControl.dll
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.pdb
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\TestMyControl.genruntimeconfig.cache
+F:\computer science\iti\Advanced C#\D7\Part1\TestMyControl\obj\Debug\net6.0-windows\ref\TestMyControl.dll

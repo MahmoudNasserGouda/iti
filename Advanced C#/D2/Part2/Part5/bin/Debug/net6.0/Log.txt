@@ -1,0 +1,3 @@
+Date : 5/6/2023 2:10:30 PM, Info: Input string was not in a correct format., Stack :    at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.GetInetger() in D:\ITI\Courses\Selected Topics in C#\D2\Part2\Part5\Program.cs:line 12

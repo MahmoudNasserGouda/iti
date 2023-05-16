@@ -1,0 +1,30 @@
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.csproj.AssemblyReference.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.AssemblyInfoInputs.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.AssemblyInfo.cs
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.csproj.CoreCompileInputs.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.exe
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.deps.json
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.runtimeconfig.json
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.pdb
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\refint\Threading.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.pdb
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.genruntimeconfig.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\Threading\obj\Debug\net6.0\ref\Threading.dll
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.exe
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.deps.json
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.runtimeconfig.json
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.dll
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\bin\Debug\net6.0\Threading.pdb
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.csproj.AssemblyReference.cache
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.GeneratedMSBuildEditorConfig.editorconfig
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.AssemblyInfoInputs.cache
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.AssemblyInfo.cs
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.csproj.CoreCompileInputs.cache
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.dll
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\refint\Threading.dll
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.pdb
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\Threading.genruntimeconfig.cache
+F:\computer science\iti\Advanced C#\D7\Part1\Threading\obj\Debug\net6.0\ref\Threading.dll
