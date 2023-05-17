@@ -1,0 +1,8 @@
+C:\Users\ITI\Desktop\G2\LinqToObjects\LinqToObjects\bin\Debug\LinqToObjects.exe.config
+C:\Users\ITI\Desktop\G2\LinqToObjects\LinqToObjects\bin\Debug\LinqToObjects.exe
+C:\Users\ITI\Desktop\G2\LinqToObjects\LinqToObjects\bin\Debug\LinqToObjects.pdb
+C:\Users\ITI\Desktop\G2\LinqToObjects\LinqToObjects\obj\Debug\LinqToObjects.csproj.AssemblyReference.cache
+C:\Users\ITI\Desktop\G2\LinqToObjects\LinqToObjects\obj\Debug\LinqToObjects.csproj.SuggestedBindingRedirects.cache
+C:\Users\ITI\Desktop\G2\LinqToObjects\LinqToObjects\obj\Debug\LinqToObjects.csproj.CoreCompileInputs.cache
+C:\Users\ITI\Desktop\G2\LinqToObjects\LinqToObjects\obj\Debug\LinqToObjects.exe
+C:\Users\ITI\Desktop\G2\LinqToObjects\LinqToObjects\obj\Debug\LinqToObjects.pdb
