@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1683192137 source:d:\iti\courses\selected topics in c#\d1\parti\main.cpp
+	<iostream>
+	"Calc.h"
+
+1683193136 d:\iti\courses\selected topics in c#\d1\parti\calc.h
+	"iti_int.h"
+	<conio.h>
+
+1683189170 d:\iti\courses\selected topics in c#\d1\parti\iti_int.h
+

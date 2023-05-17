@@ -1,0 +1,24 @@
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\bin\Debug\net6.0-windows\LabeledClock.deps.json
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\bin\Debug\net6.0-windows\LabeledClock.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\bin\Debug\net6.0-windows\LabeledClock.pdb
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.csproj.AssemblyReference.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.AssemblyInfoInputs.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.AssemblyInfo.cs
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.csproj.CoreCompileInputs.cache
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\refint\LabeledClock.dll
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.pdb
+D:\ITI\Courses\Selected Topics in C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\ref\LabeledClock.dll
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\bin\Debug\net6.0-windows\LabeledClock.deps.json
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\bin\Debug\net6.0-windows\LabeledClock.dll
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\bin\Debug\net6.0-windows\LabeledClock.pdb
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.csproj.AssemblyReference.cache
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.GeneratedMSBuildEditorConfig.editorconfig
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.AssemblyInfoInputs.cache
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.AssemblyInfo.cs
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.csproj.CoreCompileInputs.cache
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.dll
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\refint\LabeledClock.dll
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\LabeledClock.pdb
+F:\computer science\iti\Advanced C#\D7\Part1\LabeledClock\obj\Debug\net6.0-windows\ref\LabeledClock.dll
