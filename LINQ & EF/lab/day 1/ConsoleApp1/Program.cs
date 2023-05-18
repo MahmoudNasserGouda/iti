@@ -9,9 +9,11 @@
                 Console.WriteLine(x);
 
 
+
             var Q2 = SampleData.Books.Where(x => x.Price > 25).Take(3);
             foreach (var x in Q2)
                 Console.WriteLine(x);
+
 
 
             var Q3_1 = from c in SampleData.Books
@@ -29,8 +31,10 @@
                 Console.WriteLine(x);
 
 
+
             var Q4 = SampleData.Books.Where(x => x.Price > 20).Count();
             Console.WriteLine(Q4);
+
 
 
             var Q5 = from c in SampleData.Books
@@ -40,6 +44,7 @@
                      select new { c.Title, c.Price, c.Subject.Name };
             foreach (var x in Q5)
                 Console.WriteLine(x);
+
 
 
             var Q6_1 = from d in SampleData.Subjects
@@ -78,10 +83,12 @@
             }
 
 
+
             var Q7 = from Book b in SampleData.GetBooks()
                      select new { b.Title, b.Price };
             foreach (var x in Q7)
                 Console.WriteLine(x);
+
 
 
             var Q8 = from b in SampleData.Books
