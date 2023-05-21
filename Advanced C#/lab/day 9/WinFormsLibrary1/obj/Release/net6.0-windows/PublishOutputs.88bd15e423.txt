@@ -1,0 +1,3 @@
+F:\computer science\iti\Advanced C#\lab\day 9\WinFormsLibrary1\bin\Release\net6.0-windows\publish\CustomControls.dll
+F:\computer science\iti\Advanced C#\lab\day 9\WinFormsLibrary1\bin\Release\net6.0-windows\publish\CustomControls.deps.json
+F:\computer science\iti\Advanced C#\lab\day 9\WinFormsLibrary1\bin\Release\net6.0-windows\publish\CustomControls.pdb

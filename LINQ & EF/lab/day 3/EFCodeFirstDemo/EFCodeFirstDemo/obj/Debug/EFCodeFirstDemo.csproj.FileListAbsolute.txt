@@ -1,0 +1,31 @@
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EFCodeFirstDemo.exe.config
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EFCodeFirstDemo.exe
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EFCodeFirstDemo.pdb
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EntityFramework.dll
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EntityFramework.xml
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.AssemblyReference.cache
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.SuggestedBindingRedirects.cache
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.CoreCompileInputs.cache
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.CopyComplete
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.exe
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.pdb
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.Migrations.test.resources
+C:\Users\ITI\Desktop\G2\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.GenerateResource.cache
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EFCodeFirstDemo.exe.config
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EFCodeFirstDemo.exe
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EFCodeFirstDemo.pdb
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EntityFramework.dll
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EntityFramework.SqlServer.dll
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EntityFramework.xml
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\EntityFramework.SqlServer.xml
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.AssemblyReference.cache
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.SuggestedBindingRedirects.cache
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.CoreCompileInputs.cache
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.CopyComplete
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.exe
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.pdb
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.Migrations.intial.resources
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.csproj.GenerateResource.cache
+F:\computer science\iti\LINQ & EF\lab\day 3\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\EFCodeFirstDemo.Migrations.intial2.resources

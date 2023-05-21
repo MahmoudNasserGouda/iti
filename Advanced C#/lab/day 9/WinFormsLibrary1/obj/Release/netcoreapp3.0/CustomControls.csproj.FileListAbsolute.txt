@@ -1,0 +1,5 @@
+F:\computer science\iti\Advanced C#\lab\day 9\WinFormsLibrary1\obj\Release\netcoreapp3.0\CustomControls.csproj.AssemblyReference.cache
+F:\computer science\iti\Advanced C#\lab\day 9\WinFormsLibrary1\obj\Release\netcoreapp3.0\CustomControls.GeneratedMSBuildEditorConfig.editorconfig
+F:\computer science\iti\Advanced C#\lab\day 9\WinFormsLibrary1\obj\Release\netcoreapp3.0\CustomControls.AssemblyInfoInputs.cache
+F:\computer science\iti\Advanced C#\lab\day 9\WinFormsLibrary1\obj\Release\netcoreapp3.0\CustomControls.AssemblyInfo.cs
+F:\computer science\iti\Advanced C#\lab\day 9\WinFormsLibrary1\obj\Release\netcoreapp3.0\CustomControls.csproj.CoreCompileInputs.cache

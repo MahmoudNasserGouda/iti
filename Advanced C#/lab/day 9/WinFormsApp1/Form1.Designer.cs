@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            heartToggleButton1 = new CustomControls.HeartToggleButton();
+            SuspendLayout();
+            // 
+            // heartToggleButton1
+            // 
+            heartToggleButton1.CheckedColor = Color.Red;
+            heartToggleButton1.IsChecked = false;
+            heartToggleButton1.Location = new Point(150, 12);
+            heartToggleButton1.Name = "heartToggleButton1";
+            heartToggleButton1.Size = new Size(487, 426);
+            heartToggleButton1.TabIndex = 0;
+            heartToggleButton1.Text = "heartToggleButton1";
+            heartToggleButton1.UncheckedColor = Color.Silver;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(heartToggleButton1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private CustomControls.HeartToggleButton heartToggleButton1;
     }
 }
