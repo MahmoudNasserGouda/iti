@@ -1,0 +1,6 @@
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day1\HandlerModuleDemo\CustomeHandler\bin\Debug\CustomeHandler.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day1\HandlerModuleDemo\CustomeHandler\bin\Debug\CustomeHandler.pdb
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day1\HandlerModuleDemo\CustomeHandler\obj\Debug\CustomeHandler.csprojAssemblyReference.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day1\HandlerModuleDemo\CustomeHandler\obj\Debug\CustomeHandler.csproj.CoreCompileInputs.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day1\HandlerModuleDemo\CustomeHandler\obj\Debug\CustomeHandler.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day1\HandlerModuleDemo\CustomeHandler\obj\Debug\CustomeHandler.pdb

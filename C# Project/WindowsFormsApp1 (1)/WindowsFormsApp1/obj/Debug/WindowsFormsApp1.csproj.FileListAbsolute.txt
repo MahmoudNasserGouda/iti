@@ -1,0 +1,168 @@
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.AddBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.adduserForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.AdminForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.BookDetailForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.BooksForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.BorrowingBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.DeleteBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.EditBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.HomeForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.StatisticsForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.UserDetailForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WinFormsApp1.UsersForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+F:\computer science\WinFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+F:\computer science\WinFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+F:\computer science\WinFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+F:\computer science\WinFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+F:\computer science\WinFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+F:\computer science\WinFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+F:\computer science\WinFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Migrations.init.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AddBookForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.adduserForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AdminForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BookDetailForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BooksForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BorrowingBookForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.DeleteBookForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.EditBookForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.HomeForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.StatisticsForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UserDetailForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UsersForm.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Migrations.init.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AddBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.adduserForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AdminForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BookDetailForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BooksForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BorrowingBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.DeleteBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.EditBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.HomeForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.StatisticsForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UserDetailForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UsersForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Migrations.init.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AddBookForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.adduserForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AdminForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BookDetailForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BooksForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BorrowingBookForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.DeleteBookForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.EditBookForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.HomeForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.StatisticsForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UserDetailForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UsersForm.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Migrations.init.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Ahmed Elshikh\Downloads\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AddBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.adduserForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AdminForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BookDetailForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BooksForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BorrowingBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.DeleteBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.EditBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.HomeForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.StatisticsForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UserDetailForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UsersForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Migrations.init.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (2)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AddBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.adduserForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.AdminForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BookDetailForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BooksForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.BorrowingBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.DeleteBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.EditBookForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.HomeForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.StatisticsForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UserDetailForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WinFormsApp1.UsersForm.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+F:\computer science\WinFormsApp1\WindowsFormsApp1 (3)\WindowsFormsApp1 (1)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Migrations.init2.resources

@@ -1,0 +1,6 @@
+--Create a Custom Handler of any extention.
+--Create a Custom Module and handle any of the events in init function.
+-Make CRUD operation for any class you wish.
+-Try different Routes.
+----------------------------------------------------------------------
+-What is IIS?

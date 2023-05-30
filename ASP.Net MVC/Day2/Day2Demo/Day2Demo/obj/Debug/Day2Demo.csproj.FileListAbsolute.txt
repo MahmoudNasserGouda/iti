@@ -1,0 +1,158 @@
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Day2Demo.dll.config
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Day2Demo.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Day2Demo.pdb
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csc.exe
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csc.exe.config
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csc.rsp
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csi.exe
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csi.exe.config
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csi.rsp
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.AppContext.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Collections.Immutable.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Console.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Globalization.Calendars.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.IO.Compression.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.IO.FileSystem.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Net.Http.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Net.Sockets.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Reflection.Metadata.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.ValueTuple.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Xml.XPath.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\vbc.exe
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\vbc.exe.config
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\vbc.rsp
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\VBCSCompiler.exe
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\VBCSCompiler.exe.config
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Antlr3.Runtime.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Microsoft.Web.Infrastructure.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Newtonsoft.Json.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Helpers.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Mvc.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Optimization.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Razor.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.Deployment.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.Razor.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\WebGrease.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Helpers.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Mvc.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Optimization.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Razor.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.Deployment.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.Razor.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Newtonsoft.Json.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Antlr3.Runtime.pdb
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.csprojAssemblyReference.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.csproj.CoreCompileInputs.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.csproj.CopyComplete
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.pdb
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Day2Demo.dll.config
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Day2Demo.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Day2Demo.pdb
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csc.exe
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csc.exe.config
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csc.rsp
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csi.exe
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csi.exe.config
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\csi.rsp
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.Managed.Core.targets
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.AppContext.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Collections.Immutable.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Console.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Globalization.Calendars.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.IO.Compression.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.IO.FileSystem.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Net.Http.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Net.Sockets.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Reflection.Metadata.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.ValueTuple.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Xml.XmlDocument.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Xml.XPath.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\vbc.exe
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\vbc.exe.config
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\vbc.rsp
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\VBCSCompiler.exe
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\roslyn\VBCSCompiler.exe.config
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Antlr3.Runtime.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Microsoft.Web.Infrastructure.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Newtonsoft.Json.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Helpers.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Mvc.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Optimization.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Razor.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.Deployment.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.Razor.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\WebGrease.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Mvc.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Helpers.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Optimization.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.Razor.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.Deployment.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\System.Web.WebPages.Razor.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Newtonsoft.Json.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Antlr3.Runtime.pdb
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.csproj.AssemblyReference.cache
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.csproj.CoreCompileInputs.cache
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.csproj.CopyComplete
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.dll
+F:\computer science\iti\ASP.Net MVC\Day2\Day2Demo\Day2Demo\obj\Debug\Day2Demo.pdb

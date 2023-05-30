@@ -1,0 +1,4 @@
+-CRUD operation for any class rather than student.
+-make views for actions with bootstrap.
+-try model, viewbag, viewdata, tempdata, session.
+-try cookies

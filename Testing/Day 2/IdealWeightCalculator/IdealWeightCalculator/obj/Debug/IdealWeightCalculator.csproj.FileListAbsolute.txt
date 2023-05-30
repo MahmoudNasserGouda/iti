@@ -1,0 +1,7 @@
+D:\ITI\Testing Session 4\IdealWeightCalculator\IdealWeightCalculator\bin\Debug\IdealWeightCalculator.exe.config
+D:\ITI\Testing Session 4\IdealWeightCalculator\IdealWeightCalculator\bin\Debug\IdealWeightCalculator.exe
+D:\ITI\Testing Session 4\IdealWeightCalculator\IdealWeightCalculator\bin\Debug\IdealWeightCalculator.pdb
+D:\ITI\Testing Session 4\IdealWeightCalculator\IdealWeightCalculator\obj\Debug\IdealWeightCalculator.csprojAssemblyReference.cache
+D:\ITI\Testing Session 4\IdealWeightCalculator\IdealWeightCalculator\obj\Debug\IdealWeightCalculator.csproj.CoreCompileInputs.cache
+D:\ITI\Testing Session 4\IdealWeightCalculator\IdealWeightCalculator\obj\Debug\IdealWeightCalculator.exe
+D:\ITI\Testing Session 4\IdealWeightCalculator\IdealWeightCalculator\obj\Debug\IdealWeightCalculator.pdb

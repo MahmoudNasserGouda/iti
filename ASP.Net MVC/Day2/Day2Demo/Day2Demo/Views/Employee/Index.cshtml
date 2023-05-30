@@ -1,0 +1,95 @@
+﻿@{
+    Layout = null;
+}
+@model IEnumerable<Day2Demo.Models.Employee>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Employees System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br />
+    <div class="container">
+        <h2>
+            @* Code Nuggets *@
+            @ViewData["Title"]
+        </h2>
+        @{
+            if (TempData["Updated"] != null)
+            {
+                <div class="alert alert-dismissible alert-success">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4 class="alert-heading">Update Succeded!</h4>
+                    <p class="mb-0">@TempData["Updated"] was updated successfully</p>
+                </div>
+            }
+        }
+
+        @*@{
+            if (Session["Updated"] != null)
+            {
+                <div class="alert alert-dismissible alert-success">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4 class="alert-heading">Update Succeded!</h4>
+                    <p class="mb-0">@Session["Updated"] was updated successfully</p>
+                </div>
+            }
+        }*@
+
+    <a href="~/Employee/Insert">Create New Employee</a>
+        <table class="table table-hover">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th></th>
+            </tr>
+
+            @* Code Block *@
+            @{
+
+                foreach (var item in Model)
+                {
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.Name</td>
+                            <td>@item.Salary</td>
+                            <td>
+                                <a href="~/Employee/Edit/@item.ID" class="btn btn-warning">Update</a>
+                            </td>
+                            <td>
+                                <a href="~/Employee/Delete/@item.ID" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                }
+            }
+        </table>
+    </div>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

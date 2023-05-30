@@ -1,0 +1,97 @@
+﻿@model Day3Demo.Models.Student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">School System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <div class="container">
+        <h2>New Students</h2>
+        @*@{Html.BeginForm("Create", "Student", FormMethod.Post); }*@
+        @using (Html.BeginForm("Create", "Student", FormMethod.Post))
+        {
+            @Html.ValidationSummary()
+            <div class="form-group">
+                @*@Html.Label("ID")*@
+                @Html.LabelFor(m => m.ID)
+                @*<label for="ID">ID</label>*@
+                @*@Html.EditorFor(x => x.ID, new { @class = "form-control" })*@
+                @*@Html.HiddenFor(m=>m.ID)*@
+                @Html.EditorFor(m => m.ID, new { htmlAttributes = new { @class = "form-control"} })
+                @Html.ValidationMessageFor(m => m.ID, "", new { @class = "text-danger" })
+                @*@Html.TextBox("ID", "", new { @class = "form-control", placeholder = "ID" })*@
+                @*<input type="number" class="form-control" id="ID" placeholder="ID" name="ID">*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.FullName)
+                @Html.EditorFor(m => m.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "text-danger" })
+                @*<label for="FullName">FullName</label>
+        <input type="text" class="form-control" id="FullName" placeholder="FullName" name="FullName">*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.CityID)
+                @Html.EditorFor(m => m.CityID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.CityID, "", new { @class = "text-danger" })
+                @*<label for="CityID">CityID</label>
+        <input type="text" class="form-control" id="CityID" placeholder="CityID" name="CityID">*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Graduated)
+                @Html.EditorFor(m => m.Graduated, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Graduated, "", new { @class = "text-danger" })
+
+                @*<label for="Graduated">Graduated</label>
+        <input type="text" class="form-control" id="Graduated" placeholder="Graduated" name="Graduated">*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.GPA)
+                @Html.EditorFor(m => m.GPA, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.GPA, "", new { @class = "text-danger" })
+                @*<label for="GPA">GPA</label>
+        <input type="text" class="form-control" id="GPA" placeholder="GPA" name="GPA">*@
+            </div>
+            <input type="submit" class="btn btn-success" value="Create" />
+        }
+        @*@{Html.EndForm();}*@
+    </div>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
