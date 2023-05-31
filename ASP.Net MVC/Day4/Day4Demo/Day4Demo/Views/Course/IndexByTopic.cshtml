@@ -1,0 +1,129 @@
+﻿@model IEnumerable<Day4Demo.ViewModels.CourseVM>
+@using Day4Demo.BusinessLogic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index By Topics</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br />
+    <div class="container">
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+
+        @foreach (var Titem in ViewData["Topics"] as List<Day4Demo.Models.Topic>)
+        {
+            <h2>@Titem.Top_Name</h2>
+            var count = Html.CountCourses(@Titem.Top_Name);
+            if (count > 0)
+            {
+                @ListTopicCourses(@Titem.Top_Name)
+            }
+        }
+
+        @* inline Custom HTML Helper *@
+
+        @helper ListTopicCourses(string TopicName) { 
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Crs_Id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Topic_Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Crs_Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Crs_Duration)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Inst_Name)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model.Where(c => c.Topic_Name == TopicName))
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Crs_Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Topic_Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Crs_Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Crs_Duration)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Inst_Name)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Crs_Id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.Crs_Id }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.Crs_Id })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        }
+
+    </div>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

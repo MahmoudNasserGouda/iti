@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Day4Demo.Models.Topic>
+
+@{
+    Layout = "~/Views/Shared/_ITILayout.cshtml";
+}
+
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Top_Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Top_Name)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Top_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Top_Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Top_Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Top_Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Top_Id })
+            </td>
+        </tr>
+            }
+
+        </table>
+   
+
+@section Title{
+    <h2>All Topics</h2>
+    }
