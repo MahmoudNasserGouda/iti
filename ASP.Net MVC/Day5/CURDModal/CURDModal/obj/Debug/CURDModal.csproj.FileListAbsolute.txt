@@ -1,0 +1,168 @@
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\CURDModal.dll.config
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\CURDModal.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\CURDModal.pdb
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\csc.exe
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\csc.exe.config
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\csc.rsp
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\csi.exe
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\csi.exe.config
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\csi.rsp
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.Managed.Core.targets
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.AppContext.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Collections.Immutable.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Console.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.Compression.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.FileSystem.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.Pipes.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Reflection.Metadata.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.AccessControl.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Claims.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Principal.Windows.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.ValueTuple.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Xml.XmlDocument.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Xml.XPath.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\vbc.exe
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\vbc.exe.config
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\vbc.rsp
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\VBCSCompiler.exe
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\roslyn\VBCSCompiler.exe.config
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Antlr3.Runtime.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\EntityFramework.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\EntityFramework.SqlServer.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Microsoft.Web.Infrastructure.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Newtonsoft.Json.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Diagnostics.DiagnosticSource.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.Helpers.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.Mvc.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.Optimization.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.Razor.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.Deployment.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.Razor.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\WebGrease.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\EntityFramework.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\EntityFramework.SqlServer.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.Helpers.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.Mvc.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.Optimization.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.Razor.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.Deployment.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.Razor.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Newtonsoft.Json.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Antlr3.Runtime.pdb
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\System.Diagnostics.DiagnosticSource.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\MVC Core\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.csprojAssemblyReference.cache
+G:\MVC Core\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.csproj.CoreCompileInputs.cache
+G:\MVC Core\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.csproj.CopyComplete
+G:\MVC Core\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.dll
+G:\MVC Core\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.pdb
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\CURDModal.dll.config
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\CURDModal.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\CURDModal.pdb
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\csc.exe
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\csc.exe.config
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\csc.rsp
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\csi.exe
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\csi.exe.config
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\csi.rsp
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.AppContext.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Collections.Immutable.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Console.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.Compression.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.FileSystem.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.IO.Pipes.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Reflection.Metadata.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.AccessControl.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Claims.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.ValueTuple.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Xml.XPath.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\vbc.exe
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\vbc.exe.config
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\vbc.rsp
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\VBCSCompiler.exe
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\roslyn\VBCSCompiler.exe.config
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Antlr3.Runtime.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\EntityFramework.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\EntityFramework.SqlServer.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Microsoft.Web.Infrastructure.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Newtonsoft.Json.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Diagnostics.DiagnosticSource.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.Helpers.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.Mvc.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.Optimization.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.Razor.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.Deployment.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.Razor.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\WebGrease.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\EntityFramework.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\EntityFramework.SqlServer.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.Helpers.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.Mvc.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.Optimization.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.Razor.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.Deployment.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Web.WebPages.Razor.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Newtonsoft.Json.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Antlr3.Runtime.pdb
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\System.Diagnostics.DiagnosticSource.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.csprojAssemblyReference.cache
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.csproj.CoreCompileInputs.cache
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.csproj.CopyComplete
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.dll
+G:\Materials\MVC Core .Net Track\Day4\CURDModal\CURDModal\obj\Debug\CURDModal.pdb

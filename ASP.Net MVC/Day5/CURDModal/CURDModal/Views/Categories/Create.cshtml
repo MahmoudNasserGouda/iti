@@ -1,0 +1,47 @@
+﻿@model CURDModal.Models.Category
+@{ 
+    Layout = null;
+}
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">New Category</h4>
+            <button type="button" class="close" data-dismiss="modal">
+                ×
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Category Name" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" onclick="DoCreate()">Create</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function DoCreate() {
+        var cat = $("#Name").val();
+        $.ajax({  
+            type: "POST",  
+            url: '@Url.Action("Create")',  
+            data: '{Name: ' + JSON.stringify(cat) + '}',  
+            dataType: "json",  
+            contentType: "application/json; charset=utf-8",  
+            success: function (response) {
+                if (response.success)
+                    window.location.reload();
+                else
+                    alert(response.Message);
+            },  
+            error: function () {  
+                alert("Error while inserting data");  
+            }  
+        });
+    }
+</script>

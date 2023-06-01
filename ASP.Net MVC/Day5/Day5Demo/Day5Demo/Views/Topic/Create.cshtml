@@ -1,0 +1,151 @@
+﻿@model Day5Demo.Models.Topic
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+<label id="LastID"></label>
+<div id="LastIDFromParial">
+
+</div>
+
+@* Request parial view directly from Views folder *@
+@*@Html.Partial("_LogoParialView", "ITI Minia Branch")*@
+
+@* request child action from controller and it will call its parial view *@
+@*@Html.Action("GetLastTopicID");*@
+
+@* Will render the razor syntax in parial view before integeration in this view *@
+@*@{Html.RenderPartial("_LogoParialView", "ITI Minia Branch");}
+@{Html.RenderAction("GetLastTopicID");}*@
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Topic</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Top_Id, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Top_Id, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Top_Id, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Top_Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Top_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Top_Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<br />
+@*@Html.Action("Index")*@
+<div id="TopicsList">
+
+</div>
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+<script>
+        $.ajax({
+            method: "GET",
+            url: '@Url.Action("GetIDJSON")',
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                console.log(data.LastID);
+                document.getElementById("LastID").innerText = data.LastID;
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+
+        $.ajax({
+            method: "GET",
+            url: '@Url.Action("GetLastTopicID")',
+            contentType: "text/html",
+            success: function (data) {
+                console.log(data);
+                $("#LastIDFromParial").html(data);
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+
+    function filltable() {
+        $.ajax({
+            method: "GET",
+            url: '@Url.Action("Index")',
+            contentType: "text/html",
+            success: function (data) {
+                console.log(data);
+                $("#TopicsList").html(data);
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    }
+    filltable();
+    document.forms[1].onsubmit = function () {
+        event.preventDefault();
+        var id = document.getElementById("Top_Id").value
+        var name = document.getElementById("Top_Name").value
+        var data = {
+            "Top_Id": id,
+            "Top_Name": name
+        }
+        console.log(data);
+        $.ajax({
+            method: "POST",
+            url: '@Url.Action("Create")',
+            dataType: "json",
+            data: data,
+            //contentType:"application/json",
+            success: function (data) {
+                //console.log(data)
+                filltable();
+            },
+            error: function (e) {
+                console.log(e.message);
+        }
+        })
+    }
+
+    function deleteAjax(id) {
+        event.preventDefault();
+        var data = { "id": id };
+        $.ajax({
+            method: "GET",
+            url: '/Topic/Delete/' + id,
+            success: function () {
+                filltable();
+            },
+            error: function (e) {
+                console.log(e.message);
+        }
+        })
+    }
+</script>
+}

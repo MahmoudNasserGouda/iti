@@ -1,0 +1,141 @@
+﻿@model WebApplication1.Models.Course
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <h4>Course</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Crs_Id, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Crs_Id, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Crs_Id, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Crs_Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Crs_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Crs_Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Crs_Duration, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Crs_Duration, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Crs_Duration, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ins_Id, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ins_Id", new SelectList(ViewBag.Instructors, "Ins_Id", "Ins_Name"), new { @class = "form-control" })
+                @*@Html.EditorFor(model => model.Ins_Id, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.Ins_Id, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Top_Id, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Top_Id", new SelectList(ViewBag.Topics, "Top_Id", "Top_Name"), new { @class = "form-control" })
+                @*@Html.EditorFor(model => model.Top_Id, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.Top_Id, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div id="Index">
+
+</div>
+
+@section ValidationScripts{
+    @Scripts.Render("~/bundles/ValidationScript")
+
+    <script>
+    function filltable() {
+        $.ajax({
+            method: "GET",
+            url: '@Url.Action("Index")',
+            contentType: "text/html",
+            success: function (data) {
+                console.log(data);
+                $("#Index").html(data);
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    }
+    filltable();
+    document.forms[1].onsubmit = function () {
+        event.preventDefault();
+        var id = document.getElementById("Crs_Id").value
+        var name = document.getElementById("Crs_Name").value
+        var duration = document.getElementById("Crs_Duration").value
+        var inst = document.getElementById("Ins_Id").value
+        var topic = document.getElementById("Top_Id").value
+        var data = {
+            "Crs_Id": id,
+            "Crs_Name": name,
+            "Crs_Duration": duration,
+            "Ins_Id": inst,
+            "Top_Id": topic
+        }
+        console.log(data);
+        $.ajax({
+            method: "POST",
+            url: '@Url.Action("Create")',
+            dataType: "json",
+            data: data,
+            //contentType:"application/json",
+            success: function (data) {
+                //console.log(data)
+                filltable();
+                document.getElementById("Crs_Id").value = null;
+                document.getElementById("Crs_Name").value = null;
+                document.getElementById("Crs_Duration").value = null;
+                document.getElementById("Ins_Id").value = null;
+                document.getElementById("Top_Id").value = null;
+            },
+            error: function (e) {
+                console.log(e.message);
+        }
+        })
+    }
+
+    function deleteAjax(id) {
+        event.preventDefault();
+        var data = { "id": id };
+        $.ajax({
+            method: "GET",
+            url: '/Course/Delete/' + id,
+            success: function () {
+                filltable();
+            },
+            error: function (e) {
+                console.log(e.message);
+        }
+        })
+    }
+    </script>
+
+}
+
+@section Title{
+    <h2>Create New Course</h2>
+}

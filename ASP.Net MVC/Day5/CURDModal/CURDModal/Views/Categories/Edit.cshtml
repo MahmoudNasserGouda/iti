@@ -1,0 +1,49 @@
+﻿@model CURDModal.Models.Category
+@{
+    Layout = null;
+}
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Edit Category: @Model.Name</h4>
+            <button type="button" class="close" data-dismiss="modal">
+                ×
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                @Html.HiddenFor(model => model.ID)
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Category Name", id = "CatName" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" onclick="DoEdit()">Save</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function DoEdit() {
+        var cat = $("#CatName").val();
+        var catid = $("#ID").val();
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("Edit")',
+            data: '{Name: ' + JSON.stringify(cat) + ', ID: ' + JSON.stringify(catid) +'}',
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (response) {
+                if (response.success)
+                    window.location.reload();
+                else
+                    alert(response.Message);
+            },
+            error: function () {
+                alert("Error while inserting data");
+            }
+        });
+    }
+</script>

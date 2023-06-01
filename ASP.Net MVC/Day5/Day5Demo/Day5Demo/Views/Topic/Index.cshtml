@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Day5Demo.Models.Topic>
+
+@{
+    //ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    //for converting to parial view based on action
+    Layout = null;
+}
+
+@*<h2>Index</h2>*@
+@* will not work as GetLastTopicID is a child action (return Parial View) *@
+@*@Html.ActionLink("Click", "GetLastTopicID","Topic")*@
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Top_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Top_Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Top_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Top_Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Top_Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Top_Id }) |
+                <input type="button" class="btn btn-danger" value="Delete" onclick= "deleteAjax(@item.Top_Id)" />
+            </td>
+        </tr>
+    }
+
+</table>
