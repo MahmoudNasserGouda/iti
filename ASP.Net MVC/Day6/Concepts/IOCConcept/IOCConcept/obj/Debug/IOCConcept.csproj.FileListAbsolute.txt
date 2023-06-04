@@ -1,0 +1,7 @@
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\Concepts\IOCConcept\IOCConcept\obj\Debug\IOCConcept.csprojAssemblyReference.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\Concepts\IOCConcept\IOCConcept\obj\Debug\IOCConcept.csproj.CoreCompileInputs.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\Concepts\IOCConcept\IOCConcept\bin\Debug\IOCConcept.exe.config
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\Concepts\IOCConcept\IOCConcept\bin\Debug\IOCConcept.exe
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\Concepts\IOCConcept\IOCConcept\bin\Debug\IOCConcept.pdb
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\Concepts\IOCConcept\IOCConcept\obj\Debug\IOCConcept.exe
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\Concepts\IOCConcept\IOCConcept\obj\Debug\IOCConcept.pdb

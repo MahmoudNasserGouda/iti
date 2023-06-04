@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0hxcAPBpndpCbr6yZ417E7FaspQG+3MWcRTT0ZSGl9s2c8bcuI/5cc7UTc9M6hsb7O4KAscf5DbW0Ppewf4KuA==",
+  "success": true,
+  "projectFilePath": "G:\\Minia ITP 2022-2023\\Q3\\.Net 2\\ASP.Net MVC\\Day6\\.NetFromCMD\\.NetFromCMD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\microsoft.netcore.app.runtime.osx-x64\\5.0.4\\microsoft.netcore.app.runtime.osx-x64.5.0.4.nupkg.sha512",
+    "C:\\Users\\Windows\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.osx-x64\\5.0.4\\microsoft.aspnetcore.app.runtime.osx-x64.5.0.4.nupkg.sha512",
+    "C:\\Users\\Windows\\.nuget\\packages\\microsoft.netcore.app.host.osx-x64\\5.0.4\\microsoft.netcore.app.host.osx-x64.5.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

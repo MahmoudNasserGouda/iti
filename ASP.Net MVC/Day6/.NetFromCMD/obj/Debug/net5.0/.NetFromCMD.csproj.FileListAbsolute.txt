@@ -1,0 +1,16 @@
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\Debug\net5.0\.NetFromCMD.exe
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\Debug\net5.0\.NetFromCMD.deps.json
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\Debug\net5.0\.NetFromCMD.runtimeconfig.json
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\Debug\net5.0\.NetFromCMD.runtimeconfig.dev.json
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\Debug\net5.0\.NetFromCMD.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\Debug\net5.0\ref\.NetFromCMD.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\Debug\net5.0\.NetFromCMD.pdb
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\.NetFromCMD.csprojAssemblyReference.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\.NetFromCMD.GeneratedMSBuildEditorConfig.editorconfig
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\.NetFromCMD.AssemblyInfoInputs.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\.NetFromCMD.AssemblyInfo.cs
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\.NetFromCMD.csproj.CoreCompileInputs.cache
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\.NetFromCMD.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\ref\.NetFromCMD.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\.NetFromCMD.pdb
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\obj\Debug\net5.0\.NetFromCMD.genruntimeconfig.cache

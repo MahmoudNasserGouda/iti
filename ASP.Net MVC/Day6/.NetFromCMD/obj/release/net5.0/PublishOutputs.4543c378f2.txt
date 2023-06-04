@@ -1,0 +1,5 @@
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\release\net5.0\publish\.NetFromCMD.exe
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\release\net5.0\publish\.NetFromCMD.dll
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\release\net5.0\publish\.NetFromCMD.deps.json
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\release\net5.0\publish\.NetFromCMD.runtimeconfig.json
+G:\Minia ITP 2022-2023\Q3\.Net 2\ASP.Net MVC\Day6\.NetFromCMD\bin\release\net5.0\publish\.NetFromCMD.pdb
