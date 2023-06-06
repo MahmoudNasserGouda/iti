@@ -1,0 +1,31 @@
+﻿@model IEnumerable<MVC6Demo.Models.Car>
+@{
+    Layout = null;
+}
+<html>
+    <head>
+        <title>Cars</title>
+    </head>
+<body>
+    @* if img src is in wwwroot or it this will work *@
+    <img src="~/Images/school-logo-design-template-free-vector.jpg" width="50"/>
+
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Color</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>
+            @item.Code
+        </td>
+        <td>
+            @item.Color
+        </td>
+    </tr>
+        }
+    </table>
+</body>
+</html>

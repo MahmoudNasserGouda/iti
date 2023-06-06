@@ -1,0 +1,4 @@
+-Try CRUD Operation on any database.
+-Try accessing static files in wwwroot.
+-Try accessing static files located out of wwwroot.
+-try adding another client-side library in 2 ways (manually, wizard).

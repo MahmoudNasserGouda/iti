@@ -1,0 +1,33 @@
+﻿@page "{id:int?}"
+@model RazorPagesDemo.Pages.Course.EditModel
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Course.CrsId" class="form-label mt-4"></label>
+        <input asp-for="@Model.Course.CrsId" class="form-control" />
+        <span asp-validation-for="@Model.Course.CrsId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Course.CrsName" class="form-label mt-4"></label>
+        <input asp-for="@Model.Course.CrsName" class="form-control" />
+        <span asp-validation-for="@Model.Course.CrsName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Course.CrsDuration" class="form-label mt-4"></label>
+        <input asp-for="@Model.Course.CrsDuration" class="form-control" />
+        <span asp-validation-for="@Model.Course.CrsDuration" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Course.InsId" class="form-label mt-4"></label>
+        <select asp-for="@Model.Course.InsId" asp-items="ViewBag.InsId" class="form-control"></select>
+        <span asp-validation-for="@Model.Course.InsId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Course.TopId" class="form-label mt-4"></label>
+        <select asp-for="@Model.Course.TopId" asp-items="ViewBag.TopId" class="form-control"></select>
+        <span asp-validation-for="@Model.Course.TopId" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Save" class="btn btn-success" />
+</form>

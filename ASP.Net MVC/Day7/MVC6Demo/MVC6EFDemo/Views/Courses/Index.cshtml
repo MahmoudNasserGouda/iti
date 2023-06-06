@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Course>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    @Html.ActionLink("Create New","Create","Courses")
+    <a asp-action="Create" asp-controller="Courses">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CrsName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CrsDuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Top)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CrsName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CrsDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ins.InsId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Top.TopId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CrsId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CrsId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CrsId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
