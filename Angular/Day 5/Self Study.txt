@@ -1,0 +1,11 @@
+reactive forms
+-array , dynamic , custom validation
+jwt
+-authentication , authorzation 
+localaiztion =>i18n
+angular material , ngx , ngbootstrap
+angular universal
+http interceptor
+pagination
+in deep rxjs
+

@@ -1,0 +1,65 @@
+<div class="container">
+  <h1 class="mb-3">Edit && Delete Employee</h1>
+  <div class="row">
+    <div class="col-6">
+      <form [formGroup]="employyForm">
+        <div class="mb-3" >
+          <label for="id" class="form1-label">ID</label>
+          <input readonly type="text" class="form-control" id="id" name="id"
+          formControlName="id">
+        </div>
+
+        <div class="mb-3" >
+          <label for="name" class="form1-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name"
+          formControlName="name"
+          [ngClass]="{'is-invalid':  ((employyForm.get('name')?.touched ||
+          employyForm.get('name')?.dirty)  && !employyForm.get('name')?.valid)}">
+
+          <span class="invalid-feedback">
+            <span *ngIf="employyForm.get('name')?.errors?.['required']">
+              please enter name
+            </span>
+          </span>
+        </div>
+
+        <div class="mb-3" >
+          <label for="email" class="form1-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email"
+          formControlName="email">
+        </div>
+
+        <div class="mb-3" >
+          <label for="phone" class="form1-label">Phone</label>
+          <input type="number" class="form-control" id="phone" name="phone"
+          formControlName="phone">
+        </div>
+
+        <div class="mb-3" >
+          <label for="salary" class="form1-label">Salary</label>
+          <input type="number" class="form-control" id="salary" name="salary"
+          formControlName="salary">
+        </div>
+
+        <div class="mb-3" >
+          <label for="department" class="form1-label">Department</label>
+          <input type="text" class="form-control" id="department" name="department"
+          formControlName="department">
+        </div>
+
+
+
+        <div class="example-button-row">
+          <button type="submit" mat-raised-button (click)="updateEmployee()">Save</button>
+        </div>
+
+        <div class="example-button-row">
+          <button type="submit" mat-raised-button
+          (click)="deleteEmployee(employeeDetails.id)">Delete</button>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+  </div>

@@ -1,0 +1,22 @@
+﻿@model List<Book>
+
+<style>
+    .card {
+        width: 18rem;
+        float: left; 
+        margin-right: 10px; /* we use that sht*/
+    }
+
+</style>
+@foreach (var item in Model)
+{
+    <div class="card">
+        <img class="card-img-top" src="@item.ImagePath" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">@item.Description</p>
+        </div>
+    </div>
+
+}
+
+

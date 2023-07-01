@@ -1,0 +1,51 @@
+<div class="card">
+  <div class="card-header">
+    Reactive Form
+  </div>
+  <div class="card-body">
+    <form [formGroup]="userForm">
+      <div class="form-group row mb-2">
+        <label for="username" class="col-md-2">User Name </label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="username"
+          placeholder="User Name (required)"
+          formControlName="username"
+          name="username"
+          [ngClass]="{'is-invalid': (userForm.get('username')?.touched
+            || username?.dirty )
+          && !username?.valid}"
+          >
+          <span class="invalid-feedback">
+            <span *ngIf="username?.errors?.['required']">
+              please enter a valid name
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="form-group row mb-2">
+        <label for="password" class="col-md-2">Password </label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="password"
+          placeholder="Password (required)"
+          formControlName="password"
+          name="password"
+          [ngClass]="{'is-invalid': (userForm.get('password')?.touched
+            || password?.dirty )
+          && !password?.valid}"
+          >
+          <span class="invalid-feedback">
+            <span *ngIf="password?.errors?.['required']">
+              please enter a valid password
+            </span>
+            <span *ngIf="password?.errors?.['minlength']">
+              please enter a password with more than 6 character
+            </span>
+          </span>
+        </div>
+      </div>
+      <button routerLink="/user/userProfile" class="btn btn-primary" (click)="userLogin()" [disabled]="!this.username?.valid || !this.password?.valid">
+        Login
+      </button>
+    </form>
+  </div>
+</div>

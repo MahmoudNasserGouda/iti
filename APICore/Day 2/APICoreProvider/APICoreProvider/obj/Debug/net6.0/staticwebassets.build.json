@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "1Quh14ftAgxWeQhIICZhKQ1A2vfJyIbk2uvI+NbRA28=",
+  "Source": "APICoreProvider",
+  "BasePath": "_content/APICoreProvider",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "APICoreProvider\\wwwroot",
+      "Source": "APICoreProvider",
+      "ContentRoot": "C:\\Users\\ITI\\Desktop\\G2\\API\\APICoreProvider\\APICoreProvider\\wwwroot\\",
+      "BasePath": "_content/APICoreProvider",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

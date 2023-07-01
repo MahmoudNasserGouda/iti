@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <a class="navbar-brand mx-4"> Day4</a>
+  <ul class="nav nav-pills">
+    <li><a class="nav-link" routerLink="/products">Products</a></li>
+    <li><a class="nav-link" routerLink="/user/userProfile">User Profile</a></li>
+    <li *ngIf="!getuserState()"><a class="nav-link" routerLink="/user/userLogin">User Login</a></li>
+    <li *ngIf="getuserState()"><a class="nav-link" routerLink="/products" (click)="Logout()">User Logout</a></li>
+    <li><a class="nav-link" routerLink="/user/userSignup">User Signup</a></li>
+  </ul>
+</nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>

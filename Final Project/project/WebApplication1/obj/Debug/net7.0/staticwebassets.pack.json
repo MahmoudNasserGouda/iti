@@ -1,0 +1,837 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\Login_Images\\04.jpg",
+      "PackagePath": "staticwebassets\\Login_Images\\04.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\Login_Images\\05.jpg",
+      "PackagePath": "staticwebassets\\Login_Images\\05.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\Login_Images\\no.jpg",
+      "PackagePath": "staticwebassets\\Login_Images\\no.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\Login_Images\\old04.jpg",
+      "PackagePath": "staticwebassets\\Login_Images\\old04.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\Login_Images\\old05.jpg",
+      "PackagePath": "staticwebassets\\Login_Images\\old05.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\about-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\about-img.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\about-img1.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\about-img1.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\b1.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\b1.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\b2.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\b2.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\b3.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\b3.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\b4.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\b4.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\b5.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\b5.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\b6.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\b6.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\c1.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\c1.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\c2.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\c2.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\c3.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\c3.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\d.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\f1.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\f2.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\f3.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\f4.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\f5.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\f6.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\f7.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\f8.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\g1.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\g2.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\g3.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\g4.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\g5.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\g6.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\g7.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\g8.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\primary-check.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\success-check.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\elements\\success-radio.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\f1.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\f1.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\f2.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\f2.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\fact-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\fact-bg.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\header-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\header-bg.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\header-img.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\header-img.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\header-img_notimplemented.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\header-img_notimplemented.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\logo.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\p1.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\p1.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\p2.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\p2.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\p3.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\p3.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\p4.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\p4.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\p5.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\p5.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\p6.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\p6.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\signature.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\signature.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\t1.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\t1.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\t2.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\t2.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\t3.png",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\t3.png"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\MainMenuBookimg\\user.jpg",
+      "PackagePath": "staticwebassets\\assets\\MainMenuBookimg\\user.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\img\\01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\01.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\img\\02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\02.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\assets\\img\\03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\03.jpg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\AddRole.css",
+      "PackagePath": "staticwebassets\\css\\AddRole.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\CategoriesStyle.css",
+      "PackagePath": "staticwebassets\\css\\CategoriesStyle.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\ImageShow.css",
+      "PackagePath": "staticwebassets\\css\\ImageShow.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\animate.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\bootstrap.map",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\bootstrap.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\bootstrap\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\bootstrap\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\font-awesome.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\jquery.DonutWidget.min.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\jquery.DonutWidget.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\jquerysctipttop.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\jquerysctipttop.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\linearicons.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\linearicons.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\magnific-popup.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\main.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\main.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\main.map",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\main.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\nice-select.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\owl.carousel.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\MainMenuBookcss\\theme\\pages.css",
+      "PackagePath": "staticwebassets\\css\\MainMenuBookcss\\theme\\pages.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\NavBar.css",
+      "PackagePath": "staticwebassets\\css\\NavBar.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\AddRole.js",
+      "PackagePath": "staticwebassets\\js\\AddRole.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\CategoriesScript.js",
+      "PackagePath": "staticwebassets\\js\\CategoriesScript.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\easing.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\easing.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\hoverIntent.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\hoverIntent.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\jquery.sticky.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\mail-script.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\mail-script.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\main.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\main.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\owl.carousel.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\parallax.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\parallax.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\slick.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\slick.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\superfish.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\superfish.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\superfish.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\superfish.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\vendor\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\vendor\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\MainMenuBookjs\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\MainMenuBookjs\\waypoints.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome.rar",
+      "PackagePath": "staticwebassets\\lib\\font-awesome.rar"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\css\\font-awesome - Copy.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome - Copy.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\animated.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\animated.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\core.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\core.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\fixed-width.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\font-awesome.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\icons.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\icons.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\larger.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\larger.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\list.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\list.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\mixins.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\path.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\path.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\screen-reader.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\stacked.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\less\\variables.less",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\less\\variables.less"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_animated.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_core.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_icons.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_larger.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_list.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_path.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\_variables.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\font-awesome\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebApplication1.props",
+      "PackagePath": "build\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication1.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebApplication1.props",
+      "PackagePath": "buildTransitive\\WebApplication1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

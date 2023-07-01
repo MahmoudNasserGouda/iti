@@ -1,0 +1,44 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using WebApplication1.Models.Repositories;
+@model List<Chapter>
+@inject IUserRepository userRepository
+@inject UserManager<User> userManager
+
+@{
+    Layout = null;
+}
+
+<div class="h1 text-center mb-4"><span id="chaptersCount" data="@Model.Count()"></span>Chapters</div>
+
+@foreach (Chapter chapter in Model)
+{
+    <div class="d-inline-block mb-2">
+        @{
+            string Title = "Chapter " + chapter.Order + " : " + chapter.Title;
+            User user = await userManager.GetUserAsync(User);
+            bool isRead = false;
+            if (user != null)
+            {
+                isRead = await userRepository.IsReadChapter(user.Id, chapter.ID);
+            }
+            if (isRead == false)
+            {
+                <span class="h5">
+                    <a class="text-decoration-none text-xxl-center bg-dark bg-opacity-75 badge" asp-action="Index" asp-controller="Chapter" asp-route-id="@chapter.ID">@Title</a>
+                </span>
+            }
+            else
+            {
+                <span class="h5">
+                    <a class="text-decoration-none text-xxl-center bg-secondary badge" asp-action="Index" asp-controller="Chapter" asp-route-id="@chapter.ID">@Title</a>
+                </span>
+            }
+            if (User.IsInRole("Admin"))
+            {
+                <span class="h5 ms-2">
+                    <a class="text-decoration-none text-xxl-center bg-danger badge" role="button" onclick="DeleteChapter(@chapter.ID)">Delete</a>
+                </span>
+            }
+        }
+    </div>
+}

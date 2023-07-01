@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="card-header">
+    Template Form
+  </div>
+  <div class="card-body">
+    <form #signupForm="ngForm">
+      <div class="form-group row mb-2">
+        <label for="username" class="col-md-2">User Name </label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="username"
+          placeholder="User Name (required)"
+          required
+          minlength="4"
+          [(ngModel)] = user.username
+          #usernameVar = 'ngModel'
+          name="username"
+          [ngClass]="{'is-invalid': (usernameVar.touched  || usernameVar.dirty )
+          && !usernameVar.valid}"
+          >
+          <span class="invalid-feedback">
+            <span *ngIf="usernameVar.errors?.['required']">
+              please enter a valid username
+            </span>
+          </span>
+        </div>
+        <div class="form-group row mb-2">
+          <label for="password" class="col-md-2">Password </label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="password"
+            placeholder="Password (required)"
+            required
+            minlength="6"
+            [(ngModel)] = user.password
+            #passwordVar = 'ngModel'
+            name="password"
+            [ngClass]="{'is-invalid': (passwordVar.touched  || passwordVar.dirty )
+            && !passwordVar.valid}"
+            >
+            <span class="invalid-feedback">
+              <span *ngIf="passwordVar.errors?.['required']">
+                please enter a valid password
+              </span>
+              <span *ngIf="passwordVar.errors?.['minlength']">
+                please enter a password minimum length of 6 characters
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

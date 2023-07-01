@@ -1,0 +1,42 @@
+<div class="card">
+  <div class="card-header">
+    Template Form
+  </div>
+  <div class="card-body">
+    <form #signupForm="ngForm">
+      <div class="form-group row mb-2">
+        <label for="firstName" class="col-md-2">First Name </label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="firstName"
+          placeholder="First Name (required)"
+          required
+          minlength="4"
+          [(ngModel)] = user.firstName
+          #firstNameVar = 'ngModel'
+          name="firstName"
+          [ngClass]="{'is-invalid': (firstNameVar.touched  || firstNameVar.dirty )
+          && !firstNameVar.valid}"
+          >
+          <span class="invalid-feedback">
+            <span *ngIf="firstNameVar.errors?.['required']">
+              please enter a valid name
+            </span>
+
+            <span *ngIf="firstNameVar.errors?.['minlength']">
+              please enter name with more than 4 character
+            </span>
+
+
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<br> Dirty : {{signupForm.dirty}}
+<br> Touched : {{signupForm.touched}}
+<br> Valid : {{signupForm.valid}}
+<br> Value : {{signupForm.value | json}}
+

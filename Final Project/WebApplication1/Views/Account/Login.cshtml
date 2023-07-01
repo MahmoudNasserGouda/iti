@@ -1,0 +1,25 @@
+﻿@model LoginUserVM
+
+@{
+    Layout = "_Login_Registration";
+}
+<form action="/Account/Login/@Model" method="post">
+  <div class="form-floating mb-3"> 
+ <label asp-for="UserName"></label>
+<input asp-for="UserName" class="form-control"/>
+<span asp-validation-for="UserName"></span>
+</div>
+ <div class="form-floating mb-3"> 
+  <label asp-for="Password"></label>
+<input asp-for="Password" class="form-control" />
+<span asp-validation-for="Password"></span>
+ </div>
+<label asp-for="IsPersisted"></label>
+    <input asp-for="IsPersisted" class="form-check-label" />
+<span asp-validation-for="IsPersisted"></span>
+ 
+<div asp-validation-summary="All"  class="text-danger"></div>
+    <input type="submit" value="Login" class="btn btn-primary" />
+
+</form>
+

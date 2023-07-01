@@ -1,0 +1,13 @@
+﻿@model RoleAddVM 
+@{
+    Layout = "_AddRoleView";
+}
+
+<form action="/Role/AddRole" method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+   
+    <input type="submit" value="Create New Role"/>
+    <div asp-validation-summary="All"></div>
+</form>

@@ -1,0 +1,175 @@
+﻿@model WebApplication1.Models.Entities.Chapter
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="p-xxl-5 ms-xxl-5 me-xxl-5" id="chapter" data="@Model.ID">
+
+    <div class="text-center ps-xxl-5 mb-4 pe-xxl-5 ms-xxl-5 me-xxl-5">
+        @{ string bookTitle = ViewBag.BookTitle; }
+        @Html.ActionLink(bookTitle  ,"Index" , "Book" ,new{Id = ViewBag.BookId},new{@class="text-center text-decoration-none display-1 text-dark"})
+    </div>
+
+    <div class="align-content-sm-center mb-2 justify-content-center flex-row d-flex ps-xxl-5 pe-xxl-5 ms-xxl-5 me-xxl-5">
+        @if(ViewBag.Prev != 0)
+        {
+            @Html.ActionLink( "previous" ,"Index" , "Chapter" ,new{id = @ViewBag.Prev},new{@class="btn btn-primary d-inline-flex"})
+        }
+        else
+        {
+            @Html.ActionLink( "previous" ,"Index" , "Chapter" ,new{id = @ViewBag.Prev},new{@class="btn btn-primary d-inline-flex disabled"})
+        }
+        <span class="ps-2 pe-2 h4">Chapter @Model.Order: @Model.Title</span>
+        @if (ViewBag.Next != 0)
+        {
+            @Html.ActionLink( "Next" ,"Index" , "Chapter" ,new{id = @ViewBag.Next},new{@class="btn btn-primary d-inline-flex"})
+        }
+        else
+        {
+            @Html.ActionLink( "Next" ,"Index" , "Chapter" ,new{id = @ViewBag.Next},new{@class="btn btn-primary d-inline-flex disabled"})
+        }
+    </div>
+
+    <br />
+
+    <div class="align-content-sm-center justify-content-center flex-row d-flex ps-xxl-5 pe-xxl-5 ms-xxl-5 me-xxl-5">
+        <pre class="w-auto overflow-visible lead fs-5">@Model.Content</pre>
+    </div>
+
+    <br />
+
+    <div class="align-content-sm-center mt-2 justify-content-center flex-row d-flex ps-xxl-5 pe-xxl-5 ms-xxl-5 me-xxl-5">
+
+        @if (ViewBag.Prev != 0)
+        {
+            @Html.ActionLink( "previous" ,"Index" , "Chapter" ,new{id = @ViewBag.Prev},new{@class="btn btn-primary d-inline-flex"})
+        }
+        else
+        {
+            @Html.ActionLink( "previous" ,"Index" , "Chapter" ,new{id = @ViewBag.Prev},new{@class="btn btn-primary d-inline-flex disabled"})
+        }
+        <span class="ps-2 pe-2 h4">Chapter @Model.Order: @Model.Title</span>
+        @if (ViewBag.Next != 0)
+        {
+            @Html.ActionLink( "Next" ,"Index" , "Chapter" ,new{id = @ViewBag.Next},new{@class="btn btn-primary d-inline-flex"})
+        }
+        else
+        {
+            @Html.ActionLink( "Next" ,"Index" , "Chapter" ,new{id = @ViewBag.Next},new{@class="btn btn-primary d-inline-flex disabled"})
+        }
+    </div>
+
+    <br />
+    <hr class="text-primary rounded-3 opacity-75" />
+    <br />
+
+    <div id="Comments" class="align-content-sm-center flex-column d-flex ps-xxl-5 pe-xxl-5 ms-xxl-5 me-xxl-5"></div>
+
+    <div id="Comment" class="align-content-sm-center flex-column d-flex ps-xxl-5 pe-xxl-5 ms-xxl-5 me-xxl-5"></div>
+</div>
+
+
+@section Scripts{
+    <script type="text/javascript">
+        function GetComments() {
+            $.ajax({
+                method: "GET",
+                url: "/Comment/Comments/" + @Model.ID,
+                contentType: "text/html",
+                success: function (data) {
+                    $("#Comments").html(data);
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+        function DeleteComment(commentId) {
+            $.ajax({
+                method: "Post",
+                url: "/Comment/Delete/" + commentId,
+                success: function (data) {
+                    GetComments();
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+        GetComments();
+        function GetComment() {
+            $.ajax({
+                method: "GET",
+                url: "/Comment/Comment",
+                contentType: "text/html",
+                success: function (data) {
+                    $("#Comment").html(data);
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+            setTimeout(() => {
+                document.forms[0].onsubmit = function () {
+                    event.preventDefault();
+                    var data = {
+                        "ID": 0,
+                        "Text": document.getElementById("Text").value,
+                        "Votes": 0,
+                        "Date": 0,
+                        "ChapterID": document.getElementById("chapter").getAttributeNode("data").value,
+                        "UserID": document.getElementById("addComment").getAttributeNode("data").value
+                    }
+                    $.ajax({
+                        method: "POST",
+                        url: "/Comment/Comment",
+                        dataType: "json",
+                        data: data,
+                        success: function (data) {
+                            GetComments();
+                        },
+                        error: function (e) {
+                            console.log(e.message);
+                        }
+                    })
+                }
+            }, "1000")
+        }
+        function UpVote(commentId, vote) {
+            $.ajax({
+                type: 'POST',
+                url: "/Comment/UpVote",
+                data:
+                {
+                    commentId: commentId,
+                    vote: vote
+                },
+                success: function (data) {
+                    GetComments();
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+        function DownVote(commentId, vote) {
+            $.ajax({
+                type: 'POST',
+                url: "/Comment/DownVote",
+                data:
+                {
+                    commentId: commentId,
+                    vote: vote
+                },
+                success: function (data) {
+                    GetComments();
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+    </script>
+}

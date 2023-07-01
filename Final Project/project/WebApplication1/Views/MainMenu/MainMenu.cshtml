@@ -1,0 +1,98 @@
+﻿@model List<Book>
+@{
+    Layout = "_BookStoreMainMenu";
+    
+}
+
+@section NavBar{
+    <partial name="_NavBarPV" />
+}
+@section NumberOfBooks{
+	<section class="counter-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="single-counter">
+						<h1 class="counter">@ViewBag.HorrorCategoryNumber</h1>
+						<p>Horror</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-counter">
+						<h1 class="counter">@ViewBag.AdventureCategoryNumber</h1>
+						<p>Adventure</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-counter">
+						<h1 class="counter">@ViewBag.SciFiCategoryNumber</h1>
+						<p>Sci-Fi</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-counter">
+						<h1 class="counter">@ViewBag.TotalBooks</h1>
+						<p>Total Books</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}
+@section LibraryEntry{
+	<section class="banner-area" id="home">
+		<div class="container">
+			<div class="row @*fullscreen*@ d-flex align-items-center justify-content-start">
+				<div class="banner-content col-lg-7">
+					<h5 class="text-white text-uppercase">Enhance your knowledge in our</h5>
+					<h1 class="text-uppercase">
+						Chamber of Books
+					</h1>
+					<p class="text-white pt-20 pb-20">
+					With more than 100 book to read, we hope that you enjoy you stay in the chamber of books. 
+					</p>
+					<a href="/Categories/Categories" class="primary-btn text-uppercase">Enter the Chamber</a>
+				</div>
+				<div class="col-lg-5 banner-right">
+					<img class="img-fluid" src="~/assets/MainMenuBookimg/header-img.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+}
+
+@section HighestRated{
+	
+
+	<section class="course-area section-gap" id="course">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-60 col-lg-9">
+					<div class="title text-center">
+						<h1 class="mb-10">Highest Rated Books</h1>
+						<p>The highest rated books according to our users.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="active-course-carusel">
+					@foreach (var item in Model)
+				{
+						<div class="single-course item">
+							<img class="img-fluid" src="@item.ImagePath" alt="" style="height:360px; width:300px">
+							<p class="sale-btn">@item.Category.Name</p>
+							<div class="details">
+								<a href="#"><h4>@item.Name <span class="price float-right">$@item.Price</span></h4></a>
+								<p>
+									@item.Description
+								</p>
+							</div>
+						</div>
+					}
+				
+					
+				</div>
+			</div>
+		</div>
+	</section>
+}

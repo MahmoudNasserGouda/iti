@@ -1,0 +1,26 @@
+<p>product-list works!</p>
+<h1>{{pageTitle}}</h1>
+<img src="https://fakeimg.pl/250x150/">
+
+<table class="table" *ngIf="products.length">
+  <thead class="thead-light">
+    <tr>
+      <th>Image</th>
+      <th>Product</th>
+      <th>Code</th>
+      <th>Avaliable</th>
+      <th>Price</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td> <img [src]="product.imgUrl" >  </td>
+      <td>{{product.productName}}</td>
+      <td> {{product.productCode}}  </td>
+      <td> {{product.releaseDate}} </td>
+      <td> {{product.price}} </td>
+      <td>{{product.starRating}}</td>
+    </tr>
+  </tbody>
+</table>

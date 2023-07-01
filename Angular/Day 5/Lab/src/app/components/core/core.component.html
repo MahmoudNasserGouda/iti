@@ -1,0 +1,20 @@
+<div class="d-flex flex-column mt-2 justify-content-center align-items-center" style="height:100%;">
+  <h1>{{(product.productName + " : " + product.productCode| converBorder) | uppercase}}</h1>
+  <div class="mt-2">
+    <img [src]=imageSrc alt="" appImageHover>
+  </div>
+  <div class="mt-2">
+    {{product.description}}
+  </div>
+  <div class="mt-2">
+    {{product.price + "$"}}
+  </div>
+  <div class="mt-2">
+    <app-star [rating]="product.starRating"></app-star>
+  </div>
+  <div class="mt-2">
+    <button [disabled]="!(product.productID > 0)" class="btn btn-primary me-2" (click)="prevImage()" [style.width.px]="80">previous</button>
+    <input type="number" [(ngModel)]="productId" class="me-2" [style.width.px]="80"/>
+    <button [disabled]="!(product.productID < products.length - 1)" class="btn btn-primary me-2" (click)="nextImage()" [style.width.px]="80">next</button>
+  </div>
+</div>

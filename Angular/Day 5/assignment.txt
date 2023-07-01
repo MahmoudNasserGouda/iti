@@ -1,0 +1,7 @@
+guard
+module
+lazy loading
+template driven
+reactive froms
+---------------------------
+bonus: module Customer CRUD

@@ -1,0 +1,5 @@
+1- npm cache clear --force
+2- npm install -g typescript
+3- open Powershell as administrator
+4- write in Powershell : set-executionpolicy remotesigned
+5- And select option : A
