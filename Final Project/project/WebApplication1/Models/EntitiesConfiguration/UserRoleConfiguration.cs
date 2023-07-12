@@ -13,6 +13,21 @@ namespace WebApplication1.Models.EntitiesConfiguration
                 {
                     RoleId = "1",
                     UserId = "1",
+                },
+                new IdentityUserRole<string>()
+                {
+                    RoleId = "2",
+                    UserId = "1",
+                },
+                new IdentityUserRole<string>()
+                {
+                    RoleId = "1",
+                    UserId = "2",
+                },
+                new IdentityUserRole<string>()
+                {
+                    RoleId = "2",
+                    UserId = "3",
                 }
             });
         }

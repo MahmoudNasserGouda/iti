@@ -15,7 +15,22 @@ namespace WebApplication1.Models.EntitiesConfiguration
                 new Category() {
                     ID=1, 
                     Name="Horror" 
-                } 
+                },
+                new Category()
+                {
+                    ID=2,
+                    Name="Adventure"
+				},
+                new Category()
+                {
+                    ID =3,
+                    Name="Sci-Fi"
+				},
+                new Category()
+                {
+                    ID=4,
+                    Name="Romance"
+                }
             });
         }
     }

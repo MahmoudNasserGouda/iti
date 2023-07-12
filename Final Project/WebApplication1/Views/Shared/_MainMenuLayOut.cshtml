@@ -17,67 +17,7 @@
 </head>
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container px-5">
-            <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    @if (User.Identity.IsAuthenticated == false)
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link" href="Account/Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Account/Registration">Register</a>
-                        </li>
-                    }
-                    else
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link active" href="Account/LogOut">Logout</a>
-                        </li>
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/Role/AddRole">Role Add</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/AdminCreate/AddAdmin">Admin Add</a>
-                            </li>
-                        }
-                    }
-                    <!-- name user display-->
-                    <ul class="navbar-nav d-flex flex-row">
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            <li class="nav-item me-3 me-lg-0">
-                                <a class="nav-link" href="#!">
-                                    <span> Welcome @User.Identity.Name </span>
-                                </a>
-                            </li>
-
-                        }
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="#!">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="#!">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="#!">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </ul>
-            </div>
-        </div>
-    </nav>
+   @RenderSection("NavBar",false)
     <!-- Header-->
     <header class="masthead text-center text-white">
         <div class="masthead-content">

@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -2180,6 +2183,15 @@
           }
         }
       },
+      "Profanity.Detector/0.1.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ProfanityFilter.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ProfanityFilter.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -3899,6 +3911,27 @@
     }
   },
   "libraries": {
+    "FontAwesome/4.7.0": {
+      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "type": "package",
+      "path": "fontawesome/4.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/font-awesome.css",
+        "Content/Content/font-awesome.min.css",
+        "Content/fonts/FontAwesome.otf",
+        "Content/fonts/fontawesome-webfont.eot",
+        "Content/fonts/fontawesome-webfont.svg",
+        "Content/fonts/fontawesome-webfont.ttf",
+        "Content/fonts/fontawesome-webfont.woff",
+        "Content/fonts/fontawesome-webfont.woff2",
+        "fontawesome.4.7.0.nupkg.sha512",
+        "fontawesome.nuspec",
+        "tools/install.ps1"
+      ]
+    },
     "Humanizer/2.14.1": {
       "sha512": "/FUTD3cEceAAmJSCPN9+J+VhGwmL/C12jvwlyM1DFXShEMsBzvLzLqSrJ2rb+k/W2znKw7JyflZgZpyE+tI7lA==",
       "type": "package",
@@ -7099,6 +7132,18 @@
         "lib/netstandard2.0/NuGet.Versioning.xml",
         "nuget.versioning.6.3.1.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "Profanity.Detector/0.1.8": {
+      "sha512": "4rfonJb74vncmdyobz71Wm0N5YeKtReOMIr0P8z/IRP9iJsVcoRfFFfgANopaFjmHI1lZyZL+ps8AKwF1rNjHg==",
+      "type": "package",
+      "path": "profanity.detector/0.1.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/ProfanityFilter.dll",
+        "profanity.detector.0.1.8.nupkg.sha512",
+        "profanity.detector.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -11167,11 +11212,13 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "FontAwesome >= 4.7.0",
       "Microsoft.AspNet.Mvc >= 5.2.9",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.18",
       "Microsoft.EntityFrameworkCore.sqlserver >= 6.0.18",
       "Microsoft.EntityFrameworkCore.tools >= 6.0.18",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.7"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.7",
+      "Profanity.Detector >= 0.1.8"
     ]
   },
   "packageFolders": {
@@ -11215,6 +11262,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
+          },
           "Microsoft.AspNet.Mvc": {
             "target": "Package",
             "version": "[5.2.9, )"
@@ -11236,6 +11287,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[7.0.7, )"
+          },
+          "Profanity.Detector": {
+            "target": "Package",
+            "version": "[0.1.8, )"
           }
         },
         "imports": [

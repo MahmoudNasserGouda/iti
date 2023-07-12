@@ -4,6 +4,7 @@ using WebApplication1.Models.Entities;
 using WebApplication1.Models.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebApplication1.BackgroundServices;
 
 namespace WebApplication1
 {
@@ -20,13 +21,25 @@ namespace WebApplication1
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             // ctor injection of context
-            builder.Services.AddDbContext<BookStoreContext>(options=>options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddDbContext<BookStoreContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             //adding our entities scopes
-            builder.Services.AddScoped<IGameRepository, GameRepository>();
-            builder.Services.AddScoped<ISectionRepository, SectionRepository>();
+            builder.Services.AddScoped<IBookRepository, BookRepository>();
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+            builder.Services.AddScoped<IChapterRepository, ChapterRepository>();
+            builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+            builder.Services.AddScoped<IUserReviewRepository, UserReviewRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+            builder.Services.AddScoped<IUserCommentRepository, UserCommentRepository>();
+            builder.Services.AddScoped<IUserSubscriptionRepository, UserSubscriptionRepository>();
+            builder.Services.AddScoped<IReportRepository, ReportRepository>();
             // to add our signinmanager and usermanager
             builder.Services.AddIdentity<User,IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
-           
+            builder.Services.AddScoped<UserManager<User>>();
+
+            // Register subscriptions Background service
+            builder.Services.AddHostedService<SubscriptionsBackgroundService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -43,11 +56,16 @@ namespace WebApplication1
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-          
+
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Game}/{action=MainMenu}/{id?}");
-            
+                pattern: "{controller=MainMenu}/{action=MainMenu}/{id?}");
+
+            //app.MapControllerRoute(
+            //    name: "Categories",
+            //    pattern: "Categories/{action=Categories}/{id?}",
+            //    defaults: new { controller = "Categories", action = "Categories" });
+
             app.Run();
         }
     }

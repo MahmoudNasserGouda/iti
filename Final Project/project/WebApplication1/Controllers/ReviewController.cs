@@ -25,14 +25,16 @@ namespace WebApplication1.Controllers
             _userRepository = userRepository;
         }
 
-        [HttpGet]
+		[Authorize]
+		[HttpGet]
         public async Task<IActionResult> Reviews(int Id)
         {
             List<Review> reviews = await _reviewRepository.GetAll(Id);
             return View(reviews);
         }
 
-        [HttpGet]
+		[Authorize(Roles = "PremiumUser, Admin")]
+		[HttpGet]
         public async Task<IActionResult> Review()
         {
             if (User.Identity != null && User.Identity.IsAuthenticated)
@@ -46,12 +48,20 @@ namespace WebApplication1.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-        [HttpPost]
+		[Authorize(Roles = "PremiumUser, Admin")]
+		[HttpPost]
         public async Task<IActionResult> Review(Review review)
         {
-            if (review == null)
+            if (review == null || review.Text == null)
             {
-                throw new ArgumentNullException(nameof(review));
+				ModelState.AddModelError(nameof(review.Text), "*you can't write an empty review");
+				return View(review);
+			}
+            var filter = new ProfanityFilter.ProfanityFilter();
+            var swearList = filter.DetectAllProfanities(review.Text);
+            if (swearList.Count > 0) {
+                ModelState.AddModelError(nameof(review.Text),"*you can't write profane words like (" + String.Join(", ", swearList) + ").");
+                return View(review);
             }
             await _reviewRepository.AddReview(review);
             await _bookRepository.CalculateRating(review.BookID);
@@ -59,7 +69,8 @@ namespace WebApplication1.Controllers
             return Json(new { success = true, r = rating });
         }
 
-        [HttpPost]
+		[Authorize(Roles = "Admin")]
+		[HttpPost]
         public async Task<IActionResult> Delete(int Id)
         {
             int bookId = _reviewRepository.GetById(Id).Result.BookID;
@@ -69,7 +80,8 @@ namespace WebApplication1.Controllers
             return Json(new { success = true, r = rating });
         }
 
-        [HttpPost]
+		[Authorize]
+		[HttpPost]
         public async Task<IActionResult> UpVote(int reviewId, int vote)
         {
             if (User.Identity != null && User.Identity.IsAuthenticated)
@@ -93,7 +105,8 @@ namespace WebApplication1.Controllers
             return Json(new { success = true });
         }
 
-        [HttpPost]
+		[Authorize]
+		[HttpPost]
         public async Task<IActionResult> DownVote(int reviewId, int vote)
         {
             if (User.Identity != null && User.Identity.IsAuthenticated)

@@ -3,23 +3,42 @@
 @{
     Layout = "_Login_Registration";
 }
-<form action="/Account/Login/@Model" method="post">
-  <div class="form-floating mb-3"> 
- <label asp-for="UserName"></label>
-<input asp-for="UserName" class="form-control"/>
-<span asp-validation-for="UserName"></span>
-</div>
- <div class="form-floating mb-3"> 
-  <label asp-for="Password"></label>
-<input asp-for="Password" class="form-control" />
-<span asp-validation-for="Password"></span>
- </div>
-<label asp-for="IsPersisted"></label>
-    <input asp-for="IsPersisted" class="form-check-label" />
-<span asp-validation-for="IsPersisted"></span>
- 
-<div asp-validation-summary="All"  class="text-danger"></div>
-    <input type="submit" value="Login" class="btn btn-primary" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label {
+            font-weight: bold;
+            color: darkslategray
+        }
+    </style>
+       
+</head>
+<body>
+    <form action="/Account/Login/@Model" method="post">
+        <div class="form-floating mb-3">
+            <label asp-for="UserName"></label>
+            <input asp-for="UserName" class="form-control" />
+            <span asp-validation-for="UserName" style="color:brown;display:inline-block"></span>
+        </div>
+        <div class="form-floating mb-3" style="">
+            <label asp-for="Password" style="padding-right:7px;padding-bottom:10px"></label>
+            <input asp-for="Password" class="form-control" />
+            <span asp-validation-for="Password" style="color:brown;display:inline-block"></span>
+        </div>
+        <label asp-for="IsPersisted"></label>
+        <input asp-for="IsPersisted" class="form-check-label" />
+        <span asp-validation-for="IsPersisted" style="color:brown ;display:inline-block"></span>
 
-</form>
+        <div asp-validation-summary="All" class="text-danger" style="color:brown"></div>
+        <input type="submit" value="Login" class="btn btn-primary" />
+        <a href="/Account/Registration" style="color:firebrick"> Didn't Sign Up?</a>
+    </form>
+
+</body>
+</html>
+
+
 

@@ -1,0 +1,99 @@
+﻿@{
+    Layout = "_TempPayment";
+}
+@model Subscription
+@section NavBar{
+    <partial name="_NavBarPV" />
+}
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="text-center">
+            <h2>You shopping cart summary</h2>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Selected amount</th>
+                    <th>Package</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td class="align-middle">@Model.price USD</td>
+                        <td class="align-middle">@Model.name</td>
+                        <td class="align-middle"> @Model.months Months</td>
+                        <td class="align-middle"> </td>
+                    </tr>
+            
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <td><b>Total:</b></td>
+                    <td>
+                      @Model.price
+                    </td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="text-right">
+            <div class="btn-group">
+                @*<a class="btn btn-outline-primary" asp-action="CompleteOrder">
+                Complete order
+                </a>*@
+                <div id="paypal-btn"></div>
+                <span style="padding:5px"></span>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+<script>
+    let _total = @Model.price; // TODO: fix this later
+    paypal.Button.render({
+        //Configure environment
+        env: 'sandbox',
+        client: {
+            sandbox: 'AeReFctEqkO_dkiGN-bugPZtKefJRL9v62RRzXKK5UW0IWnlnO-bKDNLDBLrQeN2fk0GI4G0HWU83Ch0'
+        },
+
+        //Customize button
+        locale: 'en_US',
+        style: {
+            size: 'small',
+            color: 'gold',
+            shape: 'pill'
+        },
+        commit: true,
+
+        //Set up a payment
+        payment: function (data, actions) {
+            return actions.payment.create({
+                transactions: [{
+                    amount: {
+                        total: _total,
+                        currency: 'USD'
+                    }
+                }]
+            });
+        },
+        
+        //Execute the payment
+        onAuthorize: function (data, actions) {
+            return actions.payment.execute().then(function () {
+                var url = '@Url.Action("CompletePayment", "Payment")' + '?months=' + 3;
+                window.location.href = url;
+            });
+        }
+
+    }, '#paypal-btn')
+</script>

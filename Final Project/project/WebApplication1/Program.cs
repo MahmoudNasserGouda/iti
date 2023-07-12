@@ -4,6 +4,7 @@ using WebApplication1.Models.Entities;
 using WebApplication1.Models.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebApplication1.BackgroundServices;
 
 namespace WebApplication1
 {
@@ -30,9 +31,16 @@ namespace WebApplication1
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<ICommentRepository, CommentRepository>();
             builder.Services.AddScoped<IUserCommentRepository, UserCommentRepository>();
-            // to add our signinmanager and usermanager
-            builder.Services.AddIdentity<User,IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
-           
+            builder.Services.AddScoped<IUserSubscriptionRepository, UserSubscriptionRepository>();
+			builder.Services.AddScoped<IReportRepository, ReportRepository>();
+
+			// to add our signinmanager and usermanager
+			builder.Services.AddIdentity<User,IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
+            builder.Services.AddScoped<UserManager<User>>();
+
+            // Register subscriptions Background service
+            builder.Services.AddHostedService<SubscriptionsBackgroundService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -49,11 +57,16 @@ namespace WebApplication1
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-          
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=MainMenu}/{action=MainMenu}/{id?}");
-            
+
+            //app.MapControllerRoute(
+            //    name: "Categories",
+            //    pattern: "Categories/{action=Categories}/{id?}",
+            //    defaults: new { controller = "Categories", action = "Categories" });
+
             app.Run();
         }
     }

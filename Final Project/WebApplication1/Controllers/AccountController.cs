@@ -34,6 +34,7 @@ namespace WebApplication1.Controllers
                 if(res.Succeeded)
                 {
                   await signinmanager.SignInAsync(myuser,false);
+                    return RedirectToAction("MainMenu", "MainMenu");
                 }else
                 {
                     foreach (var item in res.Errors)
@@ -65,8 +66,8 @@ namespace WebApplication1.Controllers
                     if(res.Succeeded)
                     {
                         await signinmanager.SignInAsync(myuser,user.IsPersisted);
-                        return View();
-                    }
+						return RedirectToAction("MainMenu", "MainMenu");
+					}
                     else
                     {
                         ModelState.AddModelError("Error:", "Wrong UserName or Passowrd");

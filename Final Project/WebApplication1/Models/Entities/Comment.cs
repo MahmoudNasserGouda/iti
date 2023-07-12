@@ -6,8 +6,10 @@
         public string Text { get; set; }
         public int Votes { get; set; }
         public DateTime Date { get; set; }
-        //public int ChapterID { get; set; }
+        public int ChapterID { get; set; }
         public virtual Chapter Chapter { get; set; }
-        public virtual ICollection<User> Users { get; set;}
+        public string UserID { get; set; }
+        public virtual User User { get; set;}
+        public virtual ICollection<UserComment> Voters { get; set; } = new List<UserComment>();
     }
 }

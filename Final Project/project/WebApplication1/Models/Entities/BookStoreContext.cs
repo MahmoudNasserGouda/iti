@@ -30,8 +30,12 @@ namespace WebApplication1.Models.Entities
             builder.ApplyConfiguration(new UserCommentConfiguration());
             builder.ApplyConfiguration(new RoleConfiguration());
             builder.ApplyConfiguration(new UserRoleConfiguration());
+            builder.ApplyConfiguration(new UserSubscriptionConfiguration());
+            builder.ApplyConfiguration(new UserBookConfiguration());
+			builder.ApplyConfiguration(new ReportConfiguration());
 
-            base.OnModelCreating(builder);
+
+			base.OnModelCreating(builder);
         }
 
         public virtual DbSet<Book> Books { get; set;}
@@ -41,5 +45,9 @@ namespace WebApplication1.Models.Entities
         public virtual DbSet<Chapter> Chapters { get; set; }
         public virtual DbSet<UserReview> UserReviews { get; set; }
         public virtual DbSet<UserComment> UserComments { get; set; }
-    }
+        public virtual DbSet<UserSubscription> UserSubscriptions { get; set; }
+        public virtual DbSet<UserBook> UserBooks { get; set; }
+		public virtual DbSet<Report> Reports { get; set; }
+
+	}
 }

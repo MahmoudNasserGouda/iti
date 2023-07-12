@@ -18,8 +18,7 @@ namespace WebApplication1.Models.Entities
         public virtual Category Category { get; set; }
         public virtual ICollection<Chapter> Chapters { get; set; } = new List<Chapter>();
         public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();    
-        public virtual ICollection<User> Users { get; set; } = new List<User>();
-        public virtual ICollection<User> OwnerUsers { get; set; } = new List<User>();
+        public virtual ICollection<UserBook> Users { get; set; } = new List<UserBook>();
 
     }
 }

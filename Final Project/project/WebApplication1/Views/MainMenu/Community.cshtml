@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+}
+
+@if (ViewBag.Open == true)
+{
+	@if (User.IsInRole("PremiumUser") || User.IsInRole("Admin"))
+	{
+		<section class="section-gap info-area" id="about">
+			<div class="container">
+				<div class="card text-bg-dark flex mx-auto w-75">
+					<img src="~/assets/MainMenuBookimg/bookclub.jpg" class="card-img" alt="...">
+					<div class="card-img-overlay d-flex flex-column justify-content-between">
+						<div class="d-flex flex-row justify-content-between">
+							<h1 class="card-title text-light">The Book Club Is Open</h1>
+							@if (User.IsInRole("Admin"))
+							{
+								<button class="btn btn-primary" type="button" onclick="Open(false)">Close</button>
+							}
+						</div>
+						<div class="align-self-center">
+							<a class="btn btn-primary flex mx-auto h1 text-light" asp-action="Index" asp-controller="Community">Join The Room</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	}
+}
+else
+{
+	@if (User.IsInRole("Admin"))
+	{
+		<section class="section-gap info-area" id="about">
+			<div class="container">
+				<div class="card text-bg-dark flex mx-auto w-75">
+					<img src="~/assets/MainMenuBookimg/bookclub.jpg" class="card-img" alt="...">
+					<div class="card-img-overlay d-flex flex-column justify-content-between">
+						<div class="d-flex flex-row justify-content-between">
+							<h1 class="card-title text-light">The Book Club Is Open</h1>
+							@if (User.IsInRole("Admin"))
+							{
+								<button class="btn btn-primary" type="button" onclick="Open(true)">Open</button>
+							}
+						</div>
+						<div class="align-self-center">
+							<a class="btn btn-primary flex mx-auto h1 text-light" asp-action="Index" asp-controller="Community">Join The Room</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	}
+}
+
+

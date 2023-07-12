@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.Design;
+using System.Data;
 using WebApplication1.Models.Entities;
 using WebApplication1.Models.Repositories;
 
@@ -20,9 +22,10 @@ namespace WebApplication1.Controllers
             _bookRepository = bookRepository;
             _commentRepository = commentRepository;
             _userCommentRepository = userCommentRepository;
-        }
+		}
 
-        public async Task<IActionResult> Index(int id)
+		[Authorize(Roles = "PremiumUser, Admin")]
+		public async Task<IActionResult> Index(int id)
         {
             if (User != null)
             {
@@ -49,20 +52,23 @@ namespace WebApplication1.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-        [HttpGet]
+		[Authorize]
+		[HttpGet]
         public async Task<IActionResult> Chapters(int Id)
         {
             List<Chapter> chapters = await _chapterRepository.GetAll(Id);
             return View(chapters);
         }
 
-        [HttpGet]
+		[Authorize(Roles = "Admin")]
+		[HttpGet]
         public IActionResult Chapter()
         {
             return View(new Chapter());
         }
 
-        [HttpPost]
+		[Authorize(Roles = "Admin")]
+		[HttpPost]
         public async Task<IActionResult> Chapter(Chapter chapter)
         {
             if (chapter == null)
@@ -73,10 +79,47 @@ namespace WebApplication1.Controllers
             return Json(new { success = true });
         }
 
-        [HttpPost]
+		[Authorize(Roles = "Admin")]
+		[HttpGet]
+        public async Task<IActionResult> Edit(int Id)
+        {
+            Chapter chapter = await _chapterRepository.GetById(Id);
+            return View(chapter);
+        }
+
+		[Authorize(Roles = "Admin")]
+		[HttpPost]
+        public async Task<IActionResult> Edit(int Id, Chapter chapter)
+        {
+            if (chapter == null)
+            {
+                throw new ArgumentNullException(nameof(chapter));
+            }
+            await _chapterRepository.EditChapter(Id, chapter);
+            return Json(new { success = true });
+        }
+
+		[Authorize(Roles = "Admin")]
+		[HttpPost]
         public async Task<IActionResult> Delete(int Id)
         {
             await _chapterRepository.Delete(Id);
+            return Json(new { success = true });
+        }
+
+		[Authorize(Roles = "Admin")]
+		[HttpPost]
+        public async Task<IActionResult> Up(int Id)
+        {
+            await _chapterRepository.Up(Id);
+            return Json(new { success = true });
+        }
+
+		[Authorize(Roles = "Admin")]
+		[HttpPost]
+        public async Task<IActionResult> Down(int Id)
+        {
+            await _chapterRepository.Down(Id);
             return Json(new { success = true });
         }
 

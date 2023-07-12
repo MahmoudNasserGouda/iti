@@ -6,7 +6,7 @@ namespace WebApplication1.Models.Entities
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<Book> Books { get; set; } = new List<Book>();
 
     }
 }

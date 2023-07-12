@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.Design;
+using System.Data;
 using WebApplication1.Models.Entities;
 using WebApplication1.Models.Repositories;
 
@@ -20,23 +22,26 @@ namespace WebApplication1.Controllers
             _bookRepository = bookRepository;
             _commentRepository = commentRepository;
             _userCommentRepository = userCommentRepository;
-        }
+		}
 
-        [HttpGet]
+		[Authorize]
+		[HttpGet]
         public async Task<IActionResult> Comments(int Id)
         {
             List<Comment> comments = await _commentRepository.GetAll(Id);
             return View(comments);
         }
 
-        [HttpPost]
+		[Authorize(Roles = "Admin")]
+		[HttpPost]
         public async Task<IActionResult> Delete(int Id)
         {
             await _commentRepository.Delete(Id);
             return Json(new { success = true });
         }
 
-        [HttpGet]
+		[Authorize(Roles = "PremiumUser, Admin")]
+		[HttpGet]
         public async Task<IActionResult> Comment()
         {
             if (User.Identity != null && User.Identity.IsAuthenticated)
@@ -50,18 +55,28 @@ namespace WebApplication1.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-        [HttpPost]
+		[Authorize(Roles = "PremiumUser, Admin")]
+		[HttpPost]
         public async Task<IActionResult> Comment(Comment comment)
         {
-            if (comment == null)
+            if (comment == null || comment.Text == null)
             {
-                throw new ArgumentNullException(nameof(comment));
+				ModelState.AddModelError(nameof(comment.Text), "*you can't write empty comment");
+				return View(comment);
+			}
+            var filter = new ProfanityFilter.ProfanityFilter();
+            var swearList = filter.DetectAllProfanities(comment.Text);
+            if (swearList.Count > 0)
+            {
+                ModelState.AddModelError(nameof(comment.Text), "*you can't write profane words like (" + String.Join(", ", swearList) + ").");
+                return View(comment);
             }
             await _commentRepository.AddComment(comment);
             return Json(new { success = true });
         }
 
-        [HttpPost]
+		[Authorize(Roles = "PremiumUser, Admin")]
+		[HttpPost]
         public async Task<IActionResult> UpVote(int commentId, int vote)
         {
             if (User.Identity != null && User.Identity.IsAuthenticated)
@@ -85,7 +100,8 @@ namespace WebApplication1.Controllers
             return Json(new { success = true });
         }
 
-        [HttpPost]
+		[Authorize(Roles = "PremiumUser, Admin")]
+		[HttpPost]
         public async Task<IActionResult> DownVote(int commentId, int vote)
         {
             if (User.Identity != null && User.Identity.IsAuthenticated)

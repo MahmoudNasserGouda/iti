@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section NavBar{
+    <partial name="_NavBarPV" />
+}
+
+<div id="listbook" class="container p-xxl-5 ms-xxl-5 me-xxl-5">
+    
+</div>
+
+
+@section Scripts{
+    <script type="text/javascript">
+        function GetBooks(){
+            $.ajax({
+                method: "Get",
+                url: "/Bookmarks/List",
+                success: function (data) {
+                    $("#listbook").html(data);
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+        GetBooks();
+        function RemoveBook(bookId) {
+            $.ajax({
+                method: "Post",
+                url: "/Bookmarks/Remove/" + bookId,
+                success: function (data) {
+                    GetBooks();
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+    </script>
+}

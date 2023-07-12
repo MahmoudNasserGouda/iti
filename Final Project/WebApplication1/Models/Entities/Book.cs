@@ -11,15 +11,15 @@ namespace WebApplication1.Models.Entities
         public string Description { get; set; }
         public string AuthorName { get; set; }  
         public int Rating { get; set; } 
-        public DateTime PublishDate { get; set; }   
+        public string PublishDate { get; set; }   
         public string ImagePath { get; set; }
-        public int Price { get; set; }  
-        //public int CategoryId { get; set; }
+        public double Price { get; set; }
+        public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
-        public virtual ICollection<Chapter> Chapters { get; set; }
-        public virtual ICollection<Review> Reviews { get; set; }    
-        public virtual ICollection<User> Users { get; set; }
-        public virtual ICollection<User> OwnerUsers { get; set; }
+        public virtual ICollection<Chapter> Chapters { get; set; } = new List<Chapter>();
+        public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();    
+        public virtual ICollection<User> Users { get; set; } = new List<User>();
+        public virtual ICollection<User> OwnerUsers { get; set; } = new List<User>();
 
     }
 }

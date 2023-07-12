@@ -51,7 +51,15 @@
 					<p class="text-white pt-20 pb-20">
 					With more than 100 book to read, we hope that you enjoy you stay in the chamber of books. 
 					</p>
-					<a href="/Categories/Categories" class="primary-btn text-uppercase">Enter the Chamber</a>
+					@if (User.Identity.IsAuthenticated)
+					{
+						<a href="/Categories/Categories" class="primary-btn text-uppercase">Enter the Chamber</a>
+					}
+					else
+					{
+						<a href="/Account/Login" class="primary-btn text-uppercase">Enter the Chamber</a>
+					}
+
 				</div>
 				<div class="col-lg-5 banner-right">
 					<img class="img-fluid" src="~/assets/MainMenuBookimg/header-img.png" alt="">
@@ -64,7 +72,7 @@
 @section HighestRated{
 	
 
-	<section class="course-area section-gap" id="course">
+	<section class="course-area" id="course">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
 				<div class="menu-content pb-60 col-lg-9">
@@ -77,22 +85,125 @@
 			<div class="row">
 				<div class="active-course-carusel">
 					@foreach (var item in Model)
-				{
+					{
 						<div class="single-course item">
 							<img class="img-fluid" src="@item.ImagePath" alt="" style="height:360px; width:300px">
 							<p class="sale-btn">@item.Category.Name</p>
 							<div class="details">
-								<a href="#"><h4>@item.Name <span class="price float-right">$@item.Price</span></h4></a>
+								@if (User.Identity.IsAuthenticated)
+								{
+									<a href="/Book/Index/@item.ID"><h4>@item.Name <span class="price float-right"> Read</span></h4></a>
+								}
+								else
+								{
+									<a href="/Account/Registration"><h4>@item.Name <span class="price float-right"> Read</span></h4></a>
+								}
 								<p>
-									@item.Description
+									@item.Description.TrimEnd()
 								</p>
 							</div>
 						</div>
 					}
-				
-					
 				</div>
 			</div>
 		</div>
 	</section>
+}
+
+@section Community {
+	<div id="community">
+
+	</div>
+}
+
+@section Announcement {
+	<div id="announcement">
+
+	</div>
+}
+
+@section Scripts {
+	<script type="text/javascript">
+		function Open(open) {
+			$.ajax({
+				method: "GET",
+				url: "/MainMenu/Community",
+				data: {
+					"open": open
+				},
+				contentType: "text/html",
+				success: function (data) {
+					$("#community").html(data);
+				},
+				error: function (e) {
+					console.log(e);
+				}
+			});
+		}
+		Open(null);
+
+		function GetAnnouncement() {
+			$.ajax({
+				method: "GET",
+				url: "/MainMenu/Announcement",
+				data: null,
+				contentType: "text/html",
+				success: function (data) {
+					$("#announcement").html(data);
+					SetAnnouncement();
+				},
+				error: function (e) {
+					console.log(e);
+				}
+			});
+		}
+		GetAnnouncement();
+
+		function SetAnnouncement() {
+			// Get elements
+			const adminBtn = document.getElementById('adminBtn');
+			const adminWindow = document.getElementById('adminWindow');
+			const form = adminWindow.querySelector('form');
+
+			// Show/hide window on click
+			adminBtn.addEventListener('click', () => {
+				adminWindow.style.display = 'block';
+			});
+
+			// Handle form submission
+			form.addEventListener('submit', (event) => {
+				// Prevent default form submission behavior
+				event.preventDefault();
+
+				// Extract form data
+				const formData = new FormData(form);
+				const headValue = formData.get('head');
+				const p1Value = formData.get('p1');
+				const p2Value = formData.get('p2');
+
+				$.ajax({
+					method: "GET",
+					url: "/MainMenu/Announcement",
+					data: {
+						"Head": headValue,
+						"P1": p1Value,
+						"P2": p2Value
+					},
+					contentType: "text/html",
+					success: function (data) {
+						$("#announcement").html(data);
+					},
+					error: function (e) {
+						console.log(e);
+					}
+				});
+
+				// Clear form fields
+				form.reset();
+
+				// Hide window
+				adminWindow.style.display = 'none';
+			});
+		}
+	</script>
 }

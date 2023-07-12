@@ -1,0 +1,40 @@
+﻿@model List<Book>
+
+@{
+    Layout = null;
+}
+
+<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+    @foreach (var item in Model)
+    {
+        <div class="col mb-5">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a asp-action="Index" asp-controller="Book" asp-route-Id="@item.ID" style="text-decoration:inherit; color:inherit; outline:inherit;">
+                    <img class="card-img-top" src="@item.ImagePath" height="320px" width="300px" alt="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">@item.Name</h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="text-center mb-2">
+                    <a onclick="RemoveBook(@item.ID)" class="btn btn-danger mt-auto">Remove</a>
+                    <div class="btn-group dropend">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Status
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button" onclick="SetStatus(@item.ID, 0)">Not Started</button></li>
+                            <li><button class="dropdown-item" type="button" onclick="SetStatus(@item.ID, 1)">Reading</button></li>
+                            <li><button class="dropdown-item" type="button" onclick="SetStatus(@item.ID, 2)">Completed</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>

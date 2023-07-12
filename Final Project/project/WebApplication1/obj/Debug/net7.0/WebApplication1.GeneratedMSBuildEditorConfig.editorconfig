@@ -28,8 +28,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5DcmVhdGVcQWRkQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/Bookmarks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va21hcmtzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/Bookmarks/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va21hcmtzXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/CategoriesCRUDS/AddBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc0NSVURTXEFkZEJvb2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/CategoriesCRUDS/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc0NSVURTXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/Categories/Categories.cshtml]
@@ -44,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcHRlclxDaGFwdGVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/Chapter/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcHRlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/Chapter/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcHRlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +76,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxDb21tZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/Community/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/DashBoard/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXERhc2hCb2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,8 +92,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/MainMenu/Announcement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcQW5ub3VuY2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/MainMenu/Community.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcQ29tbXVuaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/MainMenu/MainMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcTWFpbk1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/Payment/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/Review/Review.cshtml]
@@ -100,6 +140,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRlZ29yaWVzVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/Shared/_DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/Shared/_ImageShow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbWFnZVNob3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -114,6 +158,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/Shared/_NavBarPV.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXJQVi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/computer science/iti/Final Project/project/WebApplication1/Views/Shared/_TempPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZW1wUGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/computer science/iti/Final Project/project/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]

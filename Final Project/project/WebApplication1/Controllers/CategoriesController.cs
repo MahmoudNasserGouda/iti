@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models.Entities;
 using WebApplication1.Models.Repositories;
 
 namespace WebApplication1.Controllers
 {
+    [Authorize]
     public class CategoriesController : Controller
     {
         IBookRepository book;
@@ -17,30 +20,46 @@ namespace WebApplication1.Controllers
         }
         public IActionResult Categories()
         {
-           
+            ViewBag.Categories = category.GetAll().Result;
             return View(book.GetAll().Result);
         }
 
-        public IActionResult GetHorror()
-        {
+        //public IActionResult GetHorror()
+        //{
 
-            return PartialView("_BookList",book.GetHorror());
+        //    return PartialView("_BookList",book.GetHorror());
+        //}
+
+        //public IActionResult GetSciFi()
+        //{
+
+        //    return PartialView("_BookList", book.GetSciFi());
+        //}
+        //public IActionResult GetAdventure()
+        //{
+
+        //    return PartialView("_BookList", book.GetAdventure());
+        //}
+
+        [HttpGet]
+        public async Task<IActionResult> GetByCategory(int categoryId)
+        {
+            List<Book> books = await book.GetByCategory(categoryId);
+
+            return PartialView("_BookList", books);
+		}
+
+        [HttpGet]
+        public async Task<IActionResult> GetSearchResult(int categoryId, string SearchString)
+        {
+            List<Book> books = await book.GetSearchResult(categoryId, SearchString);
+            return PartialView("_BookList", books);
         }
 
-        public IActionResult GetSciFi()
+        public async Task<IActionResult> Delete(int ID)
         {
-
-            return PartialView("_BookList", book.GetSciFi());
-        }
-        public IActionResult GetAdventure()
-        {
-
-            return PartialView("_BookList", book.GetAdventure());
-        }
-        public IActionResult GetSearchResult(string SearchString)
-        {
-
-            return PartialView("_BookList", book.GetSearchResult(SearchString));
+            await book.DeleteBook(ID);
+            return Json(new { success = true });
         }
     }
 }

@@ -10,97 +10,142 @@
 @section ImageShow{
    <partial name="_ImageShow" model="Model" />
 }
+
 @section Books{
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg" style="background-color: black;">
         <div class="container px-4 px-lg-5">
-            <h5>The Library</h5>
+            <h5 class="mr-auto navbar-text text-white" style="font-size: 20px;">The Library</h5>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">All</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item me-3"><a class="nav-link active text-center" role="button" onclick="AjaxCallCategory(0)" aria-current="page" style="color: white; font-size: 18px; margin-right: 15px;">All</a></li>
+                    <li class="nav-item me-3"><a class="nav-link text-center" href="/CategoriesCRUDS/AddBook" style="color: white; font-size: 18px; margin-right: 15px;">Add Book</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <a class="nav-link dropdown-toggle text-center" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 18px; margin-right: 15px;">Categories</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" onclick="AjaxCallHorror()">Horror</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" onclick="AjaxCallSciFi()">Sci-Fi</a></li>
-                            <li><a class="dropdown-item" onclick="AjaxCallAdventure()">Adventure</a></li>
+                            @foreach (Category category in ViewBag.Categories)
+                            {
+                                <li><a class="dropdown-item" data="@category.ID" role="button" onclick="AjaxCallCategory(@category.ID)">@category.Name</a></li>
+                            }
                         </ul>
                     </li>
                 </ul>
-             
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
-                    <div class="input-group-append">
-                        @*<button class="btn btn-outline-success" onclick="AjaxCallSearchResult()" type="submit">Search</button>*@
-                    <a class="btn btn-outline-success" onclick="AjaxCallSearchResult()">Search</a>
-                    </div>
-              
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbar" oninput="AjaxCallSearchResult()">
+                    @*<a class="btn btn-outline-success" onclick="AjaxCallSearchResult()" style="color: white; font-size: 18px;">Search</a>*@                
+                </form>
             </div>
         </div>
     </nav>
 
+    @*<style>
+        .navbar-nav .nav-link:not(.navbar-text):hover {
+            color: pink !important;
+        }
+    </style>*@
+
     <!-- nav bar above-->
+
+    <style>
+    #Booklist {
+        /*background-image: -moz-linear-gradient(90deg, #f45622 50%, #f53e54 50%);
+        background-image: -webkit-linear-gradient(90deg, #f45622 50%, #f53e54 50%);*/
+       /* background-image: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);*/
+            background-color: rgba(245,160,140,0.8);
+    }
+    </style>
+
     <section class="py-5" id="Booklist">
-      <partial name="_BookList" />
+        <partial name="_BookList" />
     </section>
-    <script>
+}
+
+
+@section Scripts{
+    <script type="text/javascript">
+        var Id = 0;
+        $(".dropdown-menu li a").click(function () {
+            Id = $(this).attr("data");
+        });
 
         function AjaxCallSearchResult()
         {
             var result = $("#searchbar").val();
-            console.log(result);
             $.ajax({
                 url: "/Categories/GetSearchResult",
-                data:{"SearchString":result},
+                data: {
+                    "categoryId": Id,
+                    "SearchString": result 
+                },
+                processData: true,
                 success: function (result) {
                     $("#Booklist").html(result);
                 }
             });
         }
 
+        function AjaxCallCategory(categoryId) 
+        {
+            $.ajax({
+                url: "/Categories/GetByCategory",
+                data: {
+                    "categoryId": categoryId
+                },
+                success: function (result) {
+                    $("#Booklist").html(result);
+                }
+            });
+        }
 
-       function AjaxCallHorror()
-       {
+       //function AjaxCallHorror()
+       //{
            
-                $.ajax({
-                url: "/Categories/GetHorror", 
-                success: function (result) {
-                        $("#Booklist").html(result);
-                    }
-                });
+       //         $.ajax({
+       //         url: "/Categories/GetHorror", 
+       //         success: function (result) {
+       //                 $("#Booklist").html(result);
+       //             }
+       //         });
          
-       }
+       //}
 
-        function AjaxCallSciFi() {
+       // function AjaxCallSciFi() {
 
+       //     $.ajax({
+       //         url: "/Categories/GetSciFi",
+       //         success: function (result) {
+       //             $("#Booklist").html(result);
+       //         }
+       //     });
+
+       // }
+
+       // function AjaxCallAdventure() {
+
+       //     $.ajax({
+       //         url: "/Categories/GetAdventure",
+       //         success: function (result) {
+       //             $("#Booklist").html(result);
+       //         }
+       //     });
+
+       // }
+
+        function DeleteBook(bookId) {
             $.ajax({
-                url: "/Categories/GetSciFi",
+                url: "/Categories/Delete",
+                method: "POST",
+                data: { ID: bookId }, // Example: sending the bookId as data
                 success: function (result) {
-                    $("#Booklist").html(result);
+
+                    AjaxCallCategory(0);
                 }
             });
-
         }
-
-        function AjaxCallAdventure() {
-
-            $.ajax({
-                url: "/Categories/GetAdventure",
-                success: function (result) {
-                    $("#Booklist").html(result);
-                }
-            });
-
-        }
-
-       
     </script>
-
-
 }
 
 

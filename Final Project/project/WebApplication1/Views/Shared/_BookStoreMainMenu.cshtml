@@ -29,45 +29,27 @@
 	<link rel="stylesheet" href="~/css/MainMenuBookcss/animate.min.css">
 	<link rel="stylesheet" href="~/css/MainMenuBookcss/owl.carousel.css">
 	<link rel="stylesheet" href="~/css/MainMenuBookcss/main.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
 
 	<!-- boots trap link for icons-->
 
 </head>
 <body>
-
-	<header id="header" id="home">
-		@RenderSection("NavBar",false)
-	</header><!-- #header -->
+	
+	<header id="header" style="background-color: #f53f51; color: #fff; position:fixed; padding:30px; top:0; width:100%; z-index:100;">
+		@RenderSection("NavBar", false)
+	</header>
+	<!-- #header -->
 	<!-- start banner Area -->
 	@RenderSection("LibraryEntry", false)
 	<!-- End banner Area -->
 	<!-- Start about Area -->
-	<section class="section-gap info-area" id="about">
-		<div class="container">
-			<div class="single-info row mt-40 align-items-center">
-				<div class="col-lg-6 col-md-12 text-center no-padding info-left">
-					<div class="info-thumb">
-						<img src="~/assets/MainMenuBookimg/about-img.jpg" class="img-fluid info-img" alt="">
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-12 no-padding info-rigth">
-					<div class="info-content">
-						<h2 class="pb-30">BREAKING NEWS</h2>
-						<p>
-							Our team consisting of Abdullah, Ahmed, Mahmoud, and Mohamed have managed to successfully finish most of the project. 
-						</p>
-						<br>
-						<p>
-							Thanks to the supervision of instructor Sarah, we hope that you enjoy our simple website.
-						</p>
-						<br>
-						<img src="~/assets/MainMenuBookimg/signature.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	@RenderSection("Announcement", false)
 	<!-- End about Area -->
+	<!-- Start Community Area -->
+	@RenderSection("Community", false)
+	<!-- End Community Area -->
 	<!-- Start fact Area -->
 	<section class="fact-area relative section-gap" id="fact">
 		<div class="overlay overlay-bg"></div>
@@ -109,7 +91,15 @@
 						</p>
 						<div class="price-bottom">
 							<h1><span>$</span> 59.99</h1>
-							<a href="#" class="primary-btn header-btn">Purchase Now</a>
+							@if(User.Identity.IsAuthenticated)
+							{
+								<a href="/Payment/Payment?price=79.99&name=Omega%20Subscription&months=6" class="primary-btn header-btn">Purchase Now</a>
+							}else
+							{
+								<a href="/Account/Registration" class="primary-btn header-btn">Purchase Now</a>
+							}
+
+					
 						</div>
 					</div>
 				</div>
@@ -124,7 +114,14 @@
 						</p>
 						<div class="price-bottom">
 							<h1><span>$</span> 79.99</h1>
-							<a href="#" class="primary-btn header-btn">Purchase Now</a>
+							@if (User.Identity.IsAuthenticated)
+							{
+								<a href="/Payment/Payment?price=79.99&name=Alpha%20Subscription&months=8" class="primary-btn header-btn">Purchase Now</a>
+							}
+							else
+							{
+								<a href="/Account/Registration" class="primary-btn header-btn">Purchase Now</a>
+							}
 						</div>
 					</div>
 				</div>
@@ -139,7 +136,14 @@
 						</p>
 						<div class="price-bottom">
 							<h1><span>$</span>99.99</h1>
-							<a href="#" class="primary-btn">Purchase Now</a>
+							@if (User.Identity.IsAuthenticated)
+							{
+								<a href="/Payment/Payment?price=99.99&name=Omega%20Subscription&months=10" class="primary-btn header-btn">Purchase Now</a>
+							}
+							else
+							{
+								<a href="/Account/Registration" class="primary-btn header-btn">Purchase Now</a>
+							}
 						</div>
 					</div>
 				</div>
@@ -152,42 +156,42 @@
 	<!-- End course Area -->
 	<!-- Start call-to-action Area -->
 	@*<section class="call-to-action-area section-gap">
-		<div class="container">
-			<div class="row justify-content-center top">
-				<div class="col-lg-12">
-					<h1 class="text-white text-center">Download Our App for all Platforms</h1>
-					<p class="text-white text-center mt-30">
-						It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological advancement are concerned.
-					</p>
-				</div>
-			</div>
-			<div class="row justify-content-center d-flex">
-				<div class="download-button d-flex flex-row justify-content-center mt-30">
-					<div class="buttons flex-row d-flex">
-						<i class="fa fa-apple" aria-hidden="true"></i>
-						<div class="desc">
-							<a href="#">
-								<p>
-									<span>Available</span> <br>
-									on App Store
-								</p>
-							</a>
-						</div>
-					</div>
-					<div class="buttons flex-row d-flex">
-						<i class="fa fa-android" aria-hidden="true"></i>
-						<div class="desc">
-							<a href="#">
-								<p>
-									<span>Available</span> <br>
-									on Play Store
-								</p>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="container">
+	<div class="row justify-content-center top">
+	<div class="col-lg-12">
+	<h1 class="text-white text-center">Download Our App for all Platforms</h1>
+	<p class="text-white text-center mt-30">
+	It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological advancement are concerned.
+	</p>
+	</div>
+	</div>
+	<div class="row justify-content-center d-flex">
+	<div class="download-button d-flex flex-row justify-content-center mt-30">
+	<div class="buttons flex-row d-flex">
+	<i class="fa fa-apple" aria-hidden="true"></i>
+	<div class="desc">
+	<a href="#">
+	<p>
+	<span>Available</span> <br>
+	on App Store
+	</p>
+	</a>
+	</div>
+	</div>
+	<div class="buttons flex-row d-flex">
+	<i class="fa fa-android" aria-hidden="true"></i>
+	<div class="desc">
+	<a href="#">
+	<p>
+	<span>Available</span> <br>
+	on Play Store
+	</p>
+	</a>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
 	</section>*@
 	<!-- End call-to-action Area -->
 	<!-- Start testomial Area -->
@@ -300,14 +304,14 @@
 	</section>
 	<!-- End testomial Area -->
 	<!-- start footer Area -->
-	<footer class="footer-area section-gap">
+	<footer class="footer-area section-gap position-relative bottom-0">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>About Us</h6>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+							"Welcome to our book website! We are a group of passionate individuals who share a deep love for books. . Books have always held a special place in our hearts, transporting us to different worlds, and igniting our passion. Please Enjoy Your Stay. 
 						</p>
 						<p class="footer-text">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -318,9 +322,9 @@
 				</div>
 				<div class="col-lg-5  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Newsletter</h6>
-						<p>Stay update with our latest</p>
-						<div class="" id="mc_embed_signup">
+						<h6>Objective</h6>
+						<p>We hope you enjoy your stay</p>
+						@*<div class="" id="mc_embed_signup">
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
 								<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
 								<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
@@ -330,18 +334,17 @@
 
 								<div class="info"></div>
 							</form>
-						</div>
+						</div>*@
 					</div>
 				</div>
 				<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
 					<div class="single-footer-widget">
-						<h6>Follow Us</h6>
+						<h6>Famous on:</h6>
 						<p>Let us be social</p>
 						<div class="footer-social d-flex align-items-center">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
+							<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+							<a href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
 						</div>
 					</div>
 				</div>
@@ -349,7 +352,8 @@
 		</div>
 	</footer>
 	<!-- End footer Area -->
-
+	<!-- End footer Area -->
+	<script src="https://kit.fontawesome.com/e54de38071.js" crossorigin="anonymous"></script>
 	<script src="~/js/MainMenuBookjs/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="~/js/MainMenuBookjs/vendor/bootstrap.min.js"></script>
@@ -367,7 +371,8 @@
 	<script src="~/js/MainMenuBookjs/jquery.counterup.min.js"></script>
 	<script src="~/js/MainMenuBookjs/mail-script.js"></script>
 	<script src="~/js/MainMenuBookjs/main.js"></script>
-
+@*	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+*@	@RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
 
