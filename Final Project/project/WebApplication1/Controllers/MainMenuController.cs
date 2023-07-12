@@ -31,7 +31,7 @@ namespace WebApplication1.Controllers
 
 		public IActionResult Community(bool? open)
 		{
-			const string path = @"F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\community.json";
+			const string path = @"community.json";
 			var o = JsonConvert.DeserializeObject<Community>(System.IO.File.ReadAllText(path));
 			if (open != null)
 			{
@@ -45,7 +45,7 @@ namespace WebApplication1.Controllers
 
 		public IActionResult Announcement(Announcement? ann)
 		{
-			const string path = @"F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\announcement.json";
+			const string path = @"announcement.json";
 			var o = JsonConvert.DeserializeObject<Announcement>(System.IO.File.ReadAllText(path));
 			if ( ann != null )
 			{

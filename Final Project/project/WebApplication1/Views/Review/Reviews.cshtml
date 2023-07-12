@@ -117,7 +117,7 @@
     </div>
 }
 
-@if (User.IsInRole("PremiumUser"))
+@if (User.IsInRole("PremiumUser") || User.IsInRole("Admin"))
 {
     <div class="row g-0 text-center mb-4" id="addReview" data="@user.Id" role="button" onclick="GetReview()">
         <span class="col-md-2"></span>

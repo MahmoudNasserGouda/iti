@@ -21,7 +21,7 @@
             {
                 isRead = await userRepository.IsReadChapter(user.Id, chapter.ID);
             }
-            if (User.IsInRole("PremiumUser"))
+            if (User.IsInRole("PremiumUser") || User.IsInRole("Admin"))
             {
                 if (isRead == false)
                 {
@@ -51,7 +51,7 @@
                     </span>
                 }
             }
-            
+
             if (User.IsInRole("Admin"))
             {
                 <span class="h5 ms-2">

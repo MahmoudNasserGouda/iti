@@ -12,11 +12,13 @@ namespace WebApplication1.Controllers
         private readonly UserManager<User> _userManager;
         private readonly IUserSubscriptionRepository _userSubscriptionRepository;
         private readonly IReportRepository _reportRepository;
-        public PaymentController(UserManager<User> userManager, IUserSubscriptionRepository userSubscriptionRepository, IReportRepository reportRepository)
+        private readonly SignInManager<User> _signinmanager;
+        public PaymentController(UserManager<User> userManager, IUserSubscriptionRepository userSubscriptionRepository, IReportRepository reportRepository, SignInManager<User> signinmanager)
         {
             _userManager = userManager;
             _userSubscriptionRepository = userSubscriptionRepository;
             _reportRepository = reportRepository;
+            _signinmanager = signinmanager;
         }
         public IActionResult Payment(Subscription subscription)
         {     
@@ -50,8 +52,10 @@ namespace WebApplication1.Controllers
 
 
             await _userSubscriptionRepository.AddUserSubscriptionAsync(subscription);
-
-            return RedirectToRoute("Categories", new { action = "Categories" });
+            User myuser = await _userManager.FindByNameAsync(user.UserName);
+            await _signinmanager.SignOutAsync();
+            await _signinmanager.SignInAsync(myuser, false);
+            return RedirectToAction("Categories", "Categories");
         }
     }
 }

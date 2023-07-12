@@ -6,7 +6,7 @@ using WebApplication1.Models.Repositories;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize(Roles = "PremiumUser, Admin")]
+    [Authorize]
     public class BookController : Controller
     {
         private IBookRepository _bookRepository;
