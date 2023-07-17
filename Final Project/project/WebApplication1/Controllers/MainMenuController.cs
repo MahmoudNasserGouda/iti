@@ -25,7 +25,8 @@ namespace WebApplication1.Controllers
 			ViewBag.HorrorCategoryNumber = _book.GetByCategory(1).Result.Count;
 			ViewBag.SciFiCategoryNumber= _book.GetByCategory(2).Result.Count;
 			ViewBag.AdventureCategoryNumber= _book.GetByCategory(3).Result.Count;
-			ViewBag.TotalBooks= _book.GetAll().Result.Count;	
+			ViewBag.TotalBooks= _book.GetAll().Result.Count;
+			ViewBag.RomanceCategoryNumber= _book.GetByCategory(4).Result.Count;	
             return View(_book.GetAll().Result);
 		}
 

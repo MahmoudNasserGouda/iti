@@ -25,11 +25,10 @@ namespace WebApplication1.Controllers
             return View(book.GetById(ID).Result);
         }
 
-        public IActionResult Updated(int Id,Book updatedbook)
+        public async Task<IActionResult> Updated(int Id,Book updatedbook)
         {
-             book.UpdateBook( Id, updatedbook);
+             await book.UpdateBook( Id, updatedbook);
              return RedirectToRoute("Categories", new { action = "Categories" });
-
         }
 
         public IActionResult AddBook()
@@ -38,13 +37,10 @@ namespace WebApplication1.Controllers
             ViewBag.Book = book.GetAll().Result;
             return View();
         }
-        public IActionResult AddBookSave(Book booksaved)
+        public async Task<IActionResult> AddBookSave(Book booksaved)
         {
-             book.SaveBook(booksaved);
+             await book.SaveBook(booksaved);
              return RedirectToRoute("Categories", new { action = "Categories" });
         }
-   
-
-
     }
 }

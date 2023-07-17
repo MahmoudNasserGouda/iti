@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using WebApplication1.Models.Entities;
 using WebApplication1.Models.Enums;
 using WebApplication1.Models.Repositories;
@@ -7,18 +9,19 @@ using WebApplication1.Models.ViewModels;
 
 namespace WebApplication1.Controllers
 {
+    [Authorize]
     public class PaymentController : Controller
     {
         private readonly UserManager<User> _userManager;
         private readonly IUserSubscriptionRepository _userSubscriptionRepository;
         private readonly IReportRepository _reportRepository;
-        private readonly SignInManager<User> _signinmanager;
-        public PaymentController(UserManager<User> userManager, IUserSubscriptionRepository userSubscriptionRepository, IReportRepository reportRepository, SignInManager<User> signinmanager)
+        private readonly SignInManager<User> signinmanager;
+        public PaymentController(UserManager<User> userManager, IUserSubscriptionRepository userSubscriptionRepository, IReportRepository reportRepository, SignInManager<User> signInManager)
         {
             _userManager = userManager;
             _userSubscriptionRepository = userSubscriptionRepository;
             _reportRepository = reportRepository;
-            _signinmanager = signinmanager;
+            signinmanager = signInManager;
         }
         public IActionResult Payment(Subscription subscription)
         {     
@@ -53,9 +56,10 @@ namespace WebApplication1.Controllers
 
             await _userSubscriptionRepository.AddUserSubscriptionAsync(subscription);
             User myuser = await _userManager.FindByNameAsync(user.UserName);
-            await _signinmanager.SignOutAsync();
-            await _signinmanager.SignInAsync(myuser, false);
-            return RedirectToAction("Categories", "Categories");
+            await signinmanager.SignOutAsync();
+            await signinmanager.SignInAsync(myuser, false);
+
+            return RedirectToRoute("Categories", new { action = "Categories" });
         }
     }
 }

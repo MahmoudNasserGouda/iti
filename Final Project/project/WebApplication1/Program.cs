@@ -5,6 +5,7 @@ using WebApplication1.Models.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication1.BackgroundServices;
+using WebApplication1.Services;
 
 namespace WebApplication1
 {
@@ -33,6 +34,7 @@ namespace WebApplication1
             builder.Services.AddScoped<IUserCommentRepository, UserCommentRepository>();
             builder.Services.AddScoped<IUserSubscriptionRepository, UserSubscriptionRepository>();
 			builder.Services.AddScoped<IReportRepository, ReportRepository>();
+			builder.Services.AddScoped<IEmailService, EmailService>();
 
 			// to add our signinmanager and usermanager
 			builder.Services.AddIdentity<User,IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
@@ -62,10 +64,10 @@ namespace WebApplication1
                 name: "default",
                 pattern: "{controller=MainMenu}/{action=MainMenu}/{id?}");
 
-            //app.MapControllerRoute(
-            //    name: "Categories",
-            //    pattern: "Categories/{action=Categories}/{id?}",
-            //    defaults: new { controller = "Categories", action = "Categories" });
+            app.MapControllerRoute(
+                name: "Categories",
+                pattern: "Categories/{action=Categories}/{id?}",
+                defaults: new { controller = "Categories", action = "Categories" });
 
             app.Run();
         }

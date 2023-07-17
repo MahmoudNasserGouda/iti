@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\WebApplication1.csproj": {}
+    "F:\\computer science\\iti\\Final Project\\project\\WebApplication123\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\WebApplication1.csproj": {
+    "F:\\computer science\\iti\\Final Project\\project\\WebApplication123\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "F:\\computer science\\iti\\Final Project\\project\\WebApplication123\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "F:\\computer science\\iti\\Final Project\\project\\WebApplication123\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "F:\\computer science\\iti\\Final Project\\project\\WebApplication1\\obj\\",
+        "outputPath": "F:\\computer science\\iti\\Final Project\\project\\WebApplication123\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
             "FontAwesome": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",

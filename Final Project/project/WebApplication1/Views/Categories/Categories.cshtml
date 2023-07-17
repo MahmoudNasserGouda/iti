@@ -22,8 +22,9 @@
             <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                     <li class="nav-item me-3"><a class="nav-link active text-center" role="button" onclick="AjaxCallCategory(0)" aria-current="page" style="color: white; font-size: 18px; margin-right: 15px;">All</a></li>
-                    @(User.IsInRole("Admin")) {
-                    <li class="nav-item me-3"><a class="nav-link text-center" href="/CategoriesCRUDS/AddBook" style="color: white; font-size: 18px; margin-right: 15px;">Add Book</a></li>
+                    @if(User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item me-3"><a class="nav-link text-center" href="/CategoriesCRUDS/AddBook" style="color: white; font-size: 18px; margin-right: 15px;">Add Book</a></li>
                     }
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-center" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 18px; margin-right: 15px;">Categories</a>

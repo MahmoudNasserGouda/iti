@@ -8,6 +8,20 @@
     <partial name="_NavBarPV" />
 }
 @section NumberOfBooks{
+	<section class="fact-area relative section-gap" id="fact">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-40 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10">Please Enjoy Our Entire Book Collection</h1>
+						<p>Consisting of @ViewBag.TotalBooks Books</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="counter-area">
 		<div class="container">
 			<div class="row">
@@ -31,8 +45,8 @@
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="single-counter">
-						<h1 class="counter">@ViewBag.TotalBooks</h1>
-						<p>Total Books</p>
+						<h1 class="counter">@ViewBag.RomanceCategoryNumber</h1>
+						<p>Romance</p>
 					</div>
 				</div>
 			</div>
@@ -49,7 +63,7 @@
 						Chamber of Books
 					</h1>
 					<p class="text-white pt-20 pb-20">
-					With more than 100 book to read, we hope that you enjoy you stay in the chamber of books. 
+					With more than 30 books to read, we hope that you enjoy you stay in the chamber of books. 
 					</p>
 					@if (User.Identity.IsAuthenticated)
 					{
@@ -77,8 +91,8 @@
 			<div class="row d-flex justify-content-center">
 				<div class="menu-content pb-60 col-lg-9">
 					<div class="title text-center">
-						<h1 class="mb-10">Highest Rated Books</h1>
-						<p>The highest rated books according to our users.</p>
+						<h1 class="mb-10">The Collection</h1>
+						<p>Some of our books that we have to offer.</p>
 					</div>
 				</div>
 			</div>

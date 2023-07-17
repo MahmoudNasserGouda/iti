@@ -51,19 +51,7 @@
 	@RenderSection("Community", false)
 	<!-- End Community Area -->
 	<!-- Start fact Area -->
-	<section class="fact-area relative section-gap" id="fact">
-		<div class="overlay overlay-bg"></div>
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-40 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Please Enjoy Our Entire Book Collection</h1>
-						<p>We hope you enjoy all of them.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+
 	<!-- End fact Area -->
 	<!-- Start counter Area -->
 	@RenderSection("NumberOfBooks", false)
@@ -74,7 +62,7 @@
 			<div class="row d-flex justify-content-center">
 				<div class="menu-content pb-60 col-lg-8">
 					<div class="title text-center">
-						<h1 class="mb-10">Our to be Business</h1>
+						<h1 class="mb-10">Be Part of our Community</h1>
 						<p>Premium users get special surprises</p>
 					</div>
 				</div>
@@ -93,7 +81,7 @@
 							<h1><span>$</span> 59.99</h1>
 							@if(User.Identity.IsAuthenticated)
 							{
-								<a href="/Payment/Payment?price=79.99&name=Omega%20Subscription&months=6" class="primary-btn header-btn">Purchase Now</a>
+								<a href="/Payment/Payment?price=59.99&name=Omega%20Subscription&months=6" class="primary-btn header-btn">Purchase Now</a>
 							}else
 							{
 								<a href="/Account/Registration" class="primary-btn header-btn">Purchase Now</a>
@@ -213,7 +201,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>Mohsen</h4>
+						<h4>Yomna Kamal</h4>
 						<p>
 							User
 						</p>
@@ -223,7 +211,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>Sameh</h4>
+						<h4>Manal Mahmoud</h4>
 						<p>
 							User
 						</p>
@@ -233,7 +221,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>Wessam</h4>
+						<h4>Wessam Qayd</h4>
 						<p>
 							User
 						</p>
@@ -243,7 +231,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>Korolos</h4>
+						<h4>Enjy Ali</h4>
 						<p>
 							User
 						</p>
@@ -253,7 +241,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>Ali Maloul</h4>
+						<h4>Basant Fathy</h4>
 						<p>
 							User
 						</p>
@@ -263,7 +251,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>Hamdy Fathy</h4>
+						<h4>Marwa Ahmed</h4>
 						<p>
 							User
 						</p>
@@ -273,7 +261,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>El Shenawy</h4>
+						<h4>Tasneem Tawfiq</h4>
 						<p>
 							User
 						</p>
@@ -283,7 +271,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>Marawan Mohsen</h4>
+						<h4>Yara Mamdouh</h4>
 						<p>
 							User
 						</p>
@@ -293,7 +281,7 @@
 						<p class="desc">
 							Very Awesome Site!
 						</p>
-						<h4>Percy Tau</h4>
+						<h4>Samah Hosny</h4>
 						<p>
 							User
 						</p>
@@ -314,9 +302,7 @@
 							"Welcome to our book website! We are a group of passionate individuals who share a deep love for books. . Books have always held a special place in our hearts, transporting us to different worlds, and igniting our passion. Please Enjoy Your Stay. 
 						</p>
 						<p class="footer-text">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				@*			Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>*@
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
 						</p>
 					</div>
 				</div>
@@ -324,17 +310,7 @@
 					<div class="single-footer-widget">
 						<h6>Objective</h6>
 						<p>We hope you enjoy your stay</p>
-						@*<div class="" id="mc_embed_signup">
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-								<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-								<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-								</div>
 
-								<div class="info"></div>
-							</form>
-						</div>*@
 					</div>
 				</div>
 				<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
@@ -372,7 +348,7 @@
 	<script src="~/js/MainMenuBookjs/mail-script.js"></script>
 	<script src="~/js/MainMenuBookjs/main.js"></script>
 @*	<script src="~/lib/jquery/dist/jquery.min.js"></script>
-*@	@RenderSectionAsync("Scripts", required: false)
+*@	@RenderSection("Scripts", required: false)
 </body>
 </html>
 
